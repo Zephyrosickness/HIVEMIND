@@ -369,13 +369,17 @@ public class scoreDisplay extends songsDatabase{
 
 
         Path path = Paths.get("./assets/"+jacketCheck(selected)+".jpg");
+        boolean exists = Files.exists(path);
         //looking at this awful if-loop in particular makes me wanna quit and go to bed its awful and i could do something better but i dont care
 
-        if(Files.exists(path) ==false){
+        if (Files.exists(path) ==false){
             jacket = new File("./assets/placeholder.jpg");
-            System.out.println("no jacket");
+            System.out.println("error reading image!");
+            System.out.println("------DETAILS------");
+            System.out.println("JACKET: "+jacket);
+            System.out.println("RAW JACKET INPUT: "+jacketCheck(selected));
         }else{
-            if(difficulty=="BYD"){
+            if(difficulty=="BYD"&&exists==true){
                 //adds "_byd" to the end of the jpeg file name it's looking for if the diff is set to byd
 
                 path = Paths.get("./assets/"+jacketCheck(selected)+"_byd"+".jpg");
@@ -392,8 +396,8 @@ public class scoreDisplay extends songsDatabase{
                 //if diff isnt set to byd, it doesnt add beyond to the end
                 jacket = new File("./assets/"+jacketCheck(selected)+".jpg");
             }
-    }
-
+        }
+            
         combo = (int)songsDatabase.db(selected, difficulty)[0];
         cc = songsDatabase.db(selected, difficulty)[1];
 
@@ -411,7 +415,7 @@ public class scoreDisplay extends songsDatabase{
             imageLabel.setBounds(12, 70, scaledWidth, resizedImg.getHeight(null));
             //error handler in case of invalid url
         } catch (IOException e) {
-            System.out.println("error reading image! " + e.getMessage());
+            System.out.println("error reading image! ");
             System.out.println("------DETAILS------");
             System.out.println("ERROR DETAILS: "+e.getMessage());
             System.out.println("JACKET: "+jacket);
