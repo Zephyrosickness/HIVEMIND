@@ -40,7 +40,7 @@ public class hub {
         // set the layout manager to null for absolute positioning
         panel.setLayout(null);
 
-        //button to run score calcs
+        //button to run score calcr
         JButton scoreButton = new JButton("Score Calculator");
         scoreButton.setBounds(25, 25, 150, 25);
         panel.add(scoreButton);

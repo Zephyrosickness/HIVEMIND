@@ -2718,8 +2718,11 @@ public class songsDatabase {
     /*the way this script works is that it requires the selected variable name to be the exact same as the jacket file name.
     *unfortunately, sometimes some characters either cannot be used in filenames or im just too lazy to change it. so this "corrects"
     *any differences between filenames and string values without either field being compromised*/
-    public static String checksum(String target){
+    public static String jacketCheck(String target){
         switch(target){
+            case "Select a chart":
+                target = "placeholder";
+                break;
             case"Altair (feat. *spiLa*)":
                 target = "Altair (feat. spiLa)";
                 break;

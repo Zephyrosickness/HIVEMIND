@@ -368,7 +368,7 @@ public class scoreDisplay extends songsDatabase{
         //sets up jacket
 
 
-        Path path = Paths.get("./assets/"+checksum(selected)+".jpg");
+        Path path = Paths.get("./assets/"+jacketCheck(selected)+".jpg");
         //looking at this awful if-loop in particular makes me wanna quit and go to bed its awful and i could do something better but i dont care
 
         if(Files.exists(path) ==false){
@@ -378,19 +378,19 @@ public class scoreDisplay extends songsDatabase{
             if(difficulty=="BYD"){
                 //adds "_byd" to the end of the jpeg file name it's looking for if the diff is set to byd
 
-                path = Paths.get("./assets/"+checksum(selected)+"_byd"+".jpg");
+                path = Paths.get("./assets/"+jacketCheck(selected)+"_byd"+".jpg");
 
                 //if a byd version of the jacket does not exist, or if the diff isnt set to byd, do not add "_byd" to the end of the target filename
                 if(Files.exists(path) ==false){
                     //if the byd jacket does not exist
-                    jacket = new File("./assets/"+checksum(selected)+".jpg");
+                    jacket = new File("./assets/"+jacketCheck(selected)+".jpg");
                 }else{
                     //if the byd jacket exists
-                    jacket = new File("./assets/"+checksum(selected)+"_byd"+".jpg");
+                    jacket = new File("./assets/"+jacketCheck(selected)+"_byd"+".jpg");
                 }
             }else{
                 //if diff isnt set to byd, it doesnt add beyond to the end
-                jacket = new File("./assets/"+checksum(selected)+".jpg");
+                jacket = new File("./assets/"+jacketCheck(selected)+".jpg");
             }
     }
 
@@ -411,7 +411,11 @@ public class scoreDisplay extends songsDatabase{
             imageLabel.setBounds(12, 70, scaledWidth, resizedImg.getHeight(null));
             //error handler in case of invalid url
         } catch (IOException e) {
-            System.out.println("Error reading image: " + e.getMessage());
+            System.out.println("error reading image! " + e.getMessage());
+            System.out.println("------DETAILS------");
+            System.out.println("ERROR DETAILS: "+e.getMessage());
+            System.out.println("JACKET: "+jacket);
+            System.out.println("RAW JACKET INPUT: "+jacketCheck(selected));
         }
 
         //update constant/combo

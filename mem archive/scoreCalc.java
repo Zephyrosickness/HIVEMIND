@@ -1,5 +1,5 @@
 public class scoreCalc extends scoreDisplay{
-    public static void calcScore(String scoreString, int far, int miss, String farOp, String missOp, boolean toa){
+    public static void calcScore(String scoreString, int inputFar, int inputMiss, String farOp, String missOp, boolean toa){
 
         //init var
 
@@ -29,16 +29,17 @@ public class scoreCalc extends scoreDisplay{
         /*runs through every possible combination of far/lost notes, calculates the score and only prints out the ones that fufill the requirements*/
 
         //oh my god. this code used to be OVER 200 LINES LONG. it was the most UNREADABLE peice of SHIT i ever wrote. now it's 20 lines. im god. im a genius. greatest programmer ever
-            for (farFinal = 0; farFinal <= far&&farFinal<=farThreshold; farFinal++) {
-                for (missFinal = 0; missFinal <= miss&&missFinal<missThreshold; missFinal++) {
+            for (farFinal = 0; farFinal <= inputFar&&farFinal<=farThreshold; farFinal++) {
+                for (missFinal = 0; missFinal <= inputMiss&&missFinal<missThreshold; missFinal++) {
                     //calcs score. each PURE is 10,000,000 divided by max combo, and FAR is half of PURE
                     pureFinal = combo - (farFinal + missFinal);
                     scoreFinal = pureRaw * pureFinal + farRaw * farFinal;
 
                     //checks if all values meet operator criteria
-                    boolean farCheck = check(farFinal, far, farOp);
-                    boolean missCheck = check(farFinal, far, farOp);
+                    boolean farCheck = check(farFinal, inputFar, farOp);
+                    boolean missCheck = check(farFinal, inputFar, farOp);
                     boolean scoreCheck = scoreFinal >= minScore;
+
 
                     //makes sure no invalid values
                     boolean legit = legitimacyCheck(pureFinal, farFinal, missFinal, combo,scoreFinal, toa, combo-pureFinal);
@@ -82,13 +83,30 @@ public class scoreCalc extends scoreDisplay{
             case "=":
                 if(input==target){
                     result = true;
+                    break;
                 }
             case "<":
                 if(input<target){
                     result = true;
+                    break;
                 }
             case "Any":
                 result = true;
+                break;
+            default:
+                System.out.println("error with checksum! invalid operator!");
+                System.out.println("------DETAILS------");
+                System.out.println("OPERATOR: "+operator);
+                System.out.println("TARGET FAR/LOST COUNT: "+target);
+                System.out.println("INPUT COUNT: "+input);
+
+        }
+        if(input<0||target<0){
+            System.out.println("error with checksum! invalid target/input!");
+            System.out.println("------DETAILS------");
+            System.out.println("OPERATOR: "+operator);
+            System.out.println("TARGET FAR/LOST COUNT: "+target);
+            System.out.println("INPUT COUNT: "+input);
         }
         return result;
     }
@@ -108,15 +126,20 @@ public class scoreCalc extends scoreDisplay{
         //init var
         int total = pure+far+miss;
         score = (int)score;
+        boolean result = false;
 
         //checks if all the values are positive integers and that it all adds up to the total combo. both of these need to be true or the score doesnt display
         if(pure >= 0&&far >=0 &&miss>=0&&total==combo&&score<=10000000&&toaCheck(toa, impure)){
-            boolean result = true;
-            return result;
+            result = true;
         }else{
-            boolean result = false;
-            System.out.println("fucked up score"+score+" toa: "+toaCheck(toa, impure));
-            return result;
+            System.out.println("error with legitimacy checksum!");
+            System.out.println("------DETAILS------");
+            System.out.println("PURE: Is PURE a valid positive number? "+(pure >= 0)+" PURE count: "+pure);
+            System.out.println("FAR: Is FAR a valid positive number? "+(far >= 0)+" FAR count: "+far);
+            System.out.println("LOST: Is LOST a valid positive number? "+(miss >= 0)+" LOST count: "+miss);
+            System.out.println("Score: Is score equal/less than 10,000,000? "+(score<=10000000)+" Score: "+miss);
+            System.out.println("Toa Kozukata: Is Toa enabled? "+toa+" FAR+LOST count: "+impure+" toaCheck status"+toaCheck(toa, impure));
         }
+        return result;
     }
 }
