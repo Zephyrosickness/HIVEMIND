@@ -37,7 +37,7 @@ public class scoreCalc extends scoreDisplay{
 
                     //checks if all values meet operator criteria
                     boolean farCheck = check(farFinal, inputFar, farOp);
-                    boolean missCheck = check(farFinal, inputFar, farOp);
+                    boolean missCheck = check(missFinal, inputMiss, missOp);
                     boolean scoreCheck = scoreFinal >= minScore;
 
 
@@ -83,13 +83,13 @@ public class scoreCalc extends scoreDisplay{
             case "=":
                 if(input==target){
                     result = true;
-                    break;
                 }
+                break;
             case "<":
                 if(input<target){
                     result = true;
-                    break;
                 }
+                break;
             case "Any":
                 result = true;
                 break;
@@ -99,6 +99,7 @@ public class scoreCalc extends scoreDisplay{
                 System.out.println("OPERATOR: "+operator);
                 System.out.println("TARGET FAR/LOST COUNT: "+target);
                 System.out.println("INPUT COUNT: "+input);
+                break;
 
         }
         if(input<0||target<0){

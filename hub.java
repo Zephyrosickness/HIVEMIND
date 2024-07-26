@@ -15,7 +15,10 @@ public class hub {
             }
         } catch (Exception e) {
             //error handler for l&f in case something doesnt work
-            System.out.println("error with look and feel");
+            System.out.println("error with look and feel!");
+            System.out.println("------DETAILS------");
+            System.out.println(e.getMessage());
+
         }
 
 
