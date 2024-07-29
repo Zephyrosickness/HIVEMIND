@@ -151,7 +151,7 @@ public class scoreDisplay extends songsDatabase{
         //diff name
         String[] difficultyList = {"FTR/ETR", "BYD"};
         //for op dropdowns
-        String[] operators = {"=","<", "Any"};
+        String[] operators = {"Any", "=","<"};
 
         //for sort dropdown
         String[] sorts = {"Score","FAR count", "LOST count"};
