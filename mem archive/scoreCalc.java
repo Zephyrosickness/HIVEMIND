@@ -88,7 +88,6 @@ public class scoreCalc extends scoreDisplay{
             case "<":
                 if(input<target){
                     result = true;
-                    System.out.println("pee pee");
                 }
                 break;
             case "Any":

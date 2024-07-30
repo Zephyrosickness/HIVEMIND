@@ -3,12 +3,17 @@ public class songsDatabase {
     public static String jacketUrl;
 
     public static String[] chartsAll = { "Select a chart",
-        "[X]",
-        "#1f1e33",
-        "〇、",
+
+        //NUMBERS
+
         "1F√",
+        "10pt8tion",
+        "10pt8tion (Eternal)",
         "7thSense",
         "99 Glooms",
+
+        //A
+
         "A Wandering Melody of Love",
         "Abstruse Dilemma",
         "Aegleseeker",
@@ -21,6 +26,8 @@ public class songsDatabase {
         "Alone & Lorn",
         "Altair (feat. *spiLa*)",
         "Altale",
+        "ALTER EGO",
+        "ALTER EGO (Eternal)",
         "AlterAle",
         "AMAZING MIGHTYYYY!!!!",
         "Amekagura",
@@ -42,14 +49,20 @@ public class songsDatabase {
         "Ävril -Flicka i krans-",
         "Awaken In Ruins",
         "Axium Crisis",
+
+        //B
+
         "B.B.K.K.B.K.K.",
         "Babaroque",
+        "Back to Basics",
         "BADTEK",
         "Bamboo",
         "BATTLE NO.1",
+        "Beautiful Dreamer",
         "Be There",
         "Beside You",
         "Black Lotus",
+        "Black MInD",
         "Black Territory",
         "Blaster",
         "Blocked Library",
@@ -61,6 +74,9 @@ public class songsDatabase {
         "Brand new world",
         "BUCHiGiRE Berserker",
         "Bullet Waiting for Me (James Landino remix)",
+
+        //C
+
         "Call My Name feat. Yukacco",
         "Callima Karma",
         "Can I Friend You on Bassbook? Lol",
@@ -90,6 +106,9 @@ public class songsDatabase {
         "cyanine",
         "Cybernecia Catharsis",
         "CYCLES",
+
+        //D
+
         "Dancin' on a Cat's Paw",
         "Dandelion",
         "Dantalion",
@@ -105,6 +124,7 @@ public class songsDatabase {
         "Diode",
         "Distorted Fate",
         "Distorted Fate (Eternal)",
+        "Distortion Human",
         "Divine Light of Myriad",
         "Dot to Dot feat. shully",
         "Dreadnought",
@@ -114,6 +134,9 @@ public class songsDatabase {
         "dropdead",
         "DX Choseinou Full Metal Shojo",
         "Dynitikós",
+
+        //E
+
         "Eccentric Tale",
         "eden",
         "Ego Eimi",
@@ -126,6 +149,9 @@ public class songsDatabase {
         "Ether Strike",
         "Evening in Scarlet",
         "Evoltex (poppi'n mix)",
+
+        //F
+
         "Faint Light (Arcaea Edit)",
         "Fairytale",
         "Fallensquare",
@@ -145,6 +171,9 @@ public class songsDatabase {
         "Fracture Ray",
         "Free Myself",
         "FREEF4LL",
+
+        //G
+
         "G e n g a o z o",
         "Galactic Love",
         "Galaxy Friends",
@@ -164,6 +193,9 @@ public class songsDatabase {
         "Got hive of Ra",
         "Grievous Lady",
         "Grimheart",
+
+        //H
+
         "Halcyon",
         "Hall of Mirrors",
         "Harutopia ~Utopia of Spring~",
@@ -176,12 +208,16 @@ public class songsDatabase {
         "HELLOHELL",
         "HELLOHELL (Eternal)",
         "Hidden Rainbows of Epicurus",
-        "Hidden Rainbows of Epicurus (ETR)",
+        "Hidden Rainbows of Epicurus (Eternal)",
         "Hiiro Gekka, Kyoushou no Zetsu (nayuta 2017 ver.)",
         "Hikari",
         "HIVEMIND",
         "Hotarubi no Yuki",
         "Hybris (The one who shattered)",
+        "HYPER VISION",
+
+        //I
+
         "I've heard it said",
         "Iconoclast",
         "Ignotus",
@@ -201,15 +237,24 @@ public class songsDatabase {
         "IONOSTREAM",
         "IONOSTREAM (Eternal)",
         "IZANA",
+
+        //J
+
         "Jingle",
         "Jingle (Eternal)",
         "Journey",
         "Jump",
+
+        //K
+
         "Kanagawa Cyber Culvert",
         "Kanbu de Tomatte Sugu Tokeru",
         "Kanjou no Matenrou ～Arr.Demetori",
         "Kissing Lucifer",
         "KYOREN ROMANCE",
+
+        //L
+
         "La'qryma of the Wasteland",
         "LAMIA",
         "Lapis",
@@ -241,6 +286,9 @@ public class songsDatabase {
         "Lumia",
         "Luna Rossa",
         "LunarOrbit -believe in the Espebranch road-",
+
+        //M
+
         "Macrocosmic Modulation",
         "Magnolia",
         "MAHOROBA",
@@ -266,6 +314,9 @@ public class songsDatabase {
         "Moonlight of Sand Castle",
         "MORNINGLOOM",
         "MORNINGLOOM (Eternal)",
+
+        //N
+
         "Nameless Passion",
         "NEO WINGS",
         "New York Back Raise",
@@ -275,6 +326,9 @@ public class songsDatabase {
         "NULCTRL",
         "NULL APOPHENIA",
         "nέo κósmo",
+
+        //O
+
         "Oblivia",
         "Old School Salvage",
         "OMAKENO Stroke",
@@ -285,6 +339,9 @@ public class songsDatabase {
         "ouroboros -twin stroke of the end-",
         "Ouvertüre",
         "Overwhelm",
+
+        //P
+
         "Paper Witch",
         "Paradise",
         "Particle Arts",
@@ -300,10 +357,16 @@ public class songsDatabase {
         "PUPA",
         "Purgatorium",
         "Purple Verse",
+
+        //Q
+
         "Qovat",
         "qualia -ideaesthesia-",
         "Quon (Feryquitous)",
         "Quon",
+
+        //R
+
         "Rabbit In The Black Room",
         "Raven's Pride",
         "REconstruction",
@@ -322,6 +385,9 @@ public class songsDatabase {
         "Rise of the World",
         "Romance Wars",
         "Rugie",
+
+        //S
+
         "SACRIFICE feat. ayame",
         "SAIKYO STRONGER",
         "Sakura Fubuki",
@@ -335,6 +401,7 @@ public class songsDatabase {
         "Shades of Light in a Transcendent Realm",
         "Sheriruth",
         "Sheriruth (Laur Remix)",
+        "shrink",
         "Silent Rush",
         "Singularity",
         "Small Cloud Sugar Candy",
@@ -344,6 +411,8 @@ public class songsDatabase {
         "Specta",
         "Spider's Thread",
         "STAGER (ALL STAGE CLEAR)",
+        "STARGATE EXTREME",
+        "STARGATE EXTREME (Eternal)",
         "Stasis",
         "Stratoliner",
         "Strongholds",
@@ -355,6 +424,9 @@ public class songsDatabase {
         "Surrender",
         "Syro",
         "syūten",
+
+        //T
+
         "Technicolour",
         "Tempestissimo",
         "TEmPTaTiON",
@@ -376,12 +448,18 @@ public class songsDatabase {
         "Trrricksters!!",
         "Tsuki ni Murakumo, Hana ni Kaze",
         "Twilight Concerto",
-        "Twilight Concerto (ETR)",
+        "Twilight Concerto (Eternal)",
         "Turbocharger",
+
+        //U
+
         "Ultimate taste",
         "ultradiaxon-N3",
         "UNKNOWN LEVELS",
         "Used to be",
+
+        //V
+
         "Valhalla:0",
         "Vandalism",
         "VECTOЯ",
@@ -390,6 +468,9 @@ public class songsDatabase {
         "Vindication",
         "Vivid Theory",
         "Viyella's Tears",
+
+        //W
+
         "WAIT FOR DAWN",
         "Wish Upon a Snow",
         "with U",
@@ -397,125 +478,137 @@ public class songsDatabase {
         "World Fragments III(radio edit)",
         "World Vanquisher",
         "world.execute(me);",
+
+        //X
+
         "Xanatos",
         "Xeraphinite",
         "XTREME",
+
+        //Y
+
         "Yosakura Fubuki",
         "Your voice so... feat. Such",
+
+        //SPECIAL CHARS
+
         "αterlβus",
         "γuarδina",
         "µ",
         "ΟΔΥΣΣΕΙΑ",
-        "ω4"
+        "ω4",
+        "[X]",
+        "#1f1e33",
+        "〇、",
     };
 
     public static String[] chartsBYD = { "Select a chart",
 
-    // A
+        // A
 
-    "Antithese",
-    "Arcana Eden",
+        "Antithese",
+        "Arcana Eden",
 
-    // B
+        // B
 
-    "Bookmaker (2D Version)",
+        "Bookmaker (2D Version)",
 
-    // C
+        // C
 
-    "Cybernecia Catharsis",
+        "Cybernecia Catharsis",
 
-    // D
+        // D
 
-    "Dement ~after legend~",
+        "Dement ~after legend~",
 
-    // E
+        // E
 
-    "Einherjar Joker",
+        "Einherjar Joker",
 
-    // F
+        // F
 
-    "Fairytale",
-    "FREEF4LL",
+        "Fairytale",
+        "FREEF4LL",
 
-    // G
+        // G
 
-    "GOODTEK (Arcaea Edit)",
+        "GOODTEK (Arcaea Edit)",
 
-    // H
+        // H
 
-    "Heavensdoor",
+        "Heavensdoor",
 
-    // I
+        // I
 
-    "Ignotus Afterburn",
-    "Infinite Strife,",
-    "Infinity Heaven",
-    "inkar-usi",
+        "Ignotus Afterburn",
+        "Infinite Strife,",
+        "Infinity Heaven",
+        "inkar-usi",
 
-    // K
+        // K
 
-    "Kanagawa Cyber Culvert",
+        "Kanagawa Cyber Culvert",
 
-    // L
+        // L
 
-    "La'qryma of the Wasteland",
-    "lastendconductor",
-    "Last | Moment",
-    "Last | Eternity",
-    "Libertas",
-    "Lost Civilization",
-    "Lumia",
+        "La'qryma of the Wasteland",
+        "lastendconductor",
+        "Last | Moment",
+        "Last | Eternity",
+        "Libertas",
+        "Lost Civilization",
+        "Lumia",
 
-    // M
+        // M
 
-    "MERLIN",
-    "Moonheart",
+        "MERLIN",
+        "Moonheart",
 
-    // N
+        // N
 
-    "next to you",
+        "next to you",
 
-    // O
+        // O
 
-    "Oblivia",
-    "OMAKENO Stroke",
-    "overdead.",
+        "Oblivia",
+        "OMAKENO Stroke",
+        "overdead.",
 
-    // P
+        // P
 
-    "Party Vinyl",
-    "Pentiment",
-    "PRAGMATISM -RESURRECTION-",
-    "Purgatorium",
-    "Purple Verse",
+        "Party Vinyl",
+        "Pentiment",
+        "PRAGMATISM -RESURRECTION-",
+        "Purgatorium",
+        "Purple Verse",
 
-    // Q
+        // Q
 
-    "Quon",
+        "Quon",
 
-    // R
+        // R
 
-    "Red and Blue and Green",
+        "Red and Blue and Green",
 
-    // S
+        // S
 
-    "Shades of Light in a Transcendent Realm",
-    "Singularity VVVIP",
+        "Shades of Light in a Transcendent Realm",
+        "Singularity VVVIP",
 
-    // T
+        // T
 
-    "Tempestissimo",
-    "Teriqma",
-    "Testify",
+        "Tempestissimo",
+        "Teriqma",
+        "Testify",
 
-    // V
+        // V
 
-    "Vexaria",
-    "Vicious [ANTi] Heroism",
+        "Vexaria",
+        "Vicious [ANTi] Heroism",
 
-    // W
+        // W
 
-    "World Ender",
+        "World Ender"
 
 };
 
@@ -617,30 +710,30 @@ public class songsDatabase {
                     break;
 
                 case "Last | Moment":
+
                     values[0] = 888;
                     values[1] = 9.6;
                     break;
-
                 case "Last | Eternity":
+
                     values[0] =786;
                     values[1] =9.7;
                     break;
-
                 case "Libertas":
-
                     values[0] = 1048;
                     values[1] = 10.5;
                     break;
-                case "Lost Civilization":
 
+                case "Lost Civilization":
                     values[0] = 1061;
                     values[1] = 9.8;
                     break;
-                case "Lumia":
 
+                case "Lumia":
                     values[0] = 814;
                     values[1] = 9.5;
                     break;
+
                 case "MERLIN":
 
                     values[0] = 881;
@@ -770,96 +863,92 @@ public class songsDatabase {
             }
         } else {
             switch (selected) {
-                case "[X]":
 
-                    values[0] = 1190;
-                    values[1] = 10.4;
-                    break;
-                case "#1f1e33":
-
-                    values[0] = 1576;
-                    values[1] = 10.9;
-                    break;
-                case "〇、":
-
-                    values[0] = 708;
-                    values[1] = 9.5;
-                    break;
                 case "1F√":
-
                     values[0] = 758;
                     values[1] = 8.2;
                     break;
-                case "7thSense":
 
+                case "10pt8ion":
+                    values[0] = 906;
+                    values[1] = 9.7;
+                    break;
+
+                case "7thSense":
                     values[0] = 925;
                     values[1] = 9.9;
                     break;
-                case "99 Glooms":
 
+                case "99 Glooms":
                     values[0] = 1294;
                     values[1] = 10.3;
                     break;
-                case "A Wandering Melody of Love":
 
+                case "A Wandering Melody of Love":
                     values[0] = 931;
                     values[1] = 9.6;
                     break;
-                case "Abstruse Dilemma":
 
+                case "Abstruse Dilemma":
                     values[0] = 1467;
                     values[1] = 11.1;
                     break;
-                case "Aegleseeker":
 
+                case "Aegleseeker":
                     values[0] = 1568;
                     values[1] = 11.1;
                     break;
-                case "Ai Drew":
 
+                case "Ai Drew":
                     values[0] = 1066;
                     values[1] = 9.8;
                     break;
-                case "AI[UE]OON":
 
+                case "AI[UE]OON":
                     values[0] = 989;
                     values[1] = 9.4;
                     break;
-                case "Aleph-0":
 
+                case "Aleph-0":
                     values[0] = 919;
                     values[1] = 10.5;
                     break;
-                case "Alexandrite":
 
+                case "Alexandrite":
                     values[0] = 1040;
                     values[1] = 10;
                     break;
-                case "Alice à la mode":
 
+                case "Alice à la mode":
                     values[0] = 872;
                     values[1] = 9.2;
                     break;
-                case "Alice's Suitcase":
 
+                case "Alice's Suitcase":
                     values[0] = 999;
                     values[1] = 9.1;
                     break;
-                case "Alone & Lorn":
 
+                case "Alone & Lorn":
                     values[0] = 970;
                     values[1] = 9.6;
                     break;
-                case "Altair (feat. *spiLa*)":
 
+                case "Altair (feat. *spiLa*)":
                     values[0] = 830;
                     values[1] = 8.5;
                     break;
-                case "Altale":
 
+                case "Altale":
                     values[0] = 690;
                     values[1] = 9.7;
                     break;
+
+                case "ALTER EGO":
+                    values[0] = 1466;
+                    values[1] = 10.5;
+                    break;
+
                 case "AlterAle":
 
                     values[0] = 1277;
@@ -946,115 +1035,130 @@ public class songsDatabase {
                     values[1] = 9.3;
                     break;
                 case "Avant Raze":
-
                     values[0] = 1125;
                     values[1] = 9.6;
                     break;
-                case "Ävril -Flicka i krans-":
 
+                case "Ävril -Flicka i krans-":
                     values[0] = 851;
                     values[1] = 8.3;
                     break;
-                case "Awaken In Ruins":
 
+                case "Awaken In Ruins":
                     values[0] = 754;
                     values[1] = 9.9;
                     break;
-                case "Axium Crisis":
 
+                case "Axium Crisis":
                     values[0] = 1094;
                     values[1] = 10.7;
                     break;
-                case "B.B.K.K.B.K.K.":
 
+                case "B.B.K.K.B.K.K.":
                     values[0] = 976;
                     values[1] = 9.7;
                     break;
-                case "Babaroque":
 
+                case "Babaroque":
                     values[0] = 808;
                     values[1] = 8.5;
                     break;
-                case "BADTEK":
 
+                case "Back to Basics":
+                    values[0] = 1544;
+                    values[1] = 10.5;
+                    break;
+
+                case "BADTEK":
                     values[0] = 916;
                     values[1] = 9.7;
                     break;
-                case "Bamboo":
 
+                case "Bamboo":
                     values[0] = 1050;
                     values[1] = 10;
                     break;
-                case "BATTLE NO.1":
 
+                case "BATTLE NO.1":
                     values[0] = 1042;
                     values[1] = 9.7;
                     break;
-                case "Be There":
 
+                case "Beautiful Dreamer":
+                    values[0] = 1139;
+                    values[1] = 9.9;
+                    break;
+
+                case "Be There":
                     values[0] = 982;
                     values[1] = 9.4;
                     break;
-                case "Beside You":
 
+                case "Beside You":
                     values[0] = 703;
                     values[1] = 8.7;
                     break;
-                case "Black Lotus":
 
+                case "Black Lotus":
                     values[0] = 965;
                     values[1] = 9.7;
                     break;
-                case "Black Territory":
 
+                case "Black MInD":
+                    values[0] = 1274;
+                    values[1] = 10.8;
+                    break;
+
+                case "Black Territory":
                     values[0] = 1195;
                     values[1] = 9.8;
                     break;
-                case "Blaster":
 
+                case "Blaster":
                     values[0] = 1002;
                     values[1] = 9.3;
                     break;
-                case "Blocked Library":
 
+                case "Blocked Library":
                     values[0] = 850;
                     values[1] = 9.3;
                     break;
+
                 case "Blossoms":
 
                     values[0] = 655;
                     values[1] = 7;
                     break;
                 case "BLRINK":
-
                     values[0] = 1015;
                     values[1] = 9.7;
                     break;
-                case "blue comet":
 
+                case "blue comet":
                     values[0] = 776;
                     values[1] = 8.2;
                     break;
-                case "Blue Rose":
 
+                case "Blue Rose":
                     values[0] = 955;
                     values[1] = 9.1;
                     break;
-                case "Bookmaker (2D Version)":
 
+                case "Bookmaker (2D Version)":
                     values[0] = 1124;
                     values[1] = 8.3;
                     break;
-                case "Brand new world":
 
+                case "Brand new world":
                     values[0] = 787;
                     values[1] = 7.8;
                     break;
-                case "BUCHiGiRE Berserker":
 
+                case "BUCHiGiRE Berserker":
                     values[0] = 1412;
                     values[1] = 10.9;
                     break;
+
                 case "Bullet Waiting for Me (James Landino remix)":
 
                     values[0] = 701;
@@ -1242,60 +1346,65 @@ public class songsDatabase {
                     values[1] = 7.8;
                     break;
                 case "Désive":
-
                     values[0] = 1273;
                     values[1] = 9.9;
                     break;
-                case "Devillic Sphere":
 
+                case "Devillic Sphere":
                     values[0] = 1129;
                     values[1] = 9.9;
                     break;
-                case "Dialnote":
 
+                case "Dialnote":
                     values[0] = 684;
                     values[1] = 8.8;
                     break;
-                case "Diode":
 
+                case "Diode":
                     values[0] = 709;
                     values[1] = 8.1;
                     break;
-                case "Distorted Fate":
 
+                case "Distorted Fate":
                     values[0] = 1172;
                     values[1] = 9.6;
                     break;
-                case "Divine Light of Myriad":
 
+                case "Distortion Human": //I AM GUESSING: THESE VALUES ARENT ON THE WIKI RN
+                    values[0] =1139;
+                    values[1] =9.8;
+                    break;
+
+                case "Divine Light of Myriad":
                     values[0] = 1021;
                     values[1] = 10.8;
                     break;
-                case "Dot to Dot feat. shully":
 
+                case "Dot to Dot feat. shully":
                     values[0] = 739;
                     values[1] = 8.3;
                     break;
-                case "Dreadnought":
 
+                case "Dreadnought":
                     values[0] = 1099;
                     values[1] = 9.7;
                     break;
-                case "Dream goes on":
 
+                case "Dream goes on":
                     values[0] = 719;
                     values[1] = 7.8;
                     break;
-                    case "Dreamin' Attraction!!":
 
+                case "Dreamin' Attraction!!":
                     values[0] = 1129;
                     values[1] = 9.4;
                     break;
+                
                 case "DRG":
-
                     values[0] = 872;
                     values[1] = 9.5;
                     break;
+
                 case "dropdead":
 
                     values[0] = 823;
@@ -1613,50 +1722,62 @@ public class songsDatabase {
                     values[0] = 783;
                     values[1] = 7.5;
                     break;
-                case "Hidden Rainbows of Epicurus (ETR)":
-                    values[0] = 884;
-                    values[1] = 8.8;
-                    break;
+
                 case "Hiiro Gekka, Kyoushou no Zetsu (nayuta 2017 ver.)":
                     values[0] = 1126;
                     values[1] = 10.3;
                     break;
+
                 case "Hikari":
                     values[0] = 684;
                     values[1] = 8.1;
                     break;
+
                 case "HIVEMIND":
                     values[0] = 1252;
                     values[1] = 10;
                     break;
+
                 case "Hotarubi no Yuki":
                     values[0] = 991;
                     values[1] = 9.7;
                     break;
+
                 case "Hybris (The one who shattered)":
                     values[0] = 1196;
                     values[1] = 9.8;
                     break;
+                
+                case "HYPER VISION":
+                    values[0] = 1040;
+                    values[1] = 9.8;
+                    break;
+
                 case "I've heard it said":
                     values[0] = 864;
                     values[1] = 8.1;
                     break;
+
                 case "Iconoclast":
                     values[0] = 795;
                     values[1] = 9.1;
                     break;
+
                 case "Ignotus":
                     values[0] = 1225;
                     values[1] = 9.3;
                     break;
+
                 case "	͟͝͞Ⅱ́̕":
                     values[0] = 1051;
                     values[1] = 10.8;
                     break;
+
                 case "Ikazuchi":
                     values[0] = 1347;
                     values[1] = 10.4;
                     break;
+
                 case "Illegal Paradise":
                     values[0] = 1061;
                     values[1] = 9.5;
@@ -1988,54 +2109,55 @@ public class songsDatabase {
                     values[1] = 10.3;
                     break;
                 case "NULCTRL":
-
                     values[0] = 715;
                     values[1] = 9.5;
                     break;
+                
                 case "NULL APOPHENIA":
-
                     values[0] = 1299;
                     values[1] = 10.6;
                     break;
-                case "nέo κósmo":
 
+                case "nέo κósmo":
                     values[0] = 979;
                     values[1] = 9.7;
                     break;
-                case "Oblivia":
 
+                case "Oblivia":
                     values[0] = 956;
                     values[1] = 8.3;
                     break;
+
                 case "Old School Salvage":
                     values[0] =1316;
                     values[1] =9.8;
                     break;
-                case "OMAKENO Stroke":
 
+                case "OMAKENO Stroke":
                     values[0] = 869;
                     values[1] = 9.5;
                     break;
-                case "On And On!! feat. Jenga":
 
+                case "On And On!! feat. Jenga":
                     values[0] = 836;
                     values[1] = 9.5;
                     break;
-                case "One Last Drive":
 
+                case "One Last Drive":
                     values[0] = 885;
                     values[1] = 8.2;
                     break;
-                case "Oracle":
 
+                case "Oracle":
                     values[0] = 963;
                     values[1] = 9.3;
                     break;
-                case "Oshama Scramble!":
 
+                case "Oshama Scramble!":
                     values[0] = 1073;
                     values[1] = 10;
                     break;
+
                 case "ouroboros -twin stroke of the end-":
 
                     values[0] = 1369;
@@ -2262,135 +2384,145 @@ public class songsDatabase {
                     values[1] = 9.8;
                     break;
                 case "Scarlet Lance":
-
                     values[0] = 1130;
                     values[1] = 10.1;
                     break;
-                case "Seclusion":
 
+                case "Seclusion":
                     values[0] = 1132;
                     values[1] = 10.6;
                     break;
-                    case "Senkyou":
 
+                    case "Senkyou":
                     values[0] = 964;
                     values[1] = 8.7;
                     break;
-                case "Shades of Light in a Transcendent Realm":
 
+                case "Shades of Light in a Transcendent Realm":
                     values[0] = 1067;
                     values[1] = 8.3;
                     break;
-                case "Sheriruth":
 
+                case "Sheriruth":
                     values[0] = 1151;
                     values[1] = 10.1;
                     break;
-                case "Sheriruth (Laur Remix)":
 
+                case "Sheriruth (Laur Remix)":
                     values[0] = 1134;
                     values[1] = 10.6;
                     break;
-                case "Silent Rush":
 
+                case "shrink": //I AM GUESSING HERE: VALUES ARE NOT ON WIKI RN
+                    values[0] =1000;
+                    values[1] =9.8;
+                    break; 
+                
+                case "Silent Rush":
                     values[0] = 941;
                     values[1] = 8.6;
                     break;
+                
                 case "Singularity":
-
                     values[0] = 1105;
                     values[1] = 10.7;
                     break;
-                case "Small Cloud Sugar Candy":
 
+                case "Small Cloud Sugar Candy":
                     values[0] = 919;
                     values[1] = 9.1;
                     break;
-                case "Snow White":
 
+                case "Snow White":
                     values[0] = 978;
                     values[1] = 8.4;
                     break;
-                case "Solitary Dream":
 
+                case "Solitary Dream":
                     values[0] = 972;
                     values[1] = 8.8;
                     break;
-                case "SOUNDWiTCH":
 
+                case "SOUNDWiTCH":
                     values[0] = 785;
                     values[1] = 9.9;
                     break;
-                case "Specta":
 
+                case "Specta":
                     values[0] = 1096;
                     values[1] = 9.5;
                     break;
-                case "Spider's Thread":
 
+                case "Spider's Thread":
                     values[0] = 1203;
                     values[1] = 10.8;
                     break;
-                case "STAGER (ALL STAGE CLEAR)":
 
+                case "STAGER (ALL STAGE CLEAR)":
                     values[0] = 1004;
                     values[1] = 9.5;
                     break;
-                case "Stasis":
 
+                case "STARGATE EXTREME":
+                    values[0] = 724;
+                    values[1] = 9.3;
+                    break;
+
+                case "Stasis":
                     values[0] = 1521;
                     values[1] = 10.7;
                     break;
-                case "Stratoliner":
 
+                case "Stratoliner":
                     values[0] = 877;
                     values[1] = 9.6;
                     break;
-                case "Strongholds":
 
+                case "Strongholds":
                     values[0] = 922;
                     values[1] = 9.2;
                     break;
-                case "Sulfur":
 
+                case "Sulfur":
                     values[0] = 1045;
                     values[1] = 9.7;
                     break;
-                case "Summer Fireworks of Love":
 
+                case "Summer Fireworks of Love":
                     values[0] = 1088;
                     values[1] = 9.9;
                     break;
-                case "Suomi":
 
+                case "Suomi":
                     values[0] = 818;
                     values[1] = 7.8;
                     break;
-                case "SUPERNOVA":
 
+                case "SUPERNOVA":
                     values[0] = 1123;
                     values[1] = 9.7;
                     break;
-                case "Surrender":
 
+                case "Surrender":
                     values[0] = 925;
                     values[1] = 8.8;
                     break;
-                case "Syro":
 
+                case "Syro":
                     values[0] = 1150;
                     values[1] = 9.3;
                     break;
-                case "syūten":
 
+                case "syūten":
                     values[0] = 592;
                     values[1] = 8.5;
                     break;
-                case "Technicolour":
 
+                case "Technicolour":
                     values[0] = 1140;
                     values[1] = 9.8;
                     break;
+
                 case "Tempestissimo":
 
                     values[0] = 1254;
@@ -2490,7 +2622,7 @@ public class songsDatabase {
                     values[0] = 803;
                     values[1] = 9.5;
                     break;
-                case "Twilight Concerto (ETR)":
+                case "Twilight Concerto (Eternal)":
                     values[0] = 962;
                     values[1] = 10.4;
                     break;
@@ -2620,83 +2752,113 @@ public class songsDatabase {
                     values[1] = 9.4;
                     break;
                 case "αterlβus":
-
                     values[0] = 1030;
                     values[1] = 10.2;
                     break;
-                case "γuarδina":
 
+                case "γuarδina":
                     values[0] = 1120;
                     values[1] = 10.4;
                     break;
-                case "µ":
 
+                case "µ":
                     values[0] = 1256;
                     values[1] = 9.7;
                     break;
-                case "ΟΔΥΣΣΕΙΑ":
 
+                case "ΟΔΥΣΣΕΙΑ":
                     values[0] = 1092;
                     values[1] = 9.5;
                     break;
-                case "ω4":
 
+                case "ω4":
                     values[0] = 1393;
                     values[1] = 10.8;
                     break;
 
+                case "[X]":
+                    values[0] = 1190;
+                    values[1] = 10.4;
+                    break;
 
-                    //ETR CHARTS
+                case "#1f1e33":
+                    values[0] = 1576;
+                    values[1] = 10.9;
+                    break;
 
+                case "〇、":
+                    values[0] = 708;
+                    values[1] = 9.5;
+                    break;
 
+                //ETR CHARTS
+
+                case "10pt8ion (Eternal)":
+                    values[0] = 1087;
+                    values[1] = 10.4;
+                    break;
+
+                case "ALTER EGO (Eternal)":
+                    values[0] = 1644;
+                    values[1] = 11.2;
+                    break;
 
                 case "Sayonara Hatsukoi (Eternal)":
-
                     values[0] = 728;
                     values[1] = 8.5;
                     break;
-                case "Clotho and the stargazer (Eternal)":
 
+                case "Clotho and the stargazer (Eternal)":
                     values[0] = 1031;
                     values[1] = 8.8;
                     break;
-                case "Suomi (Eternal)":
 
+                case "Suomi (Eternal)":
                     values[0] = 732;
                     values[1] = 8.9;
                     break;
-                case "Jingle (Eternal)":
 
+                case "Hidden Rainbows of Epicurus (Eternal)":
+                    values[0] = 884;
+                    values[1] = 8.8;
+                    break;
+
+                case "STARGATE EXTREME (Eternal)":
+                    values[0] = 915;
+                    values[1] = 10.0;
+                    break;
+
+                case "Jingle (Eternal)":
                     values[0] = 1047;
                     values[1] = 9.5;
                     break;
-                case "Innocence (Eternal)":
 
+                case "Innocence (Eternal)":
                     values[0] = 1157;
                     values[1] = 9.7;
                     break;
-                case "IONOSTREAM (Eternal)":
 
+                case "IONOSTREAM (Eternal)":
                     values[0] = 871;
                     values[1] = 9.7;
                     break;
-                case "HELLOHELL (Eternal)":
 
+                case "HELLOHELL (Eternal)":
                     values[0] = 770;
                     values[1] = 9.4;
                     break;
-                case "MORNINGLOOM (Eternal)":
 
+                case "MORNINGLOOM (Eternal)":
                     values[0] = 1035;
                     values[1] = 9.8;
                     break;
-                case "Distorted Fate (Eternal)":
 
+                case "Distorted Fate (Eternal)":
                     values[0] = 1402;
                     values[1] = 10.9;
                     break;
-                case "Désive (Eternal)":
 
+                case "Désive (Eternal)":
                     values[0] = 1340;
                     values[1] = 10.8;
                     break;
@@ -2803,7 +2965,7 @@ public class songsDatabase {
                 target = "Tasogare";
                 break;
 
-            case"Twilight Concerto (ETR)":
+            case"Twilight Concerto (Eternal)":
                 target = "Tasogare";
                 break;
 
