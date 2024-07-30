@@ -377,7 +377,8 @@ public class scoreDisplay extends songsDatabase{
             System.out.println("error reading image!");
             System.out.println("------DETAILS------");
             System.out.println("JACKET: "+jacket);
-            System.out.println("RAW JACKET INPUT: "+jacketCheck(selected));
+            System.out.println("JACKET INPUT: "+"./assets/"+selected+".jpg");
+            System.out.println("EXISTS?: "+exists);
         }else{
             if(difficulty=="BYD"&&exists==true){
                 //adds "_byd" to the end of the jpeg file name it's looking for if the diff is set to byd
