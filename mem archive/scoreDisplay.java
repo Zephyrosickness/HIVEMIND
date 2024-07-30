@@ -363,13 +363,13 @@ public class scoreDisplay extends songsDatabase{
     //refreshes song data
     public static void refresh(String selected, JLabel imageLabel, JLabel noteCount, JLabel chartConstant, String difficulty) {
 
-        File jacket = null;
-
         //sets up jacket
 
-
         Path path = Paths.get("./assets/"+jacketCheck(selected)+".jpg");
-        boolean exists = Files.exists(path);
+        Path pathBYD = Paths.get("./assets/"+jacketCheck(selected)+"_byd"+".jpg");
+
+        File jacket = new File(path.toString());
+
         //looking at this awful if-loop in particular makes me wanna quit and go to bed its awful and i could do something better but i dont care
 
         if (Files.exists(path) ==false){
@@ -378,27 +378,13 @@ public class scoreDisplay extends songsDatabase{
             System.out.println("------DETAILS------");
             System.out.println("JACKET: "+jacket);
             System.out.println("JACKET INPUT: "+"./assets/"+selected+".jpg");
-            System.out.println("EXISTS?: "+exists);
+            System.out.println("EXISTS?: "+Files.exists(path));
         }else{
-            if(difficulty=="BYD"&&exists==true){
-                //adds "_byd" to the end of the jpeg file name it's looking for if the diff is set to byd
-
-                path = Paths.get("./assets/"+jacketCheck(selected)+"_byd"+".jpg");
-
-                //if a byd version of the jacket does not exist, or if the diff isnt set to byd, do not add "_byd" to the end of the target filename
-                if(Files.exists(path) ==false){
-                    //if the byd jacket does not exist
-                    jacket = new File("./assets/"+jacketCheck(selected)+".jpg");
-                }else{
-                    //if the byd jacket exists
-                    jacket = new File("./assets/"+jacketCheck(selected)+"_byd"+".jpg");
-                }
-            }else{
-                //if diff isnt set to byd, it doesnt add beyond to the end
-                jacket = new File("./assets/"+jacketCheck(selected)+".jpg");
+            if(difficulty=="BYD"&&Files.exists(pathBYD)==true){
+                jacket = new File(pathBYD.toString());
             }
         }
-            
+
         combo = (int)songsDatabase.db(selected, difficulty)[0];
         cc = songsDatabase.db(selected, difficulty)[1];
 

@@ -40,6 +40,7 @@ public class songsDatabase {
         "Arcana Eden",
         "Arghena",
         "Ascent",
+        "Ashen 6oundary",
         "Astra walkthrough",
         "Astral tale",
         "AttraqtiA",
@@ -215,6 +216,8 @@ public class songsDatabase {
         "Hotarubi no Yuki",
         "Hybris (The one who shattered)",
         "HYPER VISION",
+        "Hypnotize",
+        "Hypnotize (Eternal)",
 
         //I
 
@@ -243,6 +246,7 @@ public class songsDatabase {
         "Jingle",
         "Jingle (Eternal)",
         "Journey",
+        "Judgement",
         "Jump",
 
         //K
@@ -980,60 +984,65 @@ public class songsDatabase {
                     values[1] = 9.9;
                     break;
                 case "Antithese":
-
                     values[0] = 877;
                     values[1] = 8.8;
                     break;
-                case "April showers":
 
+                case "April showers":
                     values[0] = 697;
                     values[1] = 8.6;
                     break;
-                case "Arcahv":
 
+                case "Arcahv":
                     values[0] = 1065;
                     values[1] = 9.9;
                     break;
-                case "Arcana Eden":
 
+                case "Arcana Eden":
                     values[0] = 1792;
                     values[1] = 10.5;
                     break;
-                case "Arghena":
 
+                case "Arghena":
                     values[0] = 1444;
                     values[1] = 11.3;
                     break;
-                case "Ascent":
 
+                case "Ascent":
                     values[0] = 1023;
                     values[1] = 9.8;
                     break;
-                case "Astra walkthrough":
 
+                case "Ashen 6oundary":
+                    values[0] =1183;
+                    values[1] =9.9;
+                    break;
+
+                case "Astra walkthrough":
                     values[0] = 1191;
                     values[1] = 9.9;
                     break;
+            
                 case "Astral tale":
-
                     values[0] = 884;
                     values[1] = 9.6;
                     break;
-                case "AttraqtiA":
 
+                case "AttraqtiA":
                     values[0] = 1433;
                     values[1] = 10.6;
                     break;
-                case "Aurgelmir":
 
+                case "Aurgelmir":
                     values[0] = 1100;
                     values[1] = 10.5;
                     break;
-                case "Auxesia":
 
+                case "Auxesia":
                     values[0] = 1000;
                     values[1] = 9.3;
                     break;
+
                 case "Avant Raze":
                     values[0] = 1125;
                     values[1] = 9.6;
@@ -1370,8 +1379,8 @@ public class songsDatabase {
                     values[1] = 9.6;
                     break;
 
-                case "Distortion Human": //I AM GUESSING: THESE VALUES ARENT ON THE WIKI RN
-                    values[0] =1139;
+                case "Distortion Human": //I AM GUESSING FOR CC
+                    values[0] =1317;
                     values[1] =9.8;
                     break;
 
@@ -1752,6 +1761,11 @@ public class songsDatabase {
                     values[0] = 1040;
                     values[1] = 9.8;
                     break;
+                
+                case "Hypnotize":
+                    values[0] = 993;
+                    values[1] = 8.9;
+                    break;
 
                 case "I've heard it said":
                     values[0] = 864;
@@ -1802,74 +1816,97 @@ public class songsDatabase {
                     values[0] = 1204;
                     values[1] = 9.8;
                     break;
+
                 case "inkar-usi":
                     values[0] = 463;
                     values[1] = 7.8;
                     break;
+
                 case "Innocence":
                     values[0] = 1023;
                     values[1] = 8.5;
                     break;
+
                 case "INTERNET OVERDOSE":
                     values[0] = 657;
                     values[1] = 8.4;
                     break;
+
                 case "INTERNET YAMERO":
                     values[0] = 1222;
                     values[1] = 9.9;
                     break;
-                    case "IONOSTREAM":
+
+                case "IONOSTREAM":
                     values[0] = 818;
                     values[1] = 8.7;
                     break;
+
                 case "IZANA":
                     values[0] = 976;
                     values[1] = 10.3;
                     break;
+
                 case "Jingle":
                     values[0] = 848;
                     values[1] = 7.8;
                     break;
+
                 case "Journey":
                     values[0] = 997;
                     values[1] = 9.1;
                     break;
+
+                case "Judgement":
+                    values[0] = 1432;
+                    values[1] = 10.4;
+                    break;
+
                 case "Jump":
                     values[0] = 841;
                     values[1] = 9;
                     break;
+
                 case "Kanagawa Cyber Culvert":
                     values[0] = 1111;
                     values[1] = 9;
                     break;
+
                 case "Kanbu de Tomatte Sugu Tokeru":
                     values[0] = 1108;
                     values[1] = 10;
                     break;
+
                 case "Kanjou no Matenrou ～Arr.Demetori":
                     values[0] = 1294;
                     values[1] = 9.8;
                     break;
+
                 case "Kissing Lucifer":
                     values[0] = 1183;
                     values[1] = 10.4;
                     break;
+
                 case "KYOREN ROMANCE":
                     values[0] = 1519;
                     values[1] = 10.7;
                     break;
+
                 case "La'qryma of the Wasteland":
                     values[0] = 956;
                     values[1] = 9.1;
                     break;
+
                 case "LAMIA":
                     values[0] = 1385;
                     values[1] = 10.9;
                     break;
+
                 case "Lapis":
                     values[0] = 920;
                     values[1] = 9.4;
                     break;
+
                 case "Last":
                     values[0] = 831;
                     values[1] = 9;
@@ -1879,18 +1916,22 @@ public class songsDatabase {
                     values[0] = 1475;
                     values[1] = 10.5;
                     break;
+
                 case "lastendconductor":
                     values[0] = 1209;
                     values[1] = 9.4;
                     break;
+
                 case "Lawless Point":
                     values[0] = 838;
                     values[1] = 9;
                     break;
+
                 case "Lazy Addiction":
                     values[0] = 1031;
                     values[1] = 9.6;
                     break;
+
                 case "Leave All Behind":
                     values[0] = 828;
                     values[1] = 9.2;
@@ -2413,8 +2454,8 @@ public class songsDatabase {
                     values[1] = 10.6;
                     break;
 
-                case "shrink": //I AM GUESSING HERE: VALUES ARE NOT ON WIKI RN
-                    values[0] =1000;
+                case "shrink": //I AM GUESSING HERE FOR CC
+                    values[0] =939;
                     values[1] =9.8;
                     break; 
                 
@@ -2862,6 +2903,11 @@ public class songsDatabase {
                     values[0] = 1340;
                     values[1] = 10.8;
                     break;
+                    
+                case "Hypnotize (Eternal)":
+                    values[0] = 1164;
+                    values[1] = 9.9;
+                    break;
 
                 case null:
                     values[0] = 0;
@@ -2903,6 +2949,14 @@ public class songsDatabase {
 
             case"Désive (Eternal)":
                 target = "Désive";
+                break;
+
+            case"ALTER EGO (Eternal)":
+                target = "ALTER EGO";
+                break;
+
+            case"Hypnotize (Eternal)":
+                target = "Hypnotize";
                 break;
 
             case"Distorted Fate (Eternal)":
