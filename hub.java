@@ -66,5 +66,17 @@ public class hub {
                 pttDisplay.init();
             }
         });
+
+        //button to run world calcs
+        JButton worldButton = new JButton("World Mode Calculator");
+        worldButton.setBounds(25, 75, 150, 25);
+        panel.add(worldButton);
+                        
+        //runs the function to open the pttcalc program
+        worldButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                worldDisplay.init();
+            }
+        });
     }
 }
