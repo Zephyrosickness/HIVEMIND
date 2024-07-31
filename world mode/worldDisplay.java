@@ -34,7 +34,7 @@ public class worldDisplay {
 
 
         // create a window
-        JFrame frame = new JFrame("Chronicles");
+        JFrame frame = new JFrame("Babaroque");
         frame.setSize(700, 700);
 
         //score display
@@ -71,24 +71,25 @@ public class worldDisplay {
         ///LABELS
 
 
-        //label for rating filter
-        JLabel ratingLabel = new JLabel("Rating");
-        ratingLabel.setBounds(25, 25, 150, 25);
-        panel.add(ratingLabel);
 
         //label for cc filter
         JLabel ccLabel = new JLabel("Chart Constant");
         ccLabel.setBounds(25, 55, 150, 25);
         panel.add(ccLabel);
 
+        //label for steps
+        JLabel stepLabel = new JLabel("Steps");
+        stepLabel.setBounds(25, 85, 80, 25);
+        panel.add(stepLabel);
+
         //label for score
         JLabel scoreLabel = new JLabel("Score");
-        scoreLabel.setBounds(25, 85, 80, 25);
+        scoreLabel.setBounds(25, 115, 80, 25);
         panel.add(scoreLabel);
 
         //label for sorter
         JLabel sortLabel = new JLabel("Sort by");
-        sortLabel.setBounds(25, 115, 80, 25);
+        sortLabel.setBounds(25, 145, 80, 25);
         panel.add(sortLabel);
 
 
@@ -100,33 +101,35 @@ public class worldDisplay {
         //array vars (dropdown options)
 
         //for op dropdowns
-        String[] operators = {"=","<", ">", "Any"};
+        String[] operators = {"Any", "=","<", ">"};
 
         //for sort dropdown
-        String[] sorts = {"Score","Rating", "Chart Constant"};
+        String[] sorts = {"Score", "Chart Constant", "Steps", "STEP Stat"};
 
 
         //filter dropdowns
 
 
-        //dropdown for operator on rating count
-        final JComboBox<String> ratingOperator = new JComboBox<>(operators);
-        ratingOperator.setBounds(70, 25,  50, 25);
-        panel.add(ratingOperator);
+
 
         //dropdown for operator on cc count
         final JComboBox<String> ccOperator = new JComboBox<>(operators);
         ccOperator.setBounds(100, 55,  50, 25);
         panel.add(ccOperator);
 
+        //dropdown for operator on steps
+        final JComboBox<String> stepOperator = new JComboBox<>(operators);
+        stepOperator.setBounds(70, 85,  50, 25);
+        panel.add(stepOperator);
+
         //dropdown for operator on score
         final JComboBox<String> scoreOperator = new JComboBox<>(operators);
-        scoreOperator.setBounds(70, 85,  50, 25);
+        scoreOperator.setBounds(70, 115,  50, 25);
         panel.add(scoreOperator);
 
         //select sorting methodology dropdown
         final JComboBox<String> sorter = new JComboBox<>(sorts);
-        sorter.setBounds(65, 115,  100, 25);
+        sorter.setBounds(65, 145,  100, 25);
         panel.add(sorter);
 
 
@@ -139,20 +142,19 @@ public class worldDisplay {
 
         //filter fields
 
-
-        //field for rating count
-        JTextField ratingField = new JTextField("0");
-        ratingField.setBounds(119, 25, 25, 25);
-        panel.add(ratingField);
-
         //field for cc
         JTextField ccField = new JTextField("0");
         ccField.setBounds(149, 55, 25, 25);
         panel.add(ccField);
 
+        //field for steps
+        JTextField stepField = new JTextField("0");
+        stepField.setBounds(119, 85, 25, 25);
+        panel.add(stepField);
+
         //field for min score
         JTextField scoreField = new JTextField("0");
-        scoreField.setBounds(119, 85, 25, 25);
+        scoreField.setBounds(119, 115, 25, 25);
         panel.add(scoreField);
 
         ///BUTTONS
@@ -179,9 +181,16 @@ public class worldDisplay {
                 ratingPanel.revalidate();
                 ratingPanel.repaint();
 
+                double targetCC = Double.parseDouble(ccField.getText());
+                String scoreString =(String)scoreField.getText();
+                double targetStep = Double.parseDouble(stepField.getText());
+                String ccOp = (String)ccOperator.getSelectedItem();
+                String scoreOp = (String)scoreOperator.getSelectedItem();
+                String stepOp = (String)stepOperator.getSelectedItem();
+
                 //add ptt data
 
-                //worldCalc.calc(Double.parseDouble(ratingField.getText()), Double.parseDouble(ccField.getText()), (String)scoreField.getText(), (String)ratingOperator.getSelectedItem(), (String)ccOperator.getSelectedItem(), (String)scoreOperator.getSelectedItem());
+                worldCalc.calc(targetCC, scoreString, targetStep, ccOp, scoreOp, stepOp);
 
                 //sort results based on the sort option
                 switch((String)sorter.getSelectedItem()) {
@@ -190,9 +199,6 @@ public class worldDisplay {
                         break;
                     case "Chart Constant":
                         scoreTextArray.sort(Comparator.comparingDouble(ScoreTextArea::getCC).reversed());
-                        break;
-                    case "Rating":
-                        scoreTextArray.sort(Comparator.comparingDouble(ScoreTextArea::getRating).reversed());
                         break;
                 }
 
@@ -229,11 +235,10 @@ public class worldDisplay {
         private double cc;
         private double rating;
 
-        public ScoreTextArea(String text, double cc, double rating, int score) {
+        public ScoreTextArea(String text, double cc, int score) {
             //variables for each score container
             super(text);
             this.score = score;
-            this.rating = rating;
             this.cc = cc;
             setLineWrap(true);
             setWrapStyleWord(true);
@@ -252,12 +257,13 @@ public class worldDisplay {
         }
     }
 
-    public static void importComponent(int score, double rating, double cc){
+    public static void importComponent(int score, double cc, double step, int stat){
 
         //adds judgement data and score to array
-        String text = "Score: " + score + "\n Chart Constant: " + cc +"\n Play Rating: "+rating+"\n Steps: "+0+"\n STEP stat: "+0;
-        ScoreTextArea textArea = new ScoreTextArea(text, cc, rating, score);
+        String text = "Score: " + score + "\n Chart Constant: " + cc +"\n Steps: "+step+"\n STEP stat: "+0;
+        ScoreTextArea textArea = new ScoreTextArea(text, cc, score);
         scoreTextArray.add(textArea);
+        System.out.println(text);
 
     }
 

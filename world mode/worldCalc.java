@@ -1,10 +1,12 @@
 
-public class worldCalc {
-    public static void calc(double targetRating, double targetCC, String scoreString, String ratingOp, String ccOp, String scoreOp){
+public class worldCalc extends worldDisplay{
+    public static void calc(double targetCC, String scoreString, double targetStep, String ccOp, String scoreOp, String stepOp){
 //vars
         int finalScore = 0;
         double finalCC = 0;
         double finalRating = 0;
+        double finalStep = 0;
+        int finalStat = 0;
         int targetScore = Integer.parseInt(scoreString);
 
         //gets length of score. then adds 0's until it hits 7 digits (so 99 = 9,900,000)
@@ -16,7 +18,6 @@ public class worldCalc {
             for(; length<7; length++){
                 scoreString = scoreString+"0";
                 targetScore = Integer.parseInt(scoreString);
-                System.out.println(targetScore);
             }
         }
 
@@ -28,17 +29,25 @@ public class worldCalc {
         //runs through every combo of score/chart constant and calculates play rating. if the rating, cc, and score all fall within criteria, display on the scroll panel
         for(finalScore = 9000000; finalScore<=10000000; finalScore+=5000){
             for(finalCC=7; finalCC<=12; finalCC+=0.1){
-                finalRating = reversePttCalc(finalScore, finalCC, targetRating);
-                finalCC = round(finalCC);
+                for(finalStat=0; finalStat<=105; finalStat++){
+                    finalRating = reversePttCalc(finalScore, finalCC);
+                    finalCC = round(finalCC);
+                    finalStep = stepCalc(finalRating, finalCC, finalScore, finalStat);
+    
+                    //checks
+                    boolean scoreCheck = check(finalScore, targetScore, scoreOp);
+                    boolean ccCheck = check(finalCC, targetCC, ccOp);
+                    boolean stepCheck = check(finalStep, targetStep, stepOp);
+                    boolean legit = legitimacyCheck(finalScore, finalCC, finalRating, finalStep);
+    
+                    System.out.println("SCORE: "+finalScore);
+                    System.out.println("CC: "+finalCC);
+                    System.out.println("STEP stat: "+finalStat);
+                    System.out.println("STEP count: "+finalStep);
 
-                //checks
-                boolean ratingCheck = check(finalRating, targetRating, ratingOp);
-                boolean scoreCheck = check(finalScore, targetScore, scoreOp);
-                boolean ccCheck = check(finalCC, targetCC, ccOp);
-                //boolean legit = legitimacyCheck(finalScore, finalCC, finalRating);
-
-                if(ccCheck&&scoreCheck&&ratingCheck){
-                    pttDisplay.importComponent(finalScore, finalRating, finalCC);
+                    if(ccCheck&&scoreCheck&&stepCheck&&legit){
+                        worldDisplay.importComponent(finalScore, finalCC, finalStep, finalStat);
+                    }
                 }
             }
         }
@@ -46,7 +55,7 @@ public class worldCalc {
 
 
     //more info: go to the arcaea wiki and look up "potential"
-    public static double reversePttCalc(double score, double CC, double targetRating){
+    public static double reversePttCalc(double score, double CC){
         double modifier;
         if(score==10000000){
             modifier = 2;
@@ -73,17 +82,17 @@ public class worldCalc {
         return result;
     }
 
-    /*public static boolean legitimacyCheck(double score, double CC, double targetRating){
+    public static boolean legitimacyCheck(double score, double CC, double targetRating, double step){
         boolean result;
 
         //checks if all the values are positive integers and that it all adds up to the total combo. both of these need to be true or the score doesnt display
-        if(score >= 0&&cc <=12 &&targetRating>=0&&score<=10000000){
+        if(score >= 0&&cc <=12 &&targetRating>=0&&score<=10000000&&step>=0){
             result = true;
         }else{
             result = false;
         }
         return result;
-    }*/
+    }
 
     //checks input meets the operators
     public static boolean check(double input, double target, String operator){
@@ -93,17 +102,41 @@ public class worldCalc {
                 if(input==target){
                     result = true;
                 }
-            case ">":
-                if(input>target){
-                    result = true;
-                }
+                break;
             case "<":
                 if(input<target){
                     result = true;
                 }
+                break;
             case "Any":
                 result = true;
+                break;
+            default:
+                System.out.println("error with checksum! invalid operator!");
+                System.out.println("------DETAILS------");
+                System.out.println("OPERATOR: "+operator);
+                System.out.println("TARGET FAR/LOST COUNT: "+target);
+                System.out.println("INPUT COUNT: "+input);
+                break;
+
+        }
+        if(input<0||target<0){
+            System.out.println("error with checksum! invalid target/input!");
+            System.out.println("------DETAILS------");
+            System.out.println("OPERATOR: "+operator);
+            System.out.println("TARGET FAR/LOST COUNT: "+target);
+            System.out.println("INPUT COUNT: "+input);
         }
         return result;
+    }
+
+    public static double stepCalc(double rating, double cc, double score, int stepStat){
+        double stepCount =0;
+
+        for(stepStat =0; stepStat<=105;stepStat++){
+            double playResult = 2.45*Math.sqrt(rating)+2.5;
+            stepCount = playResult*(stepStat/50);
+        }
+        return stepCount;
     }
 }
