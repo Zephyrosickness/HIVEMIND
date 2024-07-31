@@ -371,14 +371,14 @@ public class scoreDisplay extends songsDatabase{
         File jacket = new File(path.toString());
 
         //looking at this awful if-loop in particular makes me wanna quit and go to bed its awful and i could do something better but i dont care
+        //ITS SO MUCH BETTER NOW IM LITERALLY GOD IM FASTER STRONGER SMARTER IM THE GREATEST PROGRAMMER TO EVER LIVE
 
         if (Files.exists(path) ==false){
-            jacket = new File("./assets/placeholder.jpg");
             System.out.println("error reading image!");
             System.out.println("------DETAILS------");
             System.out.println("JACKET: "+jacket);
-            System.out.println("JACKET INPUT: "+"./assets/"+selected+".jpg");
             System.out.println("EXISTS?: "+Files.exists(path));
+            jacket = new File("./assets/placeholder.jpg");
         }else{
             if(difficulty=="BYD"&&Files.exists(pathBYD)==true){
                 jacket = new File(pathBYD.toString());
@@ -406,7 +406,6 @@ public class scoreDisplay extends songsDatabase{
             System.out.println("------DETAILS------");
             System.out.println("ERROR DETAILS: "+e.getMessage());
             System.out.println("JACKET: "+jacket);
-            System.out.println("RAW JACKET INPUT: "+jacketCheck(selected));
         }
 
         //update constant/combo

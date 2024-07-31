@@ -2926,100 +2926,62 @@ public class songsDatabase {
     /*the way this script works is that it requires the selected variable name to be the exact same as the jacket file name.
     *unfortunately, sometimes some characters either cannot be used in filenames or im just too lazy to change it. so this "corrects"
     *any differences between filenames and string values without either field being compromised*/
+
+    //maybe find some way to auto-truncate etr
     public static String jacketCheck(String target){
+
+        if(target.endsWith( "(Eternal)")){
+            StringBuffer stringBuffer = new StringBuffer(target);
+            if (stringBuffer.length() > 0) {
+                for(int i=1; i<11;i++){
+                    stringBuffer.deleteCharAt(stringBuffer.length() - 1);
+                }
+            }
+            target = stringBuffer.toString(); 
+        }
+
         switch(target){
             case "Select a chart":
                 target = "placeholder";
                 break;
-            case"Altair (feat. *spiLa*)":
+
+            case "Altair (feat. *spiLa*)":
                 target = "Altair (feat. spiLa)";
                 break;
 
-            case"Can I Friend You on Bassbook? Lol":
+            case "Can I Friend You on Bassbook? Lol":
                 target ="Bassbook";
                 break;
 
-            case"Clotho and the stargazer (Eternal)":
-                target ="Clotho and the stargazer";
-                break;
-
-            case"cocoro*cosmetic":
+            case "cocoro*cosmetic":
                 target = "cocoro";
-                break;
-
-            case"Désive (Eternal)":
-                target = "Désive";
-                break;
-
-            case"ALTER EGO (Eternal)":
-                target = "ALTER EGO";
-                break;
-
-            case"Hypnotize (Eternal)":
-                target = "Hypnotize";
-                break;
-
-            case"Distorted Fate (Eternal)":
-                target = "Distorted Fate";
-                break;
-
-            case"Jingle (Eternal)":
-                target = "Jingle";
-                break;
-
-            case"HELLOHELL (Eternal)":
-                target = "HELLOHELL";
-                break;
-
-            case"Innocence (Eternal)":
-                target = "Innocence";
-                break;
-
-            case"IONOSTREAM (Eternal)":
-                target = "IONOSTREAM";
-                break;
-
-            case"MORNINGLOOM (Eternal)":
-                target = "MORNINGLOOM";
                 break;
 
             case"	͟͝͞Ⅱ́̕":
                 target = "Ii";
                 break;
 
-            case"carmine:scythe":
+            case "carmine:scythe":
                 target="carmine scythe";
                 break;
 
-            case"Sayonara Hatsukoi (Eternal)":
-                target="sayonara hatsukoi";
-                break;
-
-            case"Suomi (Eternal)":
-                target="suomi";
-                break;
-
-            case"To: Alice Liddell":
+            case "To: Alice Liddell":
                 target="To Alice Liddell";
                 break;
 
-            case"Valhalla:0":
+            case "Valhalla:0":
                 target="valhalla0";
                 break;
 
-            case"Last | Moment":
+            case "Last | Moment":
                 target="Last Moment";
                 break;
 
-            case"Last | Eternity":
+            case "Last | Eternity":
                 target="Last Eternity";
                 break;
 
-            case"Twilight Concerto":
-                target = "Tasogare";
-                break;
-
-            case"Twilight Concerto (Eternal)":
+            case "Twilight Concerto":
                 target = "Tasogare";
                 break;
 
