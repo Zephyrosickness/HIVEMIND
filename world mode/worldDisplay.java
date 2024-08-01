@@ -4,7 +4,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.UIManager.LookAndFeelInfo;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 //contains most graphical data
@@ -87,10 +86,6 @@ public class worldDisplay {
         scoreLabel.setBounds(25, 115, 80, 25);
         panel.add(scoreLabel);
 
-        //label for sorter
-        JLabel sortLabel = new JLabel("Sort by");
-        sortLabel.setBounds(25, 145, 80, 25);
-        panel.add(sortLabel);
 
 
 
@@ -101,10 +96,8 @@ public class worldDisplay {
         //array vars (dropdown options)
 
         //for op dropdowns
-        String[] operators = {"Any", "=","<", ">"};
+        String[] operators = {"Any","<", ">"};
 
-        //for sort dropdown
-        String[] sorts = {"Score", "Chart Constant", "Steps", "STEP Stat"};
 
 
         //filter dropdowns
@@ -126,11 +119,6 @@ public class worldDisplay {
         final JComboBox<String> scoreOperator = new JComboBox<>(operators);
         scoreOperator.setBounds(70, 115,  50, 25);
         panel.add(scoreOperator);
-
-        //select sorting methodology dropdown
-        final JComboBox<String> sorter = new JComboBox<>(sorts);
-        sorter.setBounds(65, 145,  100, 25);
-        panel.add(sorter);
 
 
 
@@ -175,11 +163,6 @@ public class worldDisplay {
         run.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
 
-                clear(ratingPanel);
-
-                //update the scroll pane after adding components
-                ratingPanel.revalidate();
-                ratingPanel.repaint();
 
                 double targetCC = Double.parseDouble(ccField.getText());
                 String scoreString =(String)scoreField.getText();
@@ -192,22 +175,10 @@ public class worldDisplay {
 
                 worldCalc.calc(targetCC, scoreString, targetStep, ccOp, scoreOp, stepOp);
 
-                //sort results based on the sort option
-                switch((String)sorter.getSelectedItem()) {
-                    case "Score":
-                        scoreTextArray.sort(Comparator.comparingDouble(ScoreTextArea::getScore).reversed());
-                        break;
-                    case "Chart Constant":
-                        scoreTextArray.sort(Comparator.comparingDouble(ScoreTextArea::getCC).reversed());
-                        break;
-                }
-
-                //removes all components from ratingPanel so scores dont stack
-                ratingPanel.removeAll();
-
                 //add sorted components to the ratingPanel
                 for (ScoreTextArea textAreas : scoreTextArray) {
                     ratingPanel.add(textAreas);
+                    System.out.println("WE STILL HERE");
                 }
 
                 //update the scroll pane after adding components
@@ -229,42 +200,26 @@ public class worldDisplay {
     }
 
     //holds data for each play listing
+    //i still dont know how this works :D
 
     public static class ScoreTextArea extends JTextArea {
-        private int score;
-        private double cc;
-        private double rating;
-
-        public ScoreTextArea(String text, double cc, int score) {
+        public ScoreTextArea(String text) {
             //variables for each score container
             super(text);
-            this.score = score;
-            this.cc = cc;
             setLineWrap(true);
             setWrapStyleWord(true);
             setBorder(BorderFactory.createLineBorder(Color.BLACK));
             //setMaximumSize(new Dimension(300, 60));
         }
-
-        public int getScore() {
-            return score;
-        }
-        public double getCC() {
-            return cc;
-        }
-        public double getRating() {
-            return rating;
-        }
     }
 
+        //i still dont know how this works :D
     public static void importComponent(int score, double cc, double step, int stat){
 
         //adds judgement data and score to array
-        String text = "Score: " + score + "\n Chart Constant: " + cc +"\n Steps: "+step+"\n STEP stat: "+0;
-        ScoreTextArea textArea = new ScoreTextArea(text, cc, score);
+        String text = "Score: " + score + "\n Chart Constant: " + cc +"\n Steps: "+step+"\n STEP stat: "+stat;
+        ScoreTextArea textArea = new ScoreTextArea(text);
         scoreTextArray.add(textArea);
-        System.out.println(text);
-
     }
 
     public static void clear(JPanel panel){

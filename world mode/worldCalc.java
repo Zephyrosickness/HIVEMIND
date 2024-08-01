@@ -2,13 +2,14 @@
 public class worldCalc extends worldDisplay{
     public static void calc(double targetCC, String scoreString, double targetStep, String ccOp, String scoreOp, String stepOp){
 //vars
-        int finalScore = 0;
-        double finalCC = 0;
-        double finalRating = 0;
-        double finalStep = 0;
-        int finalStat = 0;
+        int finalScore;
+        double finalCC;
+        double finalRating;
+        double finalStep;
+        int finalStat;
         int targetScore = Integer.parseInt(scoreString);
-
+        int scoreInit = 9000000;
+        double ccInit = 7;
         //gets length of score. then adds 0's until it hits 7 digits (so 99 = 9,900,000)
         //if score starts with 1, then it be set to 10,000,000 (pure memory)
         int length = scoreString.length();
@@ -25,27 +26,28 @@ public class worldCalc extends worldDisplay{
         if(targetCC<7){
             targetCC = 7;
         }
+        if(ccOp==">"){
+            ccInit = targetCC;
+        }
+        if(scoreOp==">"){
+            scoreInit = targetScore;
+        }
 
         //runs through every combo of score/chart constant and calculates play rating. if the rating, cc, and score all fall within criteria, display on the scroll panel
-        for(finalScore = 9000000; finalScore<=10000000; finalScore+=5000){
-            for(finalCC=7; finalCC<=12; finalCC+=0.1){
-                for(finalStat=0; finalStat<=105; finalStat++){
+        for(finalStat=12; finalStat<=105; finalStat++){
+            for(finalCC=ccInit; finalCC<=10.9&&check(finalCC, targetCC, ccOp)==true; finalCC+=0.1){
+                for(finalScore = scoreInit; finalScore<=10000000&&check(finalScore, targetScore, scoreOp)==true; finalScore+=10000){
                     finalRating = reversePttCalc(finalScore, finalCC);
                     finalCC = round(finalCC);
-                    finalStep = stepCalc(finalRating, finalCC, finalScore, finalStat);
+                    finalStep = stepCalc(finalRating, finalStat);
     
                     //checks
-                    boolean scoreCheck = check(finalScore, targetScore, scoreOp);
-                    boolean ccCheck = check(finalCC, targetCC, ccOp);
+                    //boolean scoreCheck = check(finalScore, targetScore, scoreOp);
+                    //boolean ccCheck = check(finalCC, targetCC, ccOp);
                     boolean stepCheck = check(finalStep, targetStep, stepOp);
-                    boolean legit = legitimacyCheck(finalScore, finalCC, finalRating, finalStep);
-    
-                    System.out.println("SCORE: "+finalScore);
-                    System.out.println("CC: "+finalCC);
-                    System.out.println("STEP stat: "+finalStat);
-                    System.out.println("STEP count: "+finalStep);
+                    //boolean legit = legitimacyCheck(finalScore, finalCC, finalRating, finalStep);
 
-                    if(ccCheck&&scoreCheck&&stepCheck&&legit){
+                    if(stepCheck){
                         worldDisplay.importComponent(finalScore, finalCC, finalStep, finalStat);
                     }
                 }
@@ -98,13 +100,13 @@ public class worldCalc extends worldDisplay{
     public static boolean check(double input, double target, String operator){
         boolean result = false;
         switch(operator){
-            case "=":
-                if(input==target){
+            case "<":
+                if(input<=target){
                     result = true;
                 }
                 break;
-            case "<":
-                if(input<target){
+            case ">":
+                if(input>=target){
                     result = true;
                 }
                 break;
@@ -130,13 +132,14 @@ public class worldCalc extends worldDisplay{
         return result;
     }
 
-    public static double stepCalc(double rating, double cc, double score, int stepStat){
+    public static double stepCalc(double rating, int stepStat){
         double stepCount =0;
 
-        for(stepStat =0; stepStat<=105;stepStat++){
-            double playResult = 2.45*Math.sqrt(rating)+2.5;
-            stepCount = playResult*(stepStat/50);
-        }
+        double play1 = Math.sqrt(rating);
+        double playResult = 2.45*play1+2.5;
+        double partner = stepStat/50.0;
+        stepCount = playResult*partner;
+        
         return stepCount;
     }
 }
