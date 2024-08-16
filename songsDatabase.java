@@ -855,11 +855,6 @@ public class songsDatabase {
                     values[1] = 11.2;
                     break;
 
-                case null:
-                    values[0] = 0;
-                    values[1] = 0;
-                    break;
-
                 default:
                     values[0] = 0;
                     values[1] = 0;
@@ -2907,11 +2902,6 @@ public class songsDatabase {
                 case "Hypnotize (Eternal)":
                     values[0] = 1164;
                     values[1] = 9.9;
-                    break;
-
-                case null:
-                    values[0] = 0;
-                    values[1] = 0;
                     break;
 
                 default:
