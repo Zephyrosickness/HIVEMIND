@@ -21,6 +21,7 @@ public class hub {
 
         }
 
+        scoreCalc.peepeepoopootemp();
 
         // create a window
         JFrame frame = new JFrame("HIVEMIND");

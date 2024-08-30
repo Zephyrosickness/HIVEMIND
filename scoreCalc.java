@@ -143,4 +143,21 @@ public class scoreCalc extends scoreDisplay{
         }
         return result;
     }
+    @SuppressWarnings("static-access")
+    public static void peepeepoopootemp(){
+        songsDatabase db = new songsDatabase();
+        double average = 0;
+        int count = 0;
+        for(String i:db.chartsAll){
+            double[] val = db.db(i, "m");
+            double combo = val[0];
+            double cc = val[1];
+            if(cc>=10.7&&cc<=10.9){
+                count++;
+                average += combo;
+            }
+        }
+        average/=count;
+        System.out.println((int)average);
+    }
 }
