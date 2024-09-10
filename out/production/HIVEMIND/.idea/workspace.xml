@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9f0de1c-4710-4440-90a5-9fa7cd7f1cd9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/play rating/pttCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/pttCalc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/play rating/pttDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/pttDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/world mode/worldCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/worldCalc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/world mode/worldDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/worldDisplay.java" afterDir="false" />
-    </list>
+    <list default="true" id="a9f0de1c-4710-4440-90a5-9fa7cd7f1cd9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,27 +10,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Zephyrosickness"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Zephyrosickness/HIVEMIND.git",
-    "accountId": "d7fffdeb-b127-4db7-bea3-5e2482b2f699"
-  }
-}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
   <component name="ProjectId" id="2kjzbRojqV9lNaub1zc7XkgwiWM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -47,7 +26,6 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.hub.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
