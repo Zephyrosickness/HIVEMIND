@@ -237,6 +237,8 @@ public class songsDatabase {
         "Innocence (Eternal)",
         "INTERNET OVERDOSE",
         "INTERNET YAMERO",
+            "Inverted World",
+            "Inverted World (Eternal)",
         "IONOSTREAM",
         "IONOSTREAM (Eternal)",
         "IZANA",
@@ -472,6 +474,7 @@ public class songsDatabase {
         "Vindication",
         "Vivid Theory",
         "Viyella's Tears",
+            "Vulcanus",
 
         //W
 
@@ -1832,6 +1835,11 @@ public class songsDatabase {
                     values[1] = 9.9;
                     break;
 
+                case "Inverted World (Eternal)":
+                    values[0] = 1065;
+                    values[1] = 10.8; //GUESSING
+                    break;
+
                 case "IONOSTREAM":
                     values[0] = 818;
                     values[1] = 8.7;
@@ -2723,25 +2731,30 @@ public class songsDatabase {
                     values[1] = 8.8;
                     break;
                 case "Viyella's Tears":
-
                     values[0] = 1403;
                     values[1] = 10.3;
                     break;
-                case "WAIT FOR DAWN":
 
+                case "Vulcanus":
+                    values[0] = 1542;
+                    values[1] = 10.9; //GUESSING
+                    break;
+
+                case "WAIT FOR DAWN":
                     values[0] = 861;
                     values[1] = 8.7;
                     break;
-                case "Wish Upon a Snow":
 
+                case "Wish Upon a Snow":
                     values[0] = 1309;
                     values[1] = 10.5;
                     break;
+                    
                 case "with U":
-
                     values[0] = 932;
                     values[1] = 9.4;
                     break;
+
                 case "World Ender":
 
                     values[0] = 1225;
