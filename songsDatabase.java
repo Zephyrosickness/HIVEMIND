@@ -2749,7 +2749,7 @@ public class songsDatabase {
                     values[0] = 1309;
                     values[1] = 10.5;
                     break;
-                    
+
                 case "with U":
                     values[0] = 932;
                     values[1] = 9.4;
