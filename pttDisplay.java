@@ -6,6 +6,7 @@ import javax.swing.UIManager.LookAndFeelInfo;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Objects;
 
 //contains most graphical data
 //welcome to hell
@@ -170,64 +171,61 @@ public class pttDisplay {
                 //ACTIONS
 
         //load chart (songSelect dropdown)
-        run.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
+        run.addActionListener(e -> {
 
-                clear(ratingPanel);
+            clear(ratingPanel);
 
-                //update the scroll pane after adding components
-                ratingPanel.revalidate();
-                ratingPanel.repaint();
+            //update the scroll pane after adding components
+            ratingPanel.revalidate();
+            ratingPanel.repaint();
 
-                //add ptt data
+            //add ptt data
 
-                pttCalc.calc(Double.parseDouble(ratingField.getText()), Double.parseDouble(ccField.getText()), (String)scoreField.getText(), (String)ratingOperator.getSelectedItem(), (String)ccOperator.getSelectedItem(), (String)scoreOperator.getSelectedItem());
+            pttCalc.calc(Double.parseDouble(ratingField.getText()), Double.parseDouble(ccField.getText()), scoreField.getText(), (String)ratingOperator.getSelectedItem(), (String)ccOperator.getSelectedItem(), (String)scoreOperator.getSelectedItem());
 
-                //sort results based on the sort option
-                switch((String)sorter.getSelectedItem()) {
-                    case "Score":
-                        scoreTextArray.sort(Comparator.comparingDouble(ScoreTextArea::getScore).reversed());
-                        break;
-                    case "Chart Constant":
-                        scoreTextArray.sort(Comparator.comparingDouble(ScoreTextArea::getCC).reversed());
-                        break;
-                    case "Rating":
-                        scoreTextArray.sort(Comparator.comparingDouble(ScoreTextArea::getRating).reversed());
-                        break;
-                }
-
-                //removes all components from ratingPanel so scores dont stack
-                ratingPanel.removeAll();
-
-                //add sorted components to the ratingPanel
-                for (ScoreTextArea textAreas : scoreTextArray) {
-                    ratingPanel.add(textAreas);
-                }
-
-                //update the scroll pane after adding components
-                ratingPanel.revalidate();
-                ratingPanel.repaint();
+            //sort results based on the sort option
+            switch((String) Objects.requireNonNull(sorter.getSelectedItem())) {
+                case "Score":
+                    scoreTextArray.sort(Comparator.comparingDouble(ScoreTextArea::getScore).reversed());
+                    break;
+                case "Chart Constant":
+                    scoreTextArray.sort(Comparator.comparingDouble(ScoreTextArea::getCC).reversed());
+                    break;
+                case "Rating":
+                    scoreTextArray.sort(Comparator.comparingDouble(ScoreTextArea::getRating).reversed());
+                    break;
             }
+
+            //removes all components from ratingPanel so scores dont stack
+            ratingPanel.removeAll();
+
+            //add sorted components to the ratingPanel
+            for (ScoreTextArea textAreas : scoreTextArray) {
+                ratingPanel.add(textAreas);
+            }
+
+            //update the scroll pane after adding components
+            ratingPanel.revalidate();
+            ratingPanel.repaint();
         });
 
-        clear.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
+        clear.addActionListener(e -> {
 
-                ratingPanel.removeAll();
+            ratingPanel.removeAll();
 
-                ratingPanel.revalidate();
-                ratingPanel.repaint();
+            ratingPanel.revalidate();
+            ratingPanel.repaint();
 
-            }
         });
     }
 
     //holds data for each play listing
 
+    //i dont remember what this does, genuinely
     public static class ScoreTextArea extends JTextArea {
-        private int score;
-        private double cc;
-        private double rating;
+        private final int score;
+        private final double cc;
+        private final double rating;
 
         public ScoreTextArea(String text, double cc, double rating, int score) {
             //variables for each score container

@@ -48,11 +48,7 @@ public class hub {
         panel.add(scoreButton);
 
         //runs the function to open the scorecalc program
-        scoreButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                scoreDisplay.init();
-            }
-        });
+        scoreButton.addActionListener(e -> scoreDisplay.init());
 
         //button to run ptt calcs
         JButton pttButton = new JButton("Play Rating Calculator");
@@ -60,11 +56,7 @@ public class hub {
         panel.add(pttButton);
                 
         //runs the function to open the pttcalc program
-        pttButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                pttDisplay.init();
-            }
-        });
+        pttButton.addActionListener(e -> pttDisplay.init());
 
         //button to run world calcs
         JButton worldButton = new JButton("World Mode Calculator");
@@ -72,10 +64,6 @@ public class hub {
         panel.add(worldButton);
                         
         //runs the function to open the pttcalc program
-        worldButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                worldDisplay.init();
-            }
-        });
+        worldButton.addActionListener(e -> worldDisplay.init());
     }
 }
