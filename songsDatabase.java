@@ -1,7 +1,4 @@
 public class songsDatabase {
-
-    public static String jacketUrl;
-
     public static String[] chartsAll = { "Select a chart",
 
         //NUMBERS
@@ -181,6 +178,8 @@ public class songsDatabase {
         "Garakuta Doll Play",
         "Gekka (Short Version)",
         "Genesis",
+        "Gensou Sattelite",
+        "Gensou Sattelite (Eternal)",
         "Genesis (CHUNITHM)",
         "GENOCIDER",
         "GIMME DA BLOOD",
@@ -623,7 +622,7 @@ public class songsDatabase {
 
     // contains jacket/cc/combo info
     public static double[] db(String selected, String difficulty) {
-        if (difficulty == "BYD") {
+        if (difficulty.equals("BYD")) {
             switch (selected) {
                 case "Antithese":
 
@@ -1608,85 +1607,95 @@ public class songsDatabase {
                     values[1] = 8.6;
                     break;
                 case "Genesis":
-
                     values[0] = 713;
                     values[1] = 8.2;
                     break;
+
                 case "Genesis (CHUNITHM)":
-
                     values[0] = 713;
                     values[1] = 8.2;
                     break;
-                case "GENOCIDER":
 
+                case "GENOCIDER":
                     values[0] = 1483;
                     values[1] = 10.7;
                     break;
-                    case "GIMME DA BLOOD":
 
+                case "Gensou Sattelite":     //gen i dont remmeber the name of this song
+                    values[0] = 1000;
+                    values[1] = 8.7; //guessing both values
+                    break;
+
+                case "Gensou Sattelite (Eternal)":
+                    values[0] = 1000;
+                    values[1] = 10.0; //guessing both valeus
+                    break;
+
+                    case "GIMME DA BLOOD":
                     values[0] = 1093;
                     values[1] = 10.4;
                     break;
-                case "GIMMICK":
 
+                case "GIMMICK":
                     values[0] = 733;
                     values[1] = 9.5;
                     break;
-                case "Give Me a Nightmare":
 
+                case "Give Me a Nightmare":
                     values[0] = 948;
                     values[1] = 8.9;
                     break;
-                case "GLORY：ROAD":
 
+                case "GLORY：ROAD":
                     values[0] = 1479;
                     values[1] = 10.6;
                     break;
-                case "Glow":
 
+                case "Glow":
                     values[0] = 916;
                     values[1] = 9.3;
                     break;
-                case "goldenslaughterer":
 
+                case "goldenslaughterer":
                     values[0] = 1326;
                     values[1] = 9.7;
                     break;
-                case "Good bye, Merry-Go-Round.":
 
+                case "Good bye, Merry-Go-Round.":
                     values[0] = 1084;
                     values[1] = 10.5;
                     break;
-                case "GOODTEK (Arcaea Edit)":
 
+                case "GOODTEK (Arcaea Edit)":
                     values[0] = 968;
                     values[1] = 9.3;
                     break;
-                case "Got hive of Ra":
 
+                case "Got hive of Ra":
                     values[0] = 794;
                     values[1] = 9.8;
                     break;
-                case "Grievous Lady":
 
+                case "Grievous Lady":
                     values[0] = 1450;
                     values[1] = 11.3;
                     break;
-                case "Grimheart":
 
+                case "Grimheart":
                     values[0] = 959;
                     values[1] = 8.7;
                     break;
-                case "Halcyon":
 
+                case "Halcyon":
                     values[0] = 1227;
                     values[1] = 10.7;
                     break;
-                case "Hall of Mirrors":
 
+                case "Hall of Mirrors":
                     values[0] = 898;
                     values[1] = 8.2;
                     break;
+
                 case "Harutopia ~Utopia of Spring~":
 
                     values[0] = 1061;
@@ -2934,7 +2943,7 @@ public class songsDatabase {
     public static String jacketCheck(String target){
 
         if(target.endsWith( "(Eternal)")){
-            StringBuffer stringBuffer = new StringBuffer(target);
+            StringBuilder stringBuffer = new StringBuilder(target);
             if (stringBuffer.length() > 0) {
                 for(int i=1; i<11;i++){
                     stringBuffer.deleteCharAt(stringBuffer.length() - 1);
