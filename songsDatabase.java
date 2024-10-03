@@ -1,5 +1,30 @@
+import java.util.ArrayList;
+
 public class songsDatabase {
-    protected String[] chartsAll = { "Select a chart",
+    //initalize variables for each song object
+    protected String name;
+    protected double cc;
+    protected double combo;
+    protected boolean BYD;
+
+    //list of every chart
+    public static ArrayList<String> chartsAll;
+    public static ArrayList<String> chartsBYD;
+
+    protected songsDatabase(String name, double cc, double combo, boolean BYD){
+        this.name = name;
+        this.cc = cc;
+        this.combo = combo;
+        this.BYD = BYD;
+
+        if(!BYD){
+            chartsBYD.add(name); //if byd chart, add to byd list of songs
+        }else {
+            chartsAll.add(name); //if not byd, add to list of regular songs
+        }
+    }
+    protected songsDatabase IFV = new songsDatabase("1F√", 752, 8.2);
+    protected String[] chartsAlll = { "Select a chart",
 
         //NUMBERS
 
@@ -622,7 +647,7 @@ public class songsDatabase {
     public static double[] values = {0,0};
 
     // contains jacket/cc/combo info
-    public songsDatabase(String selected, String difficulty)  {
+    /*public songsDatabase(String selected, String difficulty)  {
         double cc = 0;
         double combo = 0;
 
@@ -2936,7 +2961,7 @@ public class songsDatabase {
                     break;
             }
         }
-    }
+    }*/
 
     /*the way this script works is that it requires the selected variable name to be the exact same as the jacket file name.
     *unfortunately, sometimes some characters either cannot be used in filenames or im just too lazy to change it. so this "corrects"
