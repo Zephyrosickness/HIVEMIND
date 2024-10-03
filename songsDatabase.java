@@ -10,20 +10,23 @@ public class songsDatabase {
     //list of every chart
     public static ArrayList<String> chartsAll;
     public static ArrayList<String> chartsBYD;
+    public static ArrayList<songsDatabase> objectsAll;
+    public static ArrayList<songsDatabase> objectsBYD;
 
     protected songsDatabase(String name, double cc, double combo, boolean BYD){
         this.name = name;
         this.cc = cc;
         this.combo = combo;
-        this.BYD = BYD;
 
-        if(!BYD){
+        if(BYD){
             chartsBYD.add(name); //if byd chart, add to byd list of songs
+            objectsAll.add(new songsDatabase(this.name, this.cc, this.combo, true));
         }else {
             chartsAll.add(name); //if not byd, add to list of regular songs
+            objectsAll.add(new songsDatabase(this.name, this.cc, this.combo, false));
         }
     }
-    protected songsDatabase IFV = new songsDatabase("1F√", 752, 8.2);
+    protected songsDatabase IFV = new songsDatabase("1F√", 752, 8.2, false);
     protected String[] chartsAlll = { "Select a chart",
 
         //NUMBERS
@@ -2967,7 +2970,6 @@ public class songsDatabase {
     *unfortunately, sometimes some characters either cannot be used in filenames or im just too lazy to change it. so this "corrects"
     *any differences between filenames and string values without either field being compromised*/
 
-    //maybe find some way to auto-truncate etr
     public static String jacketCheck(String target){
 
         if(target.endsWith( "(Eternal)")){
