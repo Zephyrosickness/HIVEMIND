@@ -7,13 +7,11 @@ import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Random;
+import java.util.List;
 
 //contains most graphical data
 //welcome to hell
@@ -289,7 +287,7 @@ public class scoreDisplay extends songsDatabase{
                 }
 
                 //changes chart listing depending on if diff is byd or ftr
-                if((String)difficultySelect.getSelectedItem()=="BYD"){
+                if(Objects.equals((String) difficultySelect.getSelectedItem(), "BYD")){
                     selectedChart = db.chartsBYD;
                 }else{
                     selectedChart = db.chartsAll;
@@ -371,16 +369,16 @@ public class scoreDisplay extends songsDatabase{
         File jacket = new File(path.toString());
 
         //looking at this awful if-loop in particular makes me wanna quit and go to bed its awful and i could do something better but i dont care
-        //ITS SO MUCH BETTER NOW IM LITERALLY GOD IM FASTER STRONGER SMARTER IM THE GREATEST PROGRAMMER TO EVER LIVE
+        // edit: ITS SO MUCH BETTER NOW IM LITERALLY GOD IM FASTER STRONGER SMARTER IM THE GREATEST PROGRAMMER TO EVER LIVE
 
-        if (Files.exists(path) ==false){
+        if (!Files.exists(path)){
             System.out.println("error reading image!");
             System.out.println("------DETAILS------");
             System.out.println("JACKET: "+jacket);
             System.out.println("EXISTS?: "+Files.exists(path));
             jacket = new File("./assets/placeholder.jpg");
         }else{
-            if(difficulty=="BYD"&&Files.exists(pathBYD)==true){
+            if(difficulty.equals("BYD")&&Files.exists(pathBYD)){
                 jacket = new File(pathBYD.toString());
             }
         }
@@ -402,7 +400,7 @@ public class scoreDisplay extends songsDatabase{
             imageLabel.setBounds(12, 70, scaledWidth, resizedImg.getHeight(null));
             //error handler in case of invalid url
         } catch (IOException e) {
-            System.out.println("error reading image! ");
+            System.out.println("Error reading image! ");
             System.out.println("------DETAILS------");
             System.out.println("ERROR DETAILS: "+e.getMessage());
             System.out.println("JACKET: "+jacket);
@@ -415,10 +413,11 @@ public class scoreDisplay extends songsDatabase{
     }
 
     //i dont remember how this works
+    //genuinely i dont
     public static class ScoreTextArea extends JTextArea {
-        private double score;
-        private double far;
-        private double miss;
+        double score;
+        double far;
+        double miss;
 
         public ScoreTextArea(String text, double score, int far, int miss) {
             //variables for each score container

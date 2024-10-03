@@ -1,8 +1,9 @@
 public class songsDatabase {
-    public static String[] chartsAll = { "Select a chart",
+    protected String[] chartsAll = { "Select a chart",
 
         //NUMBERS
 
+            //there is definitely an easier way to do this. make objects instead of having 2 massive chart arrays and one huge method
         "1F√",
         "10pt8tion",
         "10pt8tion (Eternal)",
@@ -508,7 +509,7 @@ public class songsDatabase {
         "〇、",
     };
 
-    public static String[] chartsBYD = { "Select a chart",
+    protected String[] chartsBYD = { "Select a chart",
 
         // A
 
@@ -621,13 +622,16 @@ public class songsDatabase {
     public static double[] values = {0,0};
 
     // contains jacket/cc/combo info
-    public static double[] db(String selected, String difficulty) {
+    public songsDatabase(String selected, String difficulty)  {
+        double cc = 0;
+        double combo = 0;
+
         if (difficulty.equals("BYD")) {
             switch (selected) {
                 case "Antithese":
 
-                    values[0] = 968;
-                    values[1] = 9.5;
+                    cc = 968;
+                    combo = 9.5;
                     break;
                 case "Arcana Eden":
 
@@ -2932,7 +2936,6 @@ public class songsDatabase {
                     break;
             }
         }
-        return values;
     }
 
     /*the way this script works is that it requires the selected variable name to be the exact same as the jacket file name.
