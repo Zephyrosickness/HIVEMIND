@@ -1,10 +1,8 @@
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import javax.swing.UIManager.LookAndFeelInfo;
 
-public class hub {
-       public static void main(String[] args) {
+public class Hub {
+    public static void main(String[] args) {
         //changes l&f to windows classic because im a basic bitch like that
         try {
             for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
@@ -13,13 +11,9 @@ public class hub {
                     break;
                 }
             }
-        } catch (Exception e) {
-            //error handler for l&f in case something doesnt work
-            System.out.println("error with look and feel!");
-            System.out.println("------DETAILS------");
-            System.out.println(e.getMessage());
+        } catch (Exception e) {System.out.println("error with look and feel!\n------DETAILS------\n"+e.getMessage());}
 
-        }
+        new Database(); //inits chartlist
 
         // create a window
         JFrame frame = new JFrame("HIVEMIND");
@@ -42,28 +36,21 @@ public class hub {
         // set the layout manager to null for absolute positioning
         panel.setLayout(null);
 
-        //button to run score calcr
+        //button to run score calc
         JButton scoreButton = new JButton("Score Calculator");
         scoreButton.setBounds(25, 25, 150, 25);
         panel.add(scoreButton);
 
-        //runs the function to open the scorecalc program
+        //runs the function to open the scorecard program
         scoreButton.addActionListener(e -> scoreDisplay.init());
 
         //button to run ptt calcs
         JButton pttButton = new JButton("Play Rating Calculator");
         pttButton.setBounds(25, 50, 150, 25);
         panel.add(pttButton);
-                
-        //runs the function to open the pttcalc program
+
+        //runs the function to open the  pttcalc program
         pttButton.addActionListener(e -> pttDisplay.init());
 
-        //button to run world calcs
-        JButton worldButton = new JButton("World Mode Calculator");
-        worldButton.setBounds(25, 75, 150, 25);
-        panel.add(worldButton);
-                        
-        //runs the function to open the pttcalc program
-        worldButton.addActionListener(e -> worldDisplay.init());
     }
 }

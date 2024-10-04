@@ -5,13 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9f0de1c-4710-4440-90a5-9fa7cd7f1cd9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/songsDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/songsDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hub.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pttCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/pttCalc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoreCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/scoreCalc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoreDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/scoreDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/songsDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worldCalc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/worldDisplay.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,16 +60,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Hub.executor": "Run",
     "Application.hub.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "test",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="hub" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hub" />
+    <configuration name="Hub" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Hub" />
       <module name="HIVEMIND" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -61,7 +80,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.hub" />
+        <item itemvalue="Application.Hub" />
       </list>
     </recent_temporary>
   </component>
@@ -75,5 +94,16 @@
       <updated>1723811844763</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
