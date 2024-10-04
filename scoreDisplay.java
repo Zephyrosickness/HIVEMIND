@@ -359,6 +359,7 @@ public class scoreDisplay extends Database {
         int combo = selectedChartObject.combo;
 
 
+        //TODO: ALTER EGO gives exception pointer error
         try {
             BufferedImage img = ImageIO.read(jacket);
 
@@ -376,7 +377,6 @@ public class scoreDisplay extends Database {
         }
 
         //update constant/combo
-
         noteCount.setText("Max Combo: " + combo);
         chartConstant.setText("Chart Constant: " + cc);
 

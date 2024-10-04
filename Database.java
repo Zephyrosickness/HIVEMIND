@@ -500,7 +500,7 @@ public class Database {
             target = "placeholder";
         }
 
-        if(target.endsWith( "(Eternal)")){
+        if(target.endsWith(" (Eternal)")){
             target = target.substring(0, target.length()-10);
         }
 
