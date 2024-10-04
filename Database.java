@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.*;
 
 public class Database {
@@ -70,7 +69,7 @@ public class Database {
             new Chart("Aleph-0", 919, 10.5, "FTR");
             new Chart("Alexandrite", 1040, 10, "FTR");
             new Chart("Alice à la mode", 872, 9.2, "FTR");
-            new Chart("Alice's Suit", 999, 9.1, "FTR");
+            new Chart("Alice's Suitcase", 999, 9.1, "FTR");
             new Chart("Alone & Lorn", 970, 9.6, "FTR");
             new Chart("Altair (feat. *spiLa*)", 830, 8.5, "FTR");
             new Chart("Altale", 690, 9.7, "FTR");
@@ -502,13 +501,7 @@ public class Database {
         }
 
         if(target.endsWith( "(Eternal)")){
-            StringBuilder stringBuffer = new StringBuilder(target);
-            if (!stringBuffer.isEmpty()) {
-                for(int i=1; i<11;i++){
-                    stringBuffer.deleteCharAt(stringBuffer.length() - 1);
-                }
-            }
-            target = stringBuffer.toString();
+            target = target.substring(0, target.length()-10);
         }
 
         switch(target){
