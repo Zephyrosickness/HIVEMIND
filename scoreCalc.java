@@ -10,10 +10,10 @@ public class scoreCalc extends scoreDisplay{
         int pureFinal;
         int minScore = Integer.parseInt(scoreString);
         double scoreFinal;
-        //these threshold variables exist because i mean i dont think anyone is gonna care about your score if you get like 500 fars or whatever
-        //it just eliminates unecessary scores and speeds up the process (i think)
-        int farThreshold = Math.round(combo/10);
-        int missThreshold = Math.round(combo/10);
+        //these threshold variables exist because I mean I don't think anyone is going to care about your score if you get like 500 fars or whatever
+        //it just eliminates unecessary scores and speeds up the process
+        int farThreshold = Math.round((float) combo /10);
+        int missThreshold = Math.round((float) combo /10);
 
         //gets length of score. then adds 0's until it hits 7 digits (so 99 = 9,900,000)
         //if score starts with 1, then it be set to 10,000,000 (pure memory)
@@ -27,10 +27,12 @@ public class scoreCalc extends scoreDisplay{
             }
         }
         /*runs through every possible combination of far/lost notes, calculates the score and only prints out the ones that fufill the requirements*/
-
-        //oh my god. this code used to be OVER 200 LINES LONG. it was the most UNREADABLE peice of SHIT i ever wrote. now it's 20 lines. im god. im a genius. greatest programmer ever
+        System.out.println("we are running,,, DEPTH1");
+        //oh my god. this code used to be OVER 200 LINES LONG. it was the most UNREADABLE peice of SHIT I ever wrote. now it's 20 lines. im god. im a genius. greatest programmer ever
             for (farFinal = 0; farFinal<farThreshold; farFinal++) {
+                System.out.println("we are running,,,DEPTH2");
                 for (missFinal = 0; missFinal<missThreshold; missFinal++) {
+                    System.out.println("we are running,,,DEPTH3");
                     //calcs score. each PURE is 10,000,000 divided by max combo, and FAR is half of PURE
                     pureFinal = combo - (farFinal + missFinal);
                     scoreFinal = pureRaw * pureFinal + farRaw * farFinal;
@@ -58,21 +60,20 @@ public class scoreCalc extends scoreDisplay{
         double modifier;
         if(score==10000000){
             modifier = 2;
-        }else if(score>=9800000&&score<=9999999&&score!=10000000){
+        }else if(score>=9800000&&score<=9999999){
             modifier = 1+((score-9800000)/200000);
         }else{
             modifier = (score-9500000)/300000;
         }
 
-        //error check to make sure its not a negative value and rounds if its positive.
-        //raw is the unrounded, raw play rating. the code rounds it to the 2nd decimal place because if i didnt do this then it would be like 500 lines long
+        //error check to make sure it's not a negative value and rounds if its positive.
+        //raw is the unrounded, raw play rating. the code rounds it to the 2nd decimal place because if I didn't do this then it would be like 500 lines long
         double raw = cc + modifier;
         if(raw<=0){
             return 0;
         }else{
             double scale = Math.pow(10, 2);
-            double rating = Math.round(raw * scale) / scale;
-            return rating;
+            return Math.round(raw * scale) / scale;
         }
     }
     
@@ -94,21 +95,10 @@ public class scoreCalc extends scoreDisplay{
                 result = true;
                 break;
             default:
-                System.out.println("error with checksum! invalid operator!");
-                System.out.println("------DETAILS------");
-                System.out.println("OPERATOR: "+operator);
-                System.out.println("TARGET FAR/LOST COUNT: "+target);
-                System.out.println("INPUT COUNT: "+input);
+                System.out.println("error with checksum! invalid operator!\n------DETAILS------\n[OPERATOR] "+operator+"\n[TARGET FAR/LOST COUNT] "+target+"\n[INPUT COUNT] "+input);
                 break;
-
         }
-        if(input<0||target<0){
-            System.out.println("error with checksum! invalid target/input!");
-            System.out.println("------DETAILS------");
-            System.out.println("OPERATOR: "+operator);
-            System.out.println("TARGET FAR/LOST COUNT: "+target);
-            System.out.println("INPUT COUNT: "+input);
-        }
+        if(input<0||target<0){System.out.println("error with checksum! invalid target/input!\n------DETAILS------\n[OPERATOR] "+operator+"\n[TARGET FAR/LOST COUNT] "+target+"\n[INPUT COUNT] "+input);}
         return result;
     }
     
@@ -116,12 +106,11 @@ public class scoreCalc extends scoreDisplay{
     //if you specify toa is the selected partner, it will make sure the non-pure notes are less than 60.
     public static boolean toaCheck(boolean toa, int impure){
         boolean result = true;
-        if(toa==true){
+        if(toa){
             if(impure>60){
                 result = false;
             }
-        }
-        return result;
+        }return result;
     }
     public static boolean legitimacyCheck(int pure, int far, int miss, int combo, double score, boolean toa, int impure){
         //init var
@@ -129,18 +118,10 @@ public class scoreCalc extends scoreDisplay{
         score = (int)score;
         boolean result = false;
 
-        //checks if all the values are positive integers and that it all adds up to the total combo. both of these need to be true or the score doesnt display
+        //checks if all the values are positive integers and that it all adds up to the total combo. both of these need to be true or the score doesn't display
         if(pure >= 0&&far >=0 &&miss>=0&&total==combo&&score<=10000000&&toaCheck(toa, impure)){
             result = true;
-        }else{
-            System.out.println("error with legitimacy checksum!");
-            System.out.println("------DETAILS------");
-            System.out.println("PURE: Is PURE a valid positive number? "+(pure >= 0)+" PURE count: "+pure);
-            System.out.println("FAR: Is FAR a valid positive number? "+(far >= 0)+" FAR count: "+far);
-            System.out.println("LOST: Is LOST a valid positive number? "+(miss >= 0)+" LOST count: "+miss);
-            System.out.println("Score: Is score equal/less than 10,000,000? "+(score<=10000000)+" Score: "+miss);
-            System.out.println("Toa Kozukata: Is Toa enabled? "+toa+" FAR+LOST count: "+impure+" toaCheck status"+toaCheck(toa, impure));
-        }
+        }else{System.out.println("error with legitimacy checksum!\n------DETAILS------\n[PURE] Is PURE a valid positive number? "+(pure >= 0)+" PURE count: "+pure+"\n[FAR] Is FAR a valid positive number? "+(far >= 0)+" FAR count: "+far+"\n[LOST] Is LOST a valid positive number? "+(miss >= 0)+" LOST count: "+miss+"\n[Score] Is score equal/less than 10,000,000? "+(score<=10000000)+" Score: "+miss+"\n[Toa Kozukata] Is Toa enabled? "+toa+" FAR+LOST count: "+impure+" toaCheck status"+toaCheck(toa, impure));}
         return result;
     }
 }

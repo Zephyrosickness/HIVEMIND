@@ -2,9 +2,9 @@
 public class pttCalc extends pttDisplay {
     public static void calc(double targetRating, double targetCC, String scoreString, String ratingOp, String ccOp, String scoreOp){
 //vars
-        int finalScore = 0;
-        double finalCC = 0;
-        double finalRating = 0;
+        int finalScore;
+        double finalCC;
+        double finalRating;
         int targetScore = Integer.parseInt(scoreString);
 
         //gets length of score. then adds 0's until it hits 7 digits (so 99 = 9,900,000)
@@ -14,7 +14,7 @@ public class pttCalc extends pttDisplay {
             targetScore = 10000000;
         }else{
             for(; length<7; length++){
-                scoreString = scoreString+"0";
+                scoreString += "0";
                 targetScore = Integer.parseInt(scoreString);
             }
         }
@@ -27,7 +27,7 @@ public class pttCalc extends pttDisplay {
         //runs through every combo of score/chart constant and calculates play rating. if the rating, cc, and score all fall within criteria, display on the scroll panel
         for(finalScore = 9000000; finalScore<=10000000; finalScore+=5000){
             for(finalCC=7; finalCC<=11.3; finalCC+=0.1){
-                finalRating = reversePttCalc(finalScore, finalCC, targetRating);
+                finalRating = reversePttCalc(finalScore, finalCC);
                 finalCC = round(finalCC);
 
                 //checks
@@ -45,19 +45,19 @@ public class pttCalc extends pttDisplay {
 
 
     //more info: go to the arcaea wiki and look up "potential"
-    public static double reversePttCalc(double score, double CC, double targetRating){
+    public static double reversePttCalc(double score, double CC){
         double modifier;
         if(score>=10000000){
             modifier = 2;
-        }else if(score>=9800000&&score<=9999999&&score!=10000000){
+        }else if(score>=9800000&&score<=9999999){
             modifier = 1+((score-9800000)/200000);
         }else{
             modifier = (score-9500000)/300000;
         }
 
-        //error check to make sure its not a negative value and rounds if its positive.
-        //raw is the unrounded, raw play rating. the code rounds it to the 2nd decimal place because if i didnt do this then it would be like 500 lines long
-        double raw = CC+modifier;;
+        //error check to make sure it's not a negative value and rounds if its positive.
+        //raw is the un-rounded, raw play rating. the code rounds it to the 2nd decimal place because if I didn't do this then it would be like 500 lines long
+        double raw = CC+modifier;
 
         if(raw<=0){
             return 0;
@@ -68,20 +68,11 @@ public class pttCalc extends pttDisplay {
 
     public static double round(double value){
         double scale = Math.pow(10, 3);
-        double result = Math.round(value * scale) / scale;
-        return result;
+        return Math.round(value * scale) / scale;
     }
 
-    public static boolean legitimacyCheck(double score, double CC, double targetRating){
-        boolean result;
-
-        //checks if all the values are positive integers and that it all adds up to the total combo. both of these need to be true or the score doesnt display
-        if(score >= 0&&cc <=11.3 &&targetRating>=0&&score<=10000000){
-            result = true;
-        }else{
-            result = false;
-        }
-        return result;
+    public static boolean legitimacyCheck(double score, double cc, double targetRating){
+        return score >= 0 && cc <= 11.3 && targetRating >= 0 && score <= 10000000;
     }
 
     //checks input meets the operators
@@ -107,20 +98,12 @@ public class pttCalc extends pttDisplay {
                 result = true;
                 break;
             default:
-                System.out.println("error with checksum! invalid operator!");
-                System.out.println("------DETAILS------");
-                System.out.println("OPERATOR: "+operator);
-                System.out.println("TARGET FAR/LOST COUNT: "+target);
-                System.out.println("INPUT COUNT: "+input);
+                System.out.printf("error with checksum! invalid operator!\n------DETAILS------\nOPERATOR: %.2s\nTARGET FAR/LOST COUNT: %.2f\nINPUT COUNT: %.2f", operator, target, input);
                 break;
 
         }
         if(input<0||target<0){
-            System.out.println("error with checksum! invalid target/input!");
-            System.out.println("------DETAILS------");
-            System.out.println("OPERATOR: "+operator);
-            System.out.println("TARGET FAR/LOST COUNT: "+target);
-            System.out.println("INPUT COUNT: "+input);
+            System.out.printf("error with checksum! invalid input/target!\n------DETAILS------\nOPERATOR: %.2s\nTARGET FAR/LOST COUNT: %.2f\nINPUT COUNT: %.2f", operator, target, input);
         }
         return result;
     }
