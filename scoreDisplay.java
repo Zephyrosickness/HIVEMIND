@@ -74,7 +74,7 @@ public class scoreDisplay extends Database {
     }
 
     //panel to hold components
-    public static void songInfoComponents(JPanel panel, JPanel scorePanel) {
+    private static void songInfoComponents(JPanel panel, JPanel scorePanel) {
 
         // set the layout manager to null for absolute positioning
         panel.setLayout(null);
@@ -335,6 +335,7 @@ public class scoreDisplay extends Database {
 
     //refreshes song data
     private static void refresh(String selected, JLabel imageLabel, JLabel noteCount, JLabel chartConstant, String difficulty) {
+        songAttributes(selected);
 
         //sets up jacket
         String check = jacketCheck(selected);
@@ -369,7 +370,7 @@ public class scoreDisplay extends Database {
             System.out.println("Error reading image!\n------DETAILS------\nERROR DETAILS: "+e.getMessage()+"JACKET: "+jacket);
         }
 
-        songAttributes(selected);
+
         //update constant/combo
         noteCount.setText("Max Combo: " + combo);
         chartConstant.setText("Chart Constant: " + cc);
@@ -378,12 +379,12 @@ public class scoreDisplay extends Database {
 
     //i dont remember how this works
     //genuinely i dont
-    public static class ScoreTextArea extends JTextArea {
+    protected static class ScoreTextArea extends JTextArea {
         double score;
         double far;
         double miss;
 
-        public ScoreTextArea(String text, double score, int far, int miss) {
+        private ScoreTextArea(String text, double score, int far, int miss) {
             //variables for each score container
             super(text);
             this.score = score;
@@ -395,18 +396,18 @@ public class scoreDisplay extends Database {
             //setMaximumSize(new Dimension(300, 60));
         }
 
-        public double getScore() {
+        private double getScore() {
             return score;
         }
-        public int getFar() {
+        private int getFar() {
             return (int)far;
         }
-        public int getMiss() {
+        private int getMiss() {
             return (int)miss;
         }
     }
 
-    public static void importComponent(double score, int pure, int far, int miss, double rating){
+    protected static void importComponent(double score, int pure, int far, int miss, double rating){
         //adds judgement data and score to array
         String text = "Score: " + (int) score + "\nPURE: " + pure + "\nFAR: " + far + "\nLOST: " + miss +"\nPlay Rating: "+rating;
         ScoreTextArea textArea = new ScoreTextArea(text, score, far, miss);
@@ -414,7 +415,7 @@ public class scoreDisplay extends Database {
 
     }
 
-    protected static void songAttributes(String selected){
+    private static void songAttributes(String selected){
         Chart selectedChartObject = chartMap.get(selected);
 
         cc = selectedChartObject.cc;

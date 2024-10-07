@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9f0de1c-4710-4440-90a5-9fa7cd7f1cd9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/utilities.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pttCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/pttCalc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pttDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/pttDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scoreCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/scoreCalc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scoreDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/scoreDisplay.java" afterDir="false" />
     </list>
@@ -47,6 +49,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2kjzbRojqV9lNaub1zc7XkgwiWM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
