@@ -5,7 +5,6 @@ import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -80,7 +79,7 @@ public class scoreDisplay extends Database {
         // set the layout manager to null for absolute positioning
         panel.setLayout(null);
 
-        ///LABELS
+        //LABELS
 
         //chart info/select labels --
 
@@ -203,7 +202,7 @@ public class scoreDisplay extends Database {
         ccMax.setBounds(235, 450, 25, 25);
         panel.add(ccMax);
 
-        ///BUTTONS--
+        //BUTTONS--
 
         //checkbox if ur using that bitch from spiders thread
         JCheckBox toa = new JCheckBox("Using Toa Kozukata");
@@ -300,7 +299,8 @@ public class scoreDisplay extends Database {
              */
 
             System.out.println("run");
-            scoreCalc.calcScore(minScore, far, miss, farOp, missOp, toaStatus);
+
+            scoreCalc.calcScore(minScore, far, miss, farOp, missOp, toaStatus, cc, combo);
 
             //sort results based on the sort option
             switch((String) Objects.requireNonNull(sorter.getSelectedItem())) {
@@ -334,7 +334,7 @@ public class scoreDisplay extends Database {
 
 
     //refreshes song data
-    public static void refresh(String selected, JLabel imageLabel, JLabel noteCount, JLabel chartConstant, String difficulty) {
+    private static void refresh(String selected, JLabel imageLabel, JLabel noteCount, JLabel chartConstant, String difficulty) {
 
         //sets up jacket
         String check = jacketCheck(selected);
@@ -353,13 +353,6 @@ public class scoreDisplay extends Database {
             }
         }
 
-        Chart selectedChartObject = chartMap.get(selected);
-
-        double cc = selectedChartObject.cc;
-        int combo = selectedChartObject.combo;
-
-
-        //TODO: ALTER EGO gives exception pointer error
         try {
             BufferedImage img = ImageIO.read(jacket);
 
@@ -376,6 +369,7 @@ public class scoreDisplay extends Database {
             System.out.println("Error reading image!\n------DETAILS------\nERROR DETAILS: "+e.getMessage()+"JACKET: "+jacket);
         }
 
+        songAttributes(selected);
         //update constant/combo
         noteCount.setText("Max Combo: " + combo);
         chartConstant.setText("Chart Constant: " + cc);
@@ -417,6 +411,14 @@ public class scoreDisplay extends Database {
         String text = "Score: " + (int) score + "\nPURE: " + pure + "\nFAR: " + far + "\nLOST: " + miss +"\nPlay Rating: "+rating;
         ScoreTextArea textArea = new ScoreTextArea(text, score, far, miss);
         scoreTextArray.add(textArea);
+
+    }
+
+    protected static void songAttributes(String selected){
+        Chart selectedChartObject = chartMap.get(selected);
+
+        cc = selectedChartObject.cc;
+        combo = selectedChartObject.combo;
 
     }
 }

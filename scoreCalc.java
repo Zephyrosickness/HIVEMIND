@@ -1,5 +1,5 @@
 public class scoreCalc extends scoreDisplay{
-    public static void calcScore(String scoreString, int inputFar, int inputMiss, String farOp, String missOp, boolean toa){
+    public static void calcScore(String scoreString, int inputFar, int inputMiss, String farOp, String missOp, boolean toa, double cc, int combo){
 
         //init var
 
@@ -12,8 +12,10 @@ public class scoreCalc extends scoreDisplay{
         double scoreFinal;
         //these threshold variables exist because I mean I don't think anyone is going to care about your score if you get like 500 fars or whatever
         //it just eliminates unecessary scores and speeds up the process
-        int farThreshold = Math.round((float) combo /10);
-        int missThreshold = Math.round((float) combo /10);
+        double comboDouble = (double)combo;
+        int farThreshold = (int) (comboDouble /10);
+        int missThreshold = (int) (comboDouble /10);
+        System.out.println(combo);
 
         //gets length of score. then adds 0's until it hits 7 digits (so 99 = 9,900,000)
         //if score starts with 1, then it be set to 10,000,000 (pure memory)
