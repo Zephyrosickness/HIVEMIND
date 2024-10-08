@@ -1,7 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import javax.swing.UIManager.LookAndFeelInfo;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -14,11 +12,10 @@ import java.util.Objects;
 public class pttDisplay {
     //init var
     public static List<ScoreTextArea> scoreTextArray = new ArrayList<>();
-    public static double cc;
     public static JPanel ratingPanel;
    //public static List<ScoreTextArea> pttTextArray = new ArrayList<>();
 
-    //ppl keep saying static vars are bad and i mean thats probably true because of something something nerd stuff idk about but um im bad at coding sorry
+    //ppl keep saying static vars are bad and I mean that's probably true because of something something nerd stuff idk about but um im bad at coding sorry
     public static void init() {
         //changes l&f to windows classic because im a basic bitch like that
         try {
@@ -69,7 +66,7 @@ public class pttDisplay {
     public static void panelAdd(JPanel panel, JPanel ratingPanel) {
 
 
-        ///LABELS
+        //LABELS
 
 
         //label for rating filter
@@ -156,7 +153,7 @@ public class pttDisplay {
         scoreField.setBounds(119, 85, 25, 25);
         panel.add(scoreField);
 
-        ///BUTTONS
+        //BUTTONS
 
         //button to run score calcs
         JButton run = new JButton("Find scores");
@@ -221,7 +218,7 @@ public class pttDisplay {
 
     //holds data for each play listing
 
-    //i dont remember what this does, genuinely
+    //I don't remember what this does, genuinely
     public static class ScoreTextArea extends JTextArea {
         private final int score;
         private final double cc;

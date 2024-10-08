@@ -5,7 +5,6 @@ import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -75,12 +74,12 @@ public class scoreDisplay extends Database {
     }
 
     //panel to hold components
-    public static void songInfoComponents(JPanel panel, JPanel scorePanel) {
+    private static void songInfoComponents(JPanel panel, JPanel scorePanel) {
 
         // set the layout manager to null for absolute positioning
         panel.setLayout(null);
 
-        ///LABELS
+        //LABELS
 
         //chart info/select labels --
 
@@ -203,7 +202,7 @@ public class scoreDisplay extends Database {
         ccMax.setBounds(235, 450, 25, 25);
         panel.add(ccMax);
 
-        ///BUTTONS--
+        //BUTTONS--
 
         //checkbox if ur using that bitch from spiders thread
         JCheckBox toa = new JCheckBox("Using Toa Kozukata");
@@ -299,7 +298,9 @@ public class scoreDisplay extends Database {
              * I DID NOW IT'S WAY SHORTER AND IN ITS OWN CLASS I'M SUCH A GENIUS I'M LITERALLY A PRODIGY OH MY GOD
              */
 
-            scoreCalc.calcScore(minScore, far, miss, farOp, missOp, toaStatus);
+            System.out.println("run");
+
+            scoreCalc.calcScore(minScore, far, miss, farOp, missOp, toaStatus, cc, combo);
 
             //sort results based on the sort option
             switch((String) Objects.requireNonNull(sorter.getSelectedItem())) {
@@ -332,16 +333,15 @@ public class scoreDisplay extends Database {
     }
 
 
-    //TODO: bassbook gives invalidPathException (due to the ? in the songtitle, even though it already parses through the checkMethod
     //refreshes song data
-    public static void refresh(String selected, JLabel imageLabel, JLabel noteCount, JLabel chartConstant, String difficulty) {
+    private static void refresh(String selected, JLabel imageLabel, JLabel noteCount, JLabel chartConstant, String difficulty) {
+        songAttributes(selected);
 
         //sets up jacket
         String check = jacketCheck(selected);
 
         Path path = Paths.get("./assets/"+check+".jpg");
         Path pathBYD = Paths.get("./assets/"+check+"_byd"+".jpg");
-        System.out.println(path);
 
         File jacket = new File(path.toString());
 
@@ -354,13 +354,6 @@ public class scoreDisplay extends Database {
             }
         }
 
-        Chart selectedChartObject = chartMap.get(selected);
-
-        cc = selectedChartObject.cc;
-        combo = selectedChartObject.combo;
-
-
-        //TODO: ALTER EGO gives exception pointer error
         try {
             BufferedImage img = ImageIO.read(jacket);
 
@@ -377,6 +370,7 @@ public class scoreDisplay extends Database {
             System.out.println("Error reading image!\n------DETAILS------\nERROR DETAILS: "+e.getMessage()+"JACKET: "+jacket);
         }
 
+
         //update constant/combo
         noteCount.setText("Max Combo: " + combo);
         chartConstant.setText("Chart Constant: " + cc);
@@ -385,12 +379,12 @@ public class scoreDisplay extends Database {
 
     //i dont remember how this works
     //genuinely i dont
-    public static class ScoreTextArea extends JTextArea {
+    protected static class ScoreTextArea extends JTextArea {
         double score;
         double far;
         double miss;
 
-        public ScoreTextArea(String text, double score, int far, int miss) {
+        private ScoreTextArea(String text, double score, int far, int miss) {
             //variables for each score container
             super(text);
             this.score = score;
@@ -402,22 +396,30 @@ public class scoreDisplay extends Database {
             //setMaximumSize(new Dimension(300, 60));
         }
 
-        public double getScore() {
+        private double getScore() {
             return score;
         }
-        public int getFar() {
+        private int getFar() {
             return (int)far;
         }
-        public int getMiss() {
+        private int getMiss() {
             return (int)miss;
         }
     }
 
-    public static void importComponent(double score, int pure, int far, int miss, double rating){
+    protected static void importComponent(double score, int pure, int far, int miss, double rating){
         //adds judgement data and score to array
         String text = "Score: " + (int) score + "\nPURE: " + pure + "\nFAR: " + far + "\nLOST: " + miss +"\nPlay Rating: "+rating;
         ScoreTextArea textArea = new ScoreTextArea(text, score, far, miss);
         scoreTextArray.add(textArea);
+
+    }
+
+    private static void songAttributes(String selected){
+        Chart selectedChartObject = chartMap.get(selected);
+
+        cc = selectedChartObject.cc;
+        combo = selectedChartObject.combo;
 
     }
 }

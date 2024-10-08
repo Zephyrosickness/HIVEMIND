@@ -1,6 +1,6 @@
 
 public class pttCalc extends pttDisplay {
-    public static void calc(double targetRating, double targetCC, String scoreString, String ratingOp, String ccOp, String scoreOp){
+    protected static void calc(double targetRating, double targetCC, String scoreString, String ratingOp, String ccOp, String scoreOp){
 //vars
         int finalScore;
         double finalCC;
@@ -28,15 +28,13 @@ public class pttCalc extends pttDisplay {
         for(finalScore = 9000000; finalScore<=10000000; finalScore+=5000){
             for(finalCC=7; finalCC<=11.3; finalCC+=0.1){
                 finalRating = reversePttCalc(finalScore, finalCC);
-                finalCC = round(finalCC);
+                finalCC = utilities.round(finalCC);
 
                 //checks
-                boolean ratingCheck = check(finalRating, targetRating, ratingOp);
-                boolean scoreCheck = check(finalScore, targetScore, scoreOp);
-                boolean ccCheck = check(finalCC, targetCC, ccOp);
-                boolean legit = legitimacyCheck(finalScore, finalCC, finalRating);
-
-                if(ccCheck&&scoreCheck&&ratingCheck&&legit){
+                boolean ratingCheck = utilities.check(finalRating, targetRating, ratingOp);
+                boolean scoreCheck = utilities.check(finalScore, targetScore, scoreOp);
+                boolean ccCheck = utilities.check(finalCC, targetCC, ccOp);
+                if(ccCheck&&scoreCheck&&ratingCheck){
                     pttDisplay.importComponent(finalScore, finalRating, finalCC);
                 }
             }
@@ -45,7 +43,7 @@ public class pttCalc extends pttDisplay {
 
 
     //more info: go to the arcaea wiki and look up "potential"
-    public static double reversePttCalc(double score, double CC){
+    protected static double reversePttCalc(double score, double CC){
         double modifier;
         if(score>=10000000){
             modifier = 2;
@@ -62,49 +60,29 @@ public class pttCalc extends pttDisplay {
         if(raw<=0){
             return 0;
         }else{
-            return round(raw);
+            return utilities.round(raw);
         }
     }
 
-    public static double round(double value){
-        double scale = Math.pow(10, 3);
-        return Math.round(value * scale) / scale;
-    }
-
-    public static boolean legitimacyCheck(double score, double cc, double targetRating){
-        return score >= 0 && cc <= 11.3 && targetRating >= 0 && score <= 10000000;
-    }
-
-    //checks input meets the operators
-    public static boolean check(double input, double target, String operator){
-        boolean result = false;
-        switch(operator){
-            case "=":
-                if(input==target){
-                    result = true;
-                }
-                break;
-            case ">":
-                if(input>target){
-                    result=true;
-                }
-                break;
-            case "<":
-                if(input<target){
-                    result = true;
-                }
-                break;
-            case "Any":
-                result = true;
-                break;
-            default:
-                System.out.printf("error with checksum! invalid operator!\n------DETAILS------\nOPERATOR: %.2s\nTARGET FAR/LOST COUNT: %.2f\nINPUT COUNT: %.2f", operator, target, input);
-                break;
-
+    //calculates play rating and returns as double. not much to say besides if u need more info u can find it here https://arcaea.fandom.com/wiki/Potential
+    protected static double calcPTT(double score, double cc){
+        double modifier;
+        if(score==10000000){
+            modifier = 2;
+        }else if(score>=9800000&&score<=9999999){
+            modifier = 1+((score-9800000)/200000);
+        }else{
+            modifier = (score-9500000)/300000;
         }
-        if(input<0||target<0){
-            System.out.printf("error with checksum! invalid input/target!\n------DETAILS------\nOPERATOR: %.2s\nTARGET FAR/LOST COUNT: %.2f\nINPUT COUNT: %.2f", operator, target, input);
+
+        //error check to make sure it's not a negative value and rounds if its positive.
+        //raw is the unrounded, raw play rating. the code rounds it to the 2nd decimal place because if I didn't do this then it would be like 500 lines long
+        double raw = cc + modifier;
+        if(raw<=0){
+            return 0;
+        }else{
+            double scale = Math.pow(10, 2);
+            return Math.round(raw * scale) / scale;
         }
-        return result;
     }
 }
