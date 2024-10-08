@@ -52,15 +52,14 @@ public class Database {
         private void initialize() {
             chartNames.clear(); chartNamesBYD.clear(); allCharts.clear(); allChartsBYD.clear(); //clear all listings to prevent stacking
             
-            //TODO: add line breaks for each starting letter to make it easier to read
-            new Chart(" ͟͝͞Ⅱ́̕", 1051, 10.8, "FTR");
-            new Chart("[X]", 1190, 10.4, "FTR");
-            new Chart("#1f1e33", 1576, 10.9, "FTR");
-            new Chart("〇、", 708, 9.5, "FTR");
-            new Chart("10pt8ion (Eternal)", 1087, 10.4, "FTR");
+            //#
+
             new Chart("10pt8ion", 906, 9.7, "FTR");
             new Chart("7thSense", 925, 9.9, "FTR");
             new Chart("99 Glooms", 1294, 10.3, "FTR");
+
+            //A
+
             new Chart("A Wandering Melody of Love", 931, 9.6, "FTR");
             new Chart("Abstruse Dilemma", 1467, 11.1, "FTR");
             new Chart("Aegleseeker", 1568, 11.1, "FTR");
@@ -73,7 +72,6 @@ public class Database {
             new Chart("Alone & Lorn", 970, 9.6, "FTR");
             new Chart("Altair (feat. *spiLa*)", 830, 8.5, "FTR");
             new Chart("Altale", 690, 9.7, "FTR");
-            new Chart("ALTER EGO (Eternal)", 1644, 11.2, "FTR");
             new Chart("ALTER EGO", 1466, 10.5, "FTR");
             new Chart("AlterAle", 1277, 9.7, "FTR");
             new Chart("AMAZING MIGHTYYYY!!!!", 1249, 10.7, "FTR");
@@ -97,6 +95,9 @@ public class Database {
             new Chart("Ävril -Flicka i krans-", 851, 8.3, "FTR");
             new Chart("Awaken In Ruins", 754, 9.9, "FTR");
             new Chart("Axium Crisis", 1094, 10.7, "FTR");
+
+            //B
+
             new Chart("B.B.K.K.B.K.K.", 976, 9.7, "FTR");
             new Chart("Babaroque", 808, 8.5, "FTR");
             new Chart("Back to Basics", 1544, 10.5, "FTR");
@@ -119,6 +120,9 @@ public class Database {
             new Chart("Brand new world", 787, 7.8, "FTR");
             new Chart("BUCHiGiRE Berserker", 1412, 10.9, "FTR");
             new Chart("Bullet Waiting for Me (James Landino remix)", 701, 8.1, "FTR");
+
+            //C
+
             new Chart("Call My Name feat. Yukacco", 921, 8.7, "FTR");
             new Chart("Callima Karma", 1222, 9.8, "FTR");
             new Chart("Can I friend you on Bassbook? lol", 861, 9.3, "FTR");
@@ -130,7 +134,6 @@ public class Database {
             new Chart("Chronicle", 1264, 10.4, "FTR");
             new Chart("Chronostasis", 916, 8.9, "FTR");
             new Chart("Climax", 1367, 10.4, "FTR");
-            new Chart("Clotho and the stargazer (Eternal)", 1031, 8.8, "FTR");
             new Chart("Clotho and the stargazer", 1021, 7.8, "FTR");
             new Chart("Coastal Highway", 732, 9, "FTR");
             new Chart("cocoro*cosmetic", 1025, 9.2, "FTR");
@@ -148,6 +151,9 @@ public class Database {
             new Chart("cyanine", 1171, 10.6, "FTR");
             new Chart("Cybernecia Catharsis", 946, 9.5, "FTR");
             new Chart("CYCLES", 695, 8.8, "FTR");
+
+            //D
+
             new Chart("Dancin' on a Cat's Paw", 891, 9.2, "FTR");
             new Chart("Dandelion", 921, 8.5, "FTR");
             new Chart("Dantalion", 1476, 10.9, "FTR");
@@ -156,12 +162,10 @@ public class Database {
             new Chart("DDD", 653, 8.5, "FTR");
             new Chart("Defection", 1141, 9.8, "FTR");
             new Chart("Dement ~after legend~", 970, 7.8, "FTR");
-            new Chart("Désive (Eternal)", 1340, 10.8, "FTR");
             new Chart("Désive", 1273, 9.9, "FTR");
             new Chart("Devillic Sphere", 1129, 9.9, "FTR");
             new Chart("Dialnote", 684, 8.8, "FTR");
             new Chart("Diode", 709, 8.1, "FTR");
-            new Chart("Distorted Fate (Eternal)", 1402, 10.9, "FTR");
             new Chart("Distorted Fate", 1172, 9.6, "FTR");
             new Chart("Distortion Human", 1317, 9.8, "FTR");
             new Chart("Divine Light of Myriad", 1021, 10.8, "FTR");
@@ -173,6 +177,9 @@ public class Database {
             new Chart("dropdead", 823, 9.1, "FTR");
             new Chart("DX Choseinou Full Metal Shojo", 808, 9.8, "FTR");
             new Chart("Dynitikós", 986, 9.5, "FTR");
+
+            //E
+
             new Chart("Eccentric Tale", 732, 8.4, "FTR");
             new Chart("eden", 1365, 10.5, "FTR");
             new Chart("Ego Eimi", 1223, 10.5, "FTR");
@@ -185,6 +192,9 @@ public class Database {
             new Chart("Ether Strike", 1170, 10.3, "FTR");
             new Chart("Evening in Scarlet", 922, 9.5, "FTR");
             new Chart("Evoltex (poppi'n mix)", 775, 8.9, "FTR");
+
+            //F
+
             new Chart("Faint Light (Arcaea Edit)", 809, 9.1, "FTR");
             new Chart("Fairytale", 782, 7, "FTR");
             new Chart("Fallensquare", 703, 9.6, "FTR");
@@ -204,6 +214,9 @@ public class Database {
             new Chart("Fracture Ray", 1279, 11.3, "FTR");
             new Chart("Free Myself", 1132, 10, "FTR");
             new Chart("FREEF4LL", 1023, 8.6, "FTR");
+
+            //G
+
             new Chart("G e n g a o z o", 1353, 10.2, "FTR");
             new Chart("Galactic Love", 813, 9, "FTR");
             new Chart("Galaxy Friends", 1013, 9.8, "FTR");
@@ -212,7 +225,6 @@ public class Database {
             new Chart("Genesis (CHUNITHM)", 713, 8.2, "FTR");
             new Chart("Genesis", 713, 8.2, "FTR");
             new Chart("GENOCIDER", 1483, 10.7, "FTR");
-            new Chart("Gensou no Satellite (Eternal)", 1139, 10.1, "FTR");
             new Chart("Gensou no Satellite", 992, 8.7, "FTR");
             new Chart("GIMME DA BLOOD", 1093, 10.4, "FTR");
             new Chart("GIMMICK", 733, 9.5, "FTR");
@@ -225,6 +237,9 @@ public class Database {
             new Chart("Got hive of Ra", 794, 9.8, "FTR");
             new Chart("Grievous Lady", 1450, 11.3, "FTR");
             new Chart("Grimheart", 959, 8.7, "FTR");
+
+            //H
+
             new Chart("Halcyon", 1227, 10.7, "FTR");
             new Chart("Hall of Mirrors", 898, 8.2, "FTR");
             new Chart("Harutopia ~Utopia of Spring~", 1061, 8.5, "FTR");
@@ -234,9 +249,7 @@ public class Database {
             new Chart("Heart", 872, 9.3, "FTR");
             new Chart("Heavenly caress", 1560, 9.8, "FTR");
             new Chart("Heavensdoor", 1101, 9.9, "FTR");
-            new Chart("HELLOHELL (Eternal)", 770, 9.4, "FTR");
             new Chart("HELLOHELL", 673, 7.5, "FTR");
-            new Chart("Hidden Rainbows of Epicurus (Eternal)", 884, 8.8, "FTR");
             new Chart("Hidden Rainbows of Epicurus", 783, 7.5, "FTR");
             new Chart("Hiiro Gekka, Kyoushou no Zetsu (nayuta 2017 ver.)", 1126, 10.3, "FTR");
             new Chart("Hikari", 684, 8.1, "FTR");
@@ -244,8 +257,10 @@ public class Database {
             new Chart("Hotarubi no Yuki", 991, 9.7, "FTR");
             new Chart("Hybris (The one who shattered)", 1196, 9.8, "FTR");
             new Chart("HYPER VISION", 1040, 9.8, "FTR");
-            new Chart("Hypnotize (Eternal)", 1164, 9.9, "FTR");
             new Chart("Hypnotize", 993, 8.9, "FTR");
+
+            //I
+
             new Chart("I've heard it said", 864, 8.1, "FTR");
             new Chart("Iconoclast", 795, 9.1, "FTR");
             new Chart("Ignotus", 1225, 9.3, "FTR");
@@ -257,25 +272,31 @@ public class Database {
             new Chart("Infinity Heaven", 853, 7.8, "FTR");
             new Chart("init()", 1204, 9.8, "FTR");
             new Chart("inkar-usi", 463, 7.8, "FTR");
-            new Chart("Innocence (Eternal)", 1157, 9.7, "FTR");
+
             new Chart("Innocence", 1023, 8.5, "FTR");
             new Chart("INTERNET OVERDOSE", 657, 8.4, "FTR");
             new Chart("INTERNET YAMERO", 1222, 9.9, "FTR");
-            new Chart("Inverted World (Eternal)", 1065, 10.7, "FTR");
             new Chart("Inverted World", 940, 9.5, "FTR");
-            new Chart("IONOSTREAM (Eternal)", 871, 9.7, "FTR");
             new Chart("IONOSTREAM", 818, 8.7, "FTR");
             new Chart("IZANA", 976, 10.3, "FTR");
-            new Chart("Jingle (Eternal)", 1047, 9.5, "FTR");
+
+            //J
+
             new Chart("Jingle", 848, 7.8, "FTR");
             new Chart("Journey", 997, 9.1, "FTR");
             new Chart("Judgement", 1432, 10.4, "FTR");
             new Chart("Jump", 841, 9, "FTR");
+
+            //K
+
             new Chart("Kanagawa Cyber Culvert", 1111, 9, "FTR");
             new Chart("Kanbu de Tomatte Sugu Tokeru", 1108, 10, "FTR");
             new Chart("Kanjou no Matenrou ～Arr.Demetori", 1294, 9.8, "FTR");
             new Chart("Kissing Lucifer", 1183, 10.4, "FTR");
             new Chart("KYOREN ROMANCE", 1519, 10.7, "FTR");
+
+            //L
+
             new Chart("La'qryma of the Wasteland", 956, 9.1, "FTR");
             new Chart("LAMIA", 1385, 10.9, "FTR");
             new Chart("Lapis", 920, 9.4, "FTR");
@@ -308,6 +329,9 @@ public class Database {
             new Chart("Lumia", 961, 8.4, "FTR");
             new Chart("Luna Rossa", 920, 9.7, "FTR");
             new Chart("LunarOrbit -believe in the Espebranch road-", 1058, 9.6, "FTR");
+
+            //M
+
             new Chart("Macrocosmic Modulation", 1117, 9.8, "FTR");
             new Chart("Magnolia", 895, 10.2, "FTR");
             new Chart("MAHOROBA", 828, 9.5, "FTR");
@@ -331,8 +355,9 @@ public class Database {
             new Chart("Monochrome Princess", 974, 9.7, "FTR");
             new Chart("Moonheart", 947, 8.4, "FTR");
             new Chart("Moonlight of Sand Castle", 645, 7.8, "FTR");
-            new Chart("MORNINGLOOM (Eternal)", 1035, 9.8, "FTR");
             new Chart("MORNINGLOOM", 940, 8.8, "FTR");
+            //N
+
             new Chart("Nameless Passion", 1223, 9.9, "FTR");
             new Chart("NEO WINGS", 1328, 10.2, "FTR");
             new Chart("New York Back Raise", 1091, 9.9, "FTR");
@@ -342,6 +367,9 @@ public class Database {
             new Chart("NULCTRL", 715, 9.5, "FTR");
             new Chart("NULL APOPHENIA", 1299, 10.6, "FTR");
             new Chart("nέo κósmo", 979, 9.7, "FTR");
+
+            //O
+
             new Chart("Oblivia", 956, 8.3, "FTR");
             new Chart("Old School Salvage", 1316, 9.8, "FTR");
             new Chart("OMAKENO Stroke", 869, 9.5, "FTR");
@@ -352,6 +380,9 @@ public class Database {
             new Chart("ouroboros -twin stroke of the end-", 1369, 10.7, "FTR");
             new Chart("Ouvertüre", 913, 9.8, "FTR");
             new Chart("Overwhelm", 1251, 10.6, "FTR");
+
+            //P
+
             new Chart("Paper Witch", 793, 8.7, "FTR");
             new Chart("Paradise", 729, 7.8, "FTR");
             new Chart("Particle Arts", 925, 8.8, "FTR");
@@ -367,10 +398,16 @@ public class Database {
             new Chart("PUPA", 1099, 10.4, "FTR");
             new Chart("Purgatorium", 983, 8.4, "FTR");
             new Chart("Purple Verse", 1023, 9.6, "FTR");
+
+            //Q
+
             new Chart("Qovat", 1299, 10.6, "FTR");
             new Chart("qualia -ideaesthesia-", 1022, 9.1, "FTR");
             new Chart("Quon (Feryquitous)", 991, 9.6, "FTR");
             new Chart("Quon", 749, 8.7, "FTR");
+
+            //R
+
             new Chart("Rabbit In The Black Room", 772, 8.4, "FTR");
             new Chart("Raven's Pride", 1030, 9.4, "FTR");
             new Chart("REconstruction", 825, 8.4, "FTR");
@@ -388,11 +425,13 @@ public class Database {
             new Chart("Rise", 788, 7.8, "FTR");
             new Chart("Romance Wars", 641, 7.8, "FTR");
             new Chart("Rugie", 975, 9.2, "FTR");
+
+            //S
+
             new Chart("SACRIFICE feat. ayame", 958, 9.7, "FTR");
             new Chart("SAIKYO STRONGER", 1384, 11, "FTR");
             new Chart("Sakura Fubuki", 837, 9.3, "FTR");
             new Chart("san skia", 1046, 8.3, "FTR");
-            new Chart("Sayonara Hatsukoi (Eternal)", 728, 8.5, "FTR");
             new Chart("Sayonara Hatsukoi", 666, 7, "FTR");
             new Chart("Scarlet Cage", 1195, 9.8, "FTR");
             new Chart("Scarlet Lance", 1130, 10.1, "FTR");
@@ -411,19 +450,20 @@ public class Database {
             new Chart("Specta", 1096, 9.5, "FTR");
             new Chart("Spider's Thread", 1203, 10.8, "FTR");
             new Chart("STAGER (ALL STAGE CLEAR)", 1004, 9.5, "FTR");
-            new Chart("STARGATE EXTREME (Eternal)", 915, 10.0, "FTR");
             new Chart("STARGATE EXTREME", 724, 9.3, "FTR");
             new Chart("Stasis", 1521, 10.7, "FTR");
             new Chart("Stratoliner", 877, 9.6, "FTR");
             new Chart("Strongholds", 922, 9.2, "FTR");
             new Chart("Sulfur", 1045, 9.7, "FTR");
             new Chart("Summer Fireworks of Love", 1088, 9.9, "FTR");
-            new Chart("Suomi (Eternal)", 732, 8.9, "FTR");
             new Chart("Suomi", 818, 7.8, "FTR");
             new Chart("SUPERNOVA", 1123, 9.7, "FTR");
             new Chart("Surrender", 925, 8.8, "FTR");
             new Chart("Syro", 1150, 9.3, "FTR");
             new Chart("syūten", 592, 8.5, "FTR");
+
+            //T
+
             new Chart("Technicolour", 1140, 9.8, "FTR");
             new Chart("Tempestissimo", 1254, 10.7, "FTR");
             new Chart("TEmPTaTiON", 1099, 10.9, "FTR");
@@ -445,12 +485,17 @@ public class Database {
             new Chart("Trrricksters!!", 1183, 10.1, "FTR");
             new Chart("Tsuki ni Murakumo, Hana ni Kaze", 740, 8.7, "FTR");
             new Chart("Turbocharger", 979, 9, "FTR");
-            new Chart("Twilight Concerto (Eternal)", 962, 10.4, "FTR");
             new Chart("Twilight Concerto", 803, 9.5, "FTR");
+
+            //U
+
             new Chart("Ultimate taste", 1405, 9.7, "FTR");
             new Chart("ultradiaxon-N3", 1228, 10.5, "FTR");
             new Chart("UNKNOWN LEVELS", 1149, 10.6, "FTR");
             new Chart("Used to be", 799, 9.2, "FTR");
+
+            //V
+
             new Chart("Valhalla:0", 1173, 10.4, "FTR");
             new Chart("Vandalism", 1087, 9.7, "FTR");
             new Chart("VECTOЯ", 1299, 9.4, "FTR");
@@ -460,6 +505,9 @@ public class Database {
             new Chart("Vivid Theory", 885, 8.8, "FTR");
             new Chart("Viyella's Tears", 1403, 10.3, "FTR");
             new Chart("Vulcanus", 1542, 10.9, "FTR");
+
+            //W
+
             new Chart("WAIT FOR DAWN", 861, 8.7, "FTR");
             new Chart("Wish Upon a Snow", 1309, 10.5, "FTR");
             new Chart("with U", 932, 9.4, "FTR");
@@ -467,16 +515,50 @@ public class Database {
             new Chart("World Fragments III(radio edit)", 1387, 9.8, "FTR");
             new Chart("World Vanquisher", 1452, 10.8, "FTR");
             new Chart("world.execute(me), ", 851, 8, "FTR");
+
+            //X
+
             new Chart("Xanatos", 1232, 10, "FTR");
             new Chart("Xeraphinite", 1048, 9.8, "FTR");
             new Chart("XTREME", 1258, 10.5, "FTR");
+
+            //Y
+
             new Chart("Yosakura Fubuki", 931, 9.4, "FTR");
             new Chart("Your voice so... feat. Such", 1013, 9.4, "FTR");
+
+            //SPECIAL CHARS
+
             new Chart("αterlβus", 1030, 10.2, "FTR");
             new Chart("γuarδina", 1120, 10.4, "FTR");
             new Chart("µ", 1256, 9.7, "FTR");
             new Chart("ΟΔΥΣΣΕΙΑ", 1092, 9.5, "FTR");
             new Chart("ω4", 1393, 10.8, "FTR");
+            new Chart("〇、", 708, 9.5, "FTR");
+            new Chart(" ͟͝͞Ⅱ́̕", 1051, 10.8, "FTR");
+            new Chart("[X]", 1190, 10.4, "FTR");
+            new Chart("#1f1e33", 1576, 10.9, "FTR");
+
+            //ETR
+
+            new Chart("10pt8ion (Eternal)", 1087, 10.4, "ETR");
+            new Chart("ALTER EGO (Eternal)", 1644, 11.2, "ETR");
+            new Chart("Clotho and the stargazer (Eternal)", 1031, 8.8, "ETR");
+            new Chart("Désive (Eternal)", 1340, 10.8, "ETR");
+            new Chart("Distorted Fate (Eternal)", 1402, 10.9, "ETR");
+            new Chart("Gensou no Satellite (Eternal)", 1139, 10.1, "ETR");
+            new Chart("HELLOHELL (Eternal)", 770, 9.4, "ETR");
+            new Chart("Hidden Rainbows of Epicurus (Eternal)", 884, 8.8, "ETR");
+            new Chart("Hypnotize (Eternal)", 1164, 9.9, "ETR");
+            new Chart("Innocence (Eternal)", 1157, 9.7, "ETR");
+            new Chart("Inverted World (Eternal)", 1065, 10.7, "ETR");
+            new Chart("IONOSTREAM (Eternal)", 871, 9.7, "ETR");
+            new Chart("Jingle (Eternal)", 1047, 9.5, "ETR");
+            new Chart("MORNINGLOOM (Eternal)", 1035, 9.8, "ETR");
+            new Chart("Sayonara Hatsukoi (Eternal)", 728, 8.5, "ETR");
+            new Chart("STARGATE EXTREME (Eternal)", 915, 10.0, "ETR");
+            new Chart("Suomi (Eternal)", 732, 8.9, "ETR");
+            new Chart("Twilight Concerto (Eternal)", 962, 10.4, "ETR");
 
             chartMaps();
         }

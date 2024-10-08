@@ -299,7 +299,6 @@ public class scoreDisplay extends Database {
              * I DID NOW IT'S WAY SHORTER AND IN ITS OWN CLASS I'M SUCH A GENIUS I'M LITERALLY A PRODIGY OH MY GOD
              */
 
-            System.out.println("run");
             scoreCalc.calcScore(minScore, far, miss, farOp, missOp, toaStatus);
 
             //sort results based on the sort option
@@ -333,6 +332,7 @@ public class scoreDisplay extends Database {
     }
 
 
+    //TODO: bassbook gives invalidPathException (due to the ? in the songtitle, even though it already parses through the checkMethod
     //refreshes song data
     public static void refresh(String selected, JLabel imageLabel, JLabel noteCount, JLabel chartConstant, String difficulty) {
 
@@ -341,6 +341,7 @@ public class scoreDisplay extends Database {
 
         Path path = Paths.get("./assets/"+check+".jpg");
         Path pathBYD = Paths.get("./assets/"+check+"_byd"+".jpg");
+        System.out.println(path);
 
         File jacket = new File(path.toString());
 
@@ -355,8 +356,8 @@ public class scoreDisplay extends Database {
 
         Chart selectedChartObject = chartMap.get(selected);
 
-        double cc = selectedChartObject.cc;
-        int combo = selectedChartObject.combo;
+        cc = selectedChartObject.cc;
+        combo = selectedChartObject.combo;
 
 
         //TODO: ALTER EGO gives exception pointer error

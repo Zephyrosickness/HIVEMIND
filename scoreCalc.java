@@ -12,8 +12,8 @@ public class scoreCalc extends scoreDisplay{
         double scoreFinal;
         //these threshold variables exist because I mean I don't think anyone is going to care about your score if you get like 500 fars or whatever
         //it just eliminates unecessary scores and speeds up the process
-        int farThreshold = Math.round((float) combo /10);
-        int missThreshold = Math.round((float) combo /10);
+        int farThreshold = combo /10;
+        int missThreshold = combo /5;
 
         //gets length of score. then adds 0's until it hits 7 digits (so 99 = 9,900,000)
         //if score starts with 1, then it be set to 10,000,000 (pure memory)
@@ -27,12 +27,9 @@ public class scoreCalc extends scoreDisplay{
             }
         }
         /*runs through every possible combination of far/lost notes, calculates the score and only prints out the ones that fufill the requirements*/
-        System.out.println("we are running,,, DEPTH1");
         //oh my god. this code used to be OVER 200 LINES LONG. it was the most UNREADABLE peice of SHIT I ever wrote. now it's 20 lines. im god. im a genius. greatest programmer ever
             for (farFinal = 0; farFinal<farThreshold; farFinal++) {
-                System.out.println("we are running,,,DEPTH2");
                 for (missFinal = 0; missFinal<missThreshold; missFinal++) {
-                    System.out.println("we are running,,,DEPTH3");
                     //calcs score. each PURE is 10,000,000 divided by max combo, and FAR is half of PURE
                     pureFinal = combo - (farFinal + missFinal);
                     scoreFinal = pureRaw * pureFinal + farRaw * farFinal;
