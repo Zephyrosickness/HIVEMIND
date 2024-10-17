@@ -1,4 +1,4 @@
-HIVEMIND is an all-in-one hub for various Arcaea projects.
+HIVEMIND is an all-in-one hub for various Arcaea projects I've made.
 ---
 Includes:
 Find all possible scores on a specified chart. Includes Score, FAR/LOST count, and Play Rating
