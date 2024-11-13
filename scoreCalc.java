@@ -28,12 +28,9 @@ public class scoreCalc extends scoreDisplay{
             }
         }
         /*runs through every possible combination of far/lost notes, calculates the score and only prints out the ones that fufill the requirements*/
-        System.out.println("we are running,,, DEPTH1");
         //oh my god. this code used to be OVER 200 LINES LONG. it was the most UNREADABLE peice of SHIT I ever wrote. now it's 20 lines. im god. im a genius. greatest programmer ever
             for (farFinal = 0; farFinal<farThreshold; farFinal++) {
-                System.out.println("we are running,,,DEPTH2");
                 for (missFinal = 0; missFinal<missThreshold; missFinal++) {
-                    System.out.println("we are running,,,DEPTH3");
                     //calcs score. each PURE is 10,000,000 divided by max combo, and FAR is half of PURE
                     pureFinal = combo - (farFinal + missFinal);
                     scoreFinal = pureRaw * pureFinal + farRaw * farFinal;

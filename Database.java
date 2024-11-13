@@ -268,7 +268,7 @@ public class Database {
             new Chart("Illegal Paradise", 1061, 9.5, "FTR");
             new Chart("IMPACT", 1231, 9.6, "FTR");
             new Chart("Impure Bird", 805, 9.4, "FTR");
-            new Chart("Infinite Strife, ", 1511, 9.9, "FTR");
+            new Chart("Infinite Strife,", 1511, 9.9, "FTR");
             new Chart("Infinity Heaven", 853, 7.8, "FTR");
             new Chart("init()", 1204, 9.8, "FTR");
             new Chart("inkar-usi", 463, 7.8, "FTR");
@@ -385,7 +385,6 @@ public class Database {
 
             new Chart("Paper Witch", 793, 8.7, "FTR");
             new Chart("Paradise", 729, 7.8, "FTR");
-            new Chart("Particle Arts", 925, 8.8, "FTR");
             new Chart("Party Vinyl", 800, 9.4, "FTR");
             new Chart("Pentiment", 1345, 10.3, "FTR");
             new Chart("Phantasia", 952, 9.2, "FTR");
@@ -432,6 +431,7 @@ public class Database {
             new Chart("SAIKYO STRONGER", 1384, 11, "FTR");
             new Chart("Sakura Fubuki", 837, 9.3, "FTR");
             new Chart("san skia", 1046, 8.3, "FTR");
+            new Chart("Saint or Sinner", 906, 8.8, "FTR");
             new Chart("Sayonara Hatsukoi", 666, 7, "FTR");
             new Chart("Scarlet Cage", 1195, 9.8, "FTR");
             new Chart("Scarlet Lance", 1130, 10.1, "FTR");
@@ -514,7 +514,7 @@ public class Database {
             new Chart("World Ender", 1225, 9.9, "FTR");
             new Chart("World Fragments III(radio edit)", 1387, 9.8, "FTR");
             new Chart("World Vanquisher", 1452, 10.8, "FTR");
-            new Chart("world.execute(me), ", 851, 8, "FTR");
+            new Chart("world.execute(me),", 851, 8, "FTR");
 
             //X
 
@@ -560,6 +560,9 @@ public class Database {
             new Chart("Suomi (Eternal)", 732, 8.9, "ETR");
             new Chart("Twilight Concerto (Eternal)", 962, 10.4, "ETR");
 
+            //BYD
+
+            new Chart("Antithese", 968, 9.5, "BYD");
             chartMaps();
         }
         private void chartMaps(){
@@ -592,10 +595,10 @@ public class Database {
                 break;
 
             case "Altair (feat. *spiLa*)":
-                target = "Altair (feat. spiLa)";
+                target = "Altair";
                 break;
 
-            case "Can I Friend You on Bassbook? Lol":
+            case "Can I friend you on Bassbook? lol":
                 target ="Bassbook";
                 break;
 

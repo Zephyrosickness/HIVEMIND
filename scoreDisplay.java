@@ -220,11 +220,12 @@ public class scoreDisplay extends Database {
         panel.add(randomize);
 
         //refreshes on initalization
-        refresh((String)songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant, (String)difficultySelect.getSelectedItem());
+        refresh((String) songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant, (String)Objects.requireNonNull(difficultySelect.getSelectedItem()));
 
         //ACTIONS--
 
         //loads chart / refreshes song data (songSelect dropdown)
+
         songSelect.addActionListener(e -> refresh((String) songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant, (String)difficultySelect.getSelectedItem()));
 
         //load byd/ftr charts (diffSelect dropdown)
@@ -334,27 +335,28 @@ public class scoreDisplay extends Database {
 
 
     //refreshes song data
-    private static void refresh(String selected, JLabel imageLabel, JLabel noteCount, JLabel chartConstant, String difficulty) {
-        songAttributes(selected);
+    private static void refresh(String selected, JLabel imageLabel, JLabel noteCount, JLabel chartConstant, String difficulty){
+        //gets the string of jacket file location
+            songAttributes(selected);
 
-        //sets up jacket
-        String check = jacketCheck(selected);
+            //sets up jacket
+            String check = jacketCheck(selected);
+            Path path = Paths.get("./assets/"+check +".jpg");
+            //appends _byd to the target jacket if the difficulty is byd
+            if (difficulty.equals("BYD")) {path = Paths.get("./assets/"+check +"_byd.jpg");}
 
-        Path path = Paths.get("./assets/"+check+".jpg");
-        Path pathBYD = Paths.get("./assets/"+check+"_byd"+".jpg");
+            File jacket = new File(path.toString());
 
-        File jacket = new File(path.toString());
+            //System.out.println("\nimage checksum!!! [!DEBUG ONLY!] \n------DETAILS------\nJACKET: "+jacket+" EXISTS?: "+Files.exists(path));
 
-        if (!Files.exists(path)){
-            System.out.println("error reading image!\n------DETAILS------\nJACKET: "+jacket+" EXISTS?: "+Files.exists(path));
-            jacket = new File("./assets/placeholder.jpg");
-        }else{
-            if(difficulty.equals("BYD")&&Files.exists(pathBYD)){
-                jacket = new File(pathBYD.toString());
+        //if the jacket doesnt exist for whatever reason, (most of the time im just too lazy to add jackets for new songs) swap to a placeholder and print an error
+            if (!Files.exists(path)) {
+                System.out.println("error reading image!\n------DETAILS------\nJACKET: " + jacket + " EXISTS?: " + Files.exists(path));
+                jacket = new File("./assets/placeholder.jpg");
             }
-        }
 
-        try {
+        //reads the jacket and displays it to ui
+        try{
             BufferedImage img = ImageIO.read(jacket);
 
             int scaledWidth = 325;
@@ -366,9 +368,7 @@ public class scoreDisplay extends Database {
             imageLabel.setIcon(imageIcon);
             imageLabel.setBounds(12, 70, scaledWidth, resizedImg.getHeight(null));
             //error handler in case of invalid url
-        } catch (IOException e) {
-            System.out.println("Error reading image!\n------DETAILS------\nERROR DETAILS: "+e.getMessage()+"JACKET: "+jacket);
-        }
+        }catch (IOException e){System.out.println("Error reading image!\n------DETAILS------\nERROR DETAILS: "+e.getMessage()+"JACKET: "+jacket);}
 
 
         //update constant/combo
