@@ -31,105 +31,96 @@ public class scoreDisplay extends Database {
     /*ppl keep saying static vars are bad and I mean that's probably true because of something something nerd stuff IDK about but um im bad at coding and I keep
     having problems IDK how to fix without static vars idek why they're bad but um maybe one day ill be good at coding and it will be fixed*/
 
-    public static void init() {
+    public static void init(){
+        final int SIZE = 700;
         //changes l&f to windows classic because im a basic bitch like that
-        try {
-            for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
-                if ("Windows Classic".equals(info.getName())) {
-                    UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (Exception e) {
-            //error handler for l&f in case something doesnt work
-            System.out.println("error with look and feel");
-        }
+        try{for(LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()){if("Windows Classic".equals(info.getName())){UIManager.setLookAndFeel(info.getClassName());break;}}
+        }catch(Exception e){System.out.println("error with look and feel");}
 
         // create a window
-        JFrame frame = new JFrame("The Memory Archive");
-        frame.setSize(700, 700);
+        final JFrame frame = new JFrame("The Memory Archive");
+        frame.setSize(SIZE, SIZE);
+        frame.setLayout(new GridLayout(1,2));
 
         //score display
 
+        //i feel like this can be made more efficient vvv
         //make new panel this will have the scores in it
-        JPanel scorePanel = new JPanel();
+        final JPanel scorePanel = new JPanel();
         scorePanel.setLayout(new BoxLayout(scorePanel, BoxLayout.Y_AXIS));
 
         // Create a JScrollPane and add the content panel to it
-        JScrollPane scoreDisplay = new JScrollPane(scorePanel);
-        scoreDisplay.setBounds(350, 0, 325, 650);
+        final JScrollPane scoreDisplay = new JScrollPane(scorePanel);
+
+
+        //main panel to hold panels in the left half
+        //make this panel vertical and then max a panel on the bottom and then inside that have 2 more f***ing panels for the labels and the actual ui items
+        final JPanel leftPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+
+        //adds panel
+        frame.add(leftPanel);
+        songInfoComponents(leftPanel, scorePanel, frame);
 
         // Add the scroll pane to the frame
         frame.add(scoreDisplay);
 
-        //main panel to hold components
-        JPanel panel = new JPanel();
-
-        //adds panel
-        frame.add(panel);
-        panel.setBounds(0, 0, 350, 700);
-        frame.setResizable(false);
-        songInfoComponents(panel, scorePanel);
         frame.setVisible(true);
     }
 
     //panel to hold components
-    private static void songInfoComponents(JPanel panel, JPanel scorePanel) {
+    private static void songInfoComponents(JPanel panel, JPanel scorePanel, JFrame frame){
+        final Dimension minFillerSize = new Dimension(frame.getWidth()/128, frame.getHeight()/128);
+        final Dimension prefFilerSize = new Dimension(frame.getWidth()/64, frame.getHeight()/64);
+        final Dimension maxFillerSize = new Dimension(frame.getWidth()/32, frame.getHeight()/32);
 
-        // set the layout manager to null for absolute positioning
-        panel.setLayout(null);
+        //the panel that holds all chart data (top half of the ui)
+        final JPanel chartPanel = new JPanel();
+        chartPanel.setLayout(new BoxLayout(chartPanel,BoxLayout.PAGE_AXIS));
+        panel.add(chartPanel);
 
-        //LABELS
-
-        //chart info/select labels --
 
         //-label for chart dropdown
-        JLabel chartTitle = new JLabel("Chart");
-        chartTitle.setBounds(112, 5, 80, 25);
-        panel.add(chartTitle);
+        chartPanel.add(new JLabel("Chart"));
+
+        chartPanel.add(new Box.Filler(minFillerSize,prefFilerSize,maxFillerSize));
 
         //label that displays the jacket
         JLabel imageLabel = new JLabel();
-        imageLabel.setBounds(25, 70, 200, 200);
-        panel.add(imageLabel);
 
+        chartPanel.add(imageLabel);
+
+        //chart select dropdown
+        songSelect = new JComboBox<>(charts);
+        chartPanel.add(songSelect);
 
         //-label for notecount
         JLabel noteCount = new JLabel("Max Combo:");
-        noteCount.setBounds(25, 410, 325, 25);
-        panel.add(noteCount);
+        chartPanel.add(noteCount);
 
         //-label for chart constant
         JLabel chartConstant = new JLabel("Chart Constant:");
-        chartConstant.setBounds(25, 430, 325, 25);
-        panel.add(chartConstant);
+        chartPanel.add(chartConstant);
 
         //-label for perfect pure info
-        JLabel pureInfo = new JLabel("*Note that this doesn't use perfect PUREs, so scores may be slightly off.");
-        pureInfo.setBounds(20, 630, 500, 25);
-        panel.add(pureInfo);
+        //panel.add(new JLabel("*Note that this doesn't use perfect PUREs, so scores may be slightly off."));
 
 
         //filter option labels --
 
         //label for far filter
         JLabel farLabel = new JLabel("FAR count");
-        farLabel.setBounds(25, 450, 150, 25);
         panel.add(farLabel);
 
         //label for lost filter
         JLabel lostLabel = new JLabel("LOST count");
-        lostLabel.setBounds(25, 480, 150, 25);
         panel.add(lostLabel);
 
         //label for min score
         JLabel scoreLabel = new JLabel("Minimum score");
-        scoreLabel.setBounds(25, 510, 150, 25);
         panel.add(scoreLabel);
 
         //label for sorter
         JLabel sortLabel = new JLabel("Sort by");
-        sortLabel.setBounds(25, 540, 80, 25);
         panel.add(sortLabel);
 
         //DROPDOWNS
@@ -147,15 +138,11 @@ public class scoreDisplay extends Database {
 
         //difficulty select dropdown
         JComboBox<String> difficultySelect = new JComboBox<>(difficultyList);
-        difficultySelect.setBounds(250, 25, 75, 25);
         panel.add(difficultySelect);
 
         //charts
 
-        //chart select dropdown
-        songSelect = new JComboBox<>(charts);
-        songSelect.setBounds(50, 25, 200, 25);
-        panel.add(songSelect);
+
 
 
         //filter dropdowns
@@ -163,60 +150,49 @@ public class scoreDisplay extends Database {
 
         //dropdown for operator on far count
         final JComboBox<String> farOperator = new JComboBox<>(operators);
-        farOperator.setBounds(74, 450,  50, 25);
         panel.add(farOperator);
 
         //dropdown for operator on miss count
         final JComboBox<String> missOperator = new JComboBox<>(operators);
-        missOperator.setBounds(80, 480,  50, 25);
         panel.add(missOperator);
 
         //select sorting methodology dropdown
         final JComboBox<String> sorter = new JComboBox<>(sorts);
-        sorter.setBounds(65, 540,  100, 25);
         panel.add(sorter);
 
         //filter fields--
 
         //field for far count
         JTextField farField = new JTextField("0");
-        farField.setBounds(120, 450, 25, 25);
         panel.add(farField);
 
         //field for lost count
         JTextField lostField = new JTextField("0");
-        lostField.setBounds(128, 480, 25, 25);
         panel.add(lostField);
 
         //field for minimum score
         JTextField scoreField = new JTextField("0");
-        scoreField.setBounds(95, 510, 75, 25);
         panel.add(scoreField);
 
         //specify cc for random song
         JTextField ccMin = new JTextField("0");
-        ccMin.setBounds(200, 450, 25, 25);
         panel.add(ccMin);
 
         JTextField ccMax = new JTextField("0");
-        ccMax.setBounds(235, 450, 25, 25);
         panel.add(ccMax);
 
         //BUTTONS--
 
         //checkbox if ur using that bitch from spiders thread
         JCheckBox toa = new JCheckBox("Using Toa Kozukata");
-        toa.setBounds (25,570,125,25);
         panel.add(toa);
 
         //button to run score calcs
         JButton run = new JButton("Find scores");
-        run.setBounds(25, 600, 100, 25);
         panel.add(run);
 
         //button to select random song
         JButton randomize = new JButton("Select Random");
-        randomize.setBounds(200, 410, 125, 25);
         panel.add(randomize);
 
         //refreshes on initalization
@@ -254,13 +230,9 @@ public class scoreDisplay extends Database {
             //value set to 11.1 bc it's the largest value that both future/beyond charts have
             //could make it 12 for byd and 11.3 for ftr, but I don't care enough for an error handler
 
-            if(maximum>11.1){
-                maximum=11.1;
-            }
+            if(maximum>11.1){maximum=11.1;}
 
-            if(minimum>11.1){
-                minimum=11.1;
-            }
+            if(minimum>11.1){minimum=11.1;}
 
 
             //selects random number and sets chart index # to the random num. if not within the bounds of specified cc, reroll
@@ -366,7 +338,6 @@ public class scoreDisplay extends Database {
             //replaces jacket
             ImageIcon imageIcon = new ImageIcon(resizedImg);
             imageLabel.setIcon(imageIcon);
-            imageLabel.setBounds(12, 70, scaledWidth, resizedImg.getHeight(null));
             //error handler in case of invalid url
         }catch (IOException e){System.out.println("Error reading image!\n------DETAILS------\nERROR DETAILS: "+e.getMessage()+"JACKET: "+jacket);}
 
@@ -374,6 +345,7 @@ public class scoreDisplay extends Database {
         //update constant/combo
         noteCount.setText("Max Combo: " + combo);
         chartConstant.setText("Chart Constant: " + cc);
+
 
     }
 
