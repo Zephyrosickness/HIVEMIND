@@ -55,7 +55,8 @@ public class scoreDisplay extends Database {
 
         //main panel to hold panels in the left half
         //make this panel vertical and then max a panel on the bottom and then inside that have 2 more f***ing panels for the labels and the actual ui items
-        final JPanel leftPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+        final JPanel leftPanel = new JPanel();
+        leftPanel.setLayout(new BoxLayout(leftPanel,BoxLayout.PAGE_AXIS));
 
         //adds panel
         frame.add(leftPanel);
@@ -103,25 +104,29 @@ public class scoreDisplay extends Database {
 
         //-label for perfect pure info
         //panel.add(new JLabel("*Note that this doesn't use perfect PUREs, so scores may be slightly off."));
+        final JPanel labelPanel = new JPanel(new BorderLayout());
+        panel.add(labelPanel);
 
+        final JPanel buttonPanel = new JPanel(new BorderLayout());
+        panel.add(buttonPanel);
 
         //filter option labels --
 
         //label for far filter
         JLabel farLabel = new JLabel("FAR count");
-        panel.add(farLabel);
+        labelPanel.add(farLabel);
 
         //label for lost filter
         JLabel lostLabel = new JLabel("LOST count");
-        panel.add(lostLabel);
+        labelPanel.add(lostLabel);
 
         //label for min score
         JLabel scoreLabel = new JLabel("Minimum score");
-        panel.add(scoreLabel);
+        labelPanel.add(scoreLabel);
 
         //label for sorter
         JLabel sortLabel = new JLabel("Sort by");
-        panel.add(sortLabel);
+        labelPanel.add(sortLabel);
 
         //DROPDOWNS
 
@@ -138,7 +143,7 @@ public class scoreDisplay extends Database {
 
         //difficulty select dropdown
         JComboBox<String> difficultySelect = new JComboBox<>(difficultyList);
-        panel.add(difficultySelect);
+        chartPanel.add(difficultySelect);
 
         //charts
 
@@ -150,50 +155,50 @@ public class scoreDisplay extends Database {
 
         //dropdown for operator on far count
         final JComboBox<String> farOperator = new JComboBox<>(operators);
-        panel.add(farOperator);
+        buttonPanel.add(farOperator);
 
         //dropdown for operator on miss count
         final JComboBox<String> missOperator = new JComboBox<>(operators);
-        panel.add(missOperator);
+        buttonPanel.add(missOperator);
 
         //select sorting methodology dropdown
         final JComboBox<String> sorter = new JComboBox<>(sorts);
-        panel.add(sorter);
+        buttonPanel.add(sorter);
 
         //filter fields--
 
         //field for far count
         JTextField farField = new JTextField("0");
-        panel.add(farField);
+        buttonPanel.add(farField);
 
         //field for lost count
         JTextField lostField = new JTextField("0");
-        panel.add(lostField);
+        buttonPanel.add(lostField);
 
         //field for minimum score
         JTextField scoreField = new JTextField("0");
-        panel.add(scoreField);
+        buttonPanel.add(scoreField);
 
         //specify cc for random song
         JTextField ccMin = new JTextField("0");
-        panel.add(ccMin);
+        buttonPanel.add(ccMin);
 
         JTextField ccMax = new JTextField("0");
-        panel.add(ccMax);
+        buttonPanel.add(ccMax);
 
         //BUTTONS--
 
         //checkbox if ur using that bitch from spiders thread
         JCheckBox toa = new JCheckBox("Using Toa Kozukata");
-        panel.add(toa);
+        buttonPanel.add(toa);
 
         //button to run score calcs
         JButton run = new JButton("Find scores");
-        panel.add(run);
+        buttonPanel.add(run);
 
         //button to select random song
         JButton randomize = new JButton("Select Random");
-        panel.add(randomize);
+        buttonPanel.add(randomize);
 
         //refreshes on initalization
         refresh((String) songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant, (String)Objects.requireNonNull(difficultySelect.getSelectedItem()));
