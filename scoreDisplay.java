@@ -14,7 +14,8 @@ import java.util.List;
 //contains most graphical data
 //welcome to hell
 
-public class scoreDisplay extends Database {
+public class scoreDisplay extends Database{
+    final private static HashMap<String, Component> componentMap = new HashMap<>();
     //init var
     protected static int combo;
     protected static double cc;
@@ -70,12 +71,15 @@ public class scoreDisplay extends Database {
 
     //panel to hold components
     private static void songInfoComponents(JPanel panel, JPanel scorePanel, JFrame frame){
+        //filler sizes
         final Dimension minFillerSize = new Dimension(frame.getWidth()/128, frame.getHeight()/128);
         final Dimension prefFilerSize = new Dimension(frame.getWidth()/64, frame.getHeight()/64);
         final Dimension maxFillerSize = new Dimension(frame.getWidth()/32, frame.getHeight()/32);
+        //dropdown assets
         final String[] difficultyList = {"FTR/ETR", "BYD"};
-
-        ArrayList<Component> itemsInOrder;
+        final String[] operators = {"Any", "=","<"};
+        final String[] sorts = {"Score","FAR count", "LOST count"};
+        //all the items
 
         //the panel that holds all chart data (top half of the ui)
         final JPanel chartPanel = new JPanel();
@@ -86,136 +90,126 @@ public class scoreDisplay extends Database {
         final JPanel bottomPanel = new JPanel(new GridLayout(0,3));
         panel.add(bottomPanel);
 
+        //chart panel items ----
 
         chartPanel.add(new JLabel("Chart"));
 
         //difficulty select dropdown
-        JComboBox<String> difficultySelect = new JComboBox<>(difficultyList);
+        final JComboBox<String> difficultySelect = new JComboBox<>(difficultyList);
         chartPanel.add(difficultySelect);
-
-        chartPanel.add(new Box.Filler(minFillerSize,prefFilerSize,maxFillerSize));
+        componentMap.put("Difficulty", difficultySelect);
 
         //chart jacket
-        JLabel imageLabel = new JLabel();
+        final JLabel imageLabel = new JLabel();
         chartPanel.add(imageLabel);
+        componentMap.put("Jacket", imageLabel);
 
         //chart select dropdown
         songSelect = new JComboBox<>(charts);
         chartPanel.add(songSelect);
+        componentMap.put("Song Select", songSelect);
 
         //-label for notecount
-        JLabel noteCount = new JLabel("Max Combo:");
+        final JLabel noteCount = new JLabel("Max Combo:");
         chartPanel.add(noteCount);
+        componentMap.put("Max Combo", noteCount);
 
         //-label for chart constant
-        JLabel chartConstant = new JLabel("Chart Constant:");
+        final JLabel chartConstant = new JLabel("Chart Constant:");
         chartPanel.add(chartConstant);
+        componentMap.put("Chart Constant", difficultySelect);
 
 
-        //DROPDOWNS
-
-        //array vars (dropdown options) --
-
-        //diff name
-        //for op dropdowns
-        final String[] operators = {"Any", "=","<"};
-        //for sort dropdown
-        final String[] sorts = {"Score","FAR count", "LOST count"};
-
-        //chart select dropdowns --
-
-
-
-        //charts
-
-
-
-
-        //filter dropdowns
+        //bottom panel items ---
 
 
         //dropdown for operator on far count
         final JComboBox<String> farOperator = new JComboBox<>(operators);
+        farOperator.setName("Far Operator");
 
         //dropdown for operator on miss count
         final JComboBox<String> lostOperator = new JComboBox<>(operators);
+        lostOperator.setName("Lost Operator");
 
         //select sorting methodology dropdown
-        final JComboBox<String> sorter = new JComboBox<>(sorts);
+        final JComboBox<String> sortSelection = new JComboBox<>(sorts);
+        sortSelection.setName("Sort Selection");
 
         //filter fields--
 
         //field for far count
-        JTextField farField = new JTextField("0");
+        final JTextField farField = new JTextField("0");
+        farField.setVisible(false);
+        farField.setEnabled(false);
+        farField.setName("Far Count");
 
         //field for lost count
-        JTextField lostField = new JTextField("0");
+        final JTextField lostField = new JTextField("0");
+        lostField.setVisible(false);
+        lostField.setEnabled(false);
+        lostField.setName("Lost Count");
 
         //field for minimum score
-        JTextField scoreField = new JTextField("0");
+        final JTextField scoreField = new JTextField("0");
+        scoreField.setName("Minimum Score");
 
         //specify cc for random song
-        JTextField ccMin = new JTextField("Min CC");
+        final JTextField ccMin = new JTextField("Min CC");
+        ccMin.setName("Minimum CC");
 
-        JTextField ccMax = new JTextField("Max CC");
+        final JTextField ccMax = new JTextField("Max CC");
+        ccMax.setName("Maximum CC");
 
         //BUTTONS--
 
         //checkbox if ur using that bitch from spiders thread
-        JCheckBox toa = new JCheckBox("Partner is Toa");
+        final JCheckBox toa = new JCheckBox("Partner is Toa");
+        toa.setName("Toa");
 
         //button to run score calcs
-        JButton run = new JButton("Find scores");
+        final JButton run = new JButton("Find scores");
 
         //button to select random song
-        JButton randomize = new JButton("Select Random");
+        final JButton randomize = new JButton("Select Random");
 
         //refreshes on initalization
-        refresh((String) songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant, (String)Objects.requireNonNull(difficultySelect.getSelectedItem()));
+        refresh((String)songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant, (String)Objects.requireNonNull(difficultySelect.getSelectedItem()));
 
         //ACTIONS--
 
         //loads chart / refreshes song data (songSelect dropdown)
 
-        songSelect.addActionListener(e -> refresh((String) songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant, (String)difficultySelect.getSelectedItem()));
+        songSelect.addActionListener(_ -> refresh((String) songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant, (String)difficultySelect.getSelectedItem()));
 
-        //we use an arraylist here because it allows u to change the order of the components without having to have them on certain lines. to reorder u just reorder the arraylist here
-        itemsInOrder = new ArrayList<>(Arrays.asList(
-                new JLabel("FAR Count"), farField, farOperator,
+        //we use an array here because it allows u to change the order of the components without having to have them on certain lines. to reorder u just reorder the arraylist here
+        Component[] itemsInOrder = new Component[]{
+                new JLabel("FAR Count"), farOperator, farField,
 
-                new JLabel("LOST Count"), lostField, lostOperator,
+                new JLabel("LOST Count"), lostOperator, lostField,
 
-                new JLabel("Minimum score"), scoreField, new Box.Filler(minFillerSize,prefFilerSize,maxFillerSize),
+                new JLabel("Minimum score"), scoreField, new Box.Filler(minFillerSize, prefFilerSize, maxFillerSize),
 
-                new JLabel("Sort By: "), sorter, new Box.Filler(minFillerSize,prefFilerSize,maxFillerSize),
+                new JLabel("Sort By: "), sortSelection, new Box.Filler(minFillerSize, prefFilerSize, maxFillerSize),
 
                 randomize, ccMin, ccMax,
 
                 toa, run
-                ));
+        };
 
         for(Component i:itemsInOrder){
             bottomPanel.add(i);
+            if(i.getName()!=null){componentMap.put(i.getName(), i);}
         }
 
         //load byd/ftr charts (diffSelect dropdown)
-        difficultySelect.addActionListener(e -> {
-            ArrayList<String> chartsTemp;
-                if(difficultySelect.getSelectedItem()=="BYD"){
-                    chartsTemp = Database.chartNamesBYD;
-                    chartMap = Database.chartMapBYD;
-                }else{
-                    chartsTemp = Database.chartNames;
-                    chartMap = Database.chartMapFTR;
-                }
-            int length = chartsTemp.size();
-            charts = chartsTemp.toArray(new String[length]);
-            songSelect.setModel(new JComboBox<>(charts).getModel());
+
+        difficultySelect.addActionListener(_ -> {
+            songSelect.setModel(loadSongList());
         });
 
 
         //selects random song
-        randomize.addActionListener(e -> {
+        randomize.addActionListener(_ -> {
             //init var
             Random rand = new Random();
             double minimum = Double.parseDouble(ccMin.getText());
@@ -248,8 +242,28 @@ public class scoreDisplay extends Database {
             refresh((String)songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant, (String)difficultySelect.getSelectedItem());
         });
 
+        farOperator.addActionListener(_ -> {
+            if(Objects.requireNonNull(farOperator.getSelectedItem()).toString().equals("Any")){
+                farField.setEnabled(false);
+                farField.setVisible(false);
+            }else{
+                farField.setEnabled(true);
+                farField.setVisible(true);
+            }
+        });
+
+        lostOperator.addActionListener(_ -> {
+            if(Objects.requireNonNull(lostOperator.getSelectedItem()).toString().equals("Any")){
+                lostField.setEnabled(false);
+                lostField.setVisible(false);
+            }else{
+                lostField.setEnabled(true);
+                lostField.setVisible(true);
+            }
+        });
+
         //calculates scores (run button)
-        run.addActionListener(e -> {
+        run.addActionListener(_ -> {
             //clear the board before running new calcs
             scoreTextArray.clear();
 
@@ -271,7 +285,7 @@ public class scoreDisplay extends Database {
             scoreCalc.calcScore(minScore, far, miss, farOp, missOp, toaStatus, cc, combo);
 
             //sort results based on the sort option
-            switch((String) Objects.requireNonNull(sorter.getSelectedItem())) {
+            switch((String) Objects.requireNonNull(sortSelection.getSelectedItem())) {
                 case "Score":
                     scoreTextArray.sort(Comparator.comparingDouble(ScoreTextArea::getScore).reversed());
                     break;
@@ -298,7 +312,23 @@ public class scoreDisplay extends Database {
 
     }
 
+    //used when changing from ftr to byd
+    private static ComboBoxModel<String> loadSongList(){
+        ArrayList<String> chartsTemp;
+        final String selected = getComponentValue("Difficulty");
 
+        if(selected.equals("BYD")){
+            chartsTemp = Database.chartNamesBYD;
+            chartMap = Database.chartMapBYD;
+        }else{
+            chartsTemp = Database.chartNames;
+            chartMap = Database.chartMapFTR;
+        }
+
+        int length = chartsTemp.size();
+        charts = chartsTemp.toArray(new String[length]);
+        return new JComboBox<>(charts).getModel();
+    }
     //refreshes song data
     private static void refresh(String selected, JLabel imageLabel, JLabel noteCount, JLabel chartConstant, String difficulty){
         //gets the string of jacket file location
@@ -342,9 +372,31 @@ public class scoreDisplay extends Database {
 
     }
 
-    //i dont remember how this works
-    //genuinely i dont
-    protected static class ScoreTextArea extends JTextArea {
+    private static String getComponentValue(String name){
+        final Component component = componentMap.get(name);
+        if(component==null){System.out.println("ur piece of shit component is null. make piece of shit error handler later "+name);}
+
+        String tempString;
+        assert component!=null;
+
+        //if component is a string
+        if(component.getClass()==JComboBox.class){
+            tempString = Objects.requireNonNull(((JComboBox<String>)component).getSelectedItem()).toString();
+        }else{
+            //if component is a num then make sure its positive
+            tempString = ((JTextField) component).getText();
+            int toInt = 0;
+            try{
+                toInt = Integer.parseInt(tempString);
+                if(toInt<0){toInt = 1;}
+            }catch(Exception _){}
+            tempString = Integer.toString(toInt);
+        }
+        return tempString;
+    }
+
+
+    protected static class ScoreTextArea extends JTextArea{
         double score;
         double far;
         double miss;
@@ -355,10 +407,9 @@ public class scoreDisplay extends Database {
             this.score = score;
             this.far = far;
             this.miss = miss;
-            setLineWrap(true);
-            setWrapStyleWord(true);
+
+            setEditable(false);
             setBorder(BorderFactory.createLineBorder(Color.BLACK));
-            //setMaximumSize(new Dimension(300, 60));
         }
 
         private double getScore() {
@@ -377,7 +428,6 @@ public class scoreDisplay extends Database {
         String text = "Score: " + (int) score + "\nPURE: " + pure + "\nFAR: " + far + "\nLOST: " + miss +"\nPlay Rating: "+rating;
         ScoreTextArea textArea = new ScoreTextArea(text, score, far, miss);
         scoreTextArray.add(textArea);
-
     }
 
     private static void songAttributes(String selected){
