@@ -73,21 +73,30 @@ public class scoreDisplay extends Database {
         final Dimension minFillerSize = new Dimension(frame.getWidth()/128, frame.getHeight()/128);
         final Dimension prefFilerSize = new Dimension(frame.getWidth()/64, frame.getHeight()/64);
         final Dimension maxFillerSize = new Dimension(frame.getWidth()/32, frame.getHeight()/32);
+        final String[] difficultyList = {"FTR/ETR", "BYD"};
+
+        ArrayList<Component> itemsInOrder;
 
         //the panel that holds all chart data (top half of the ui)
         final JPanel chartPanel = new JPanel();
-        chartPanel.setLayout(new BoxLayout(chartPanel,BoxLayout.PAGE_AXIS));
+        chartPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
         panel.add(chartPanel);
 
+        //panel for everything else
+        final JPanel bottomPanel = new JPanel(new GridLayout(0,3));
+        panel.add(bottomPanel);
 
-        //-label for chart dropdown
+
         chartPanel.add(new JLabel("Chart"));
+
+        //difficulty select dropdown
+        JComboBox<String> difficultySelect = new JComboBox<>(difficultyList);
+        chartPanel.add(difficultySelect);
 
         chartPanel.add(new Box.Filler(minFillerSize,prefFilerSize,maxFillerSize));
 
-        //label that displays the jacket
+        //chart jacket
         JLabel imageLabel = new JLabel();
-
         chartPanel.add(imageLabel);
 
         //chart select dropdown
@@ -102,48 +111,20 @@ public class scoreDisplay extends Database {
         JLabel chartConstant = new JLabel("Chart Constant:");
         chartPanel.add(chartConstant);
 
-        //-label for perfect pure info
-        //panel.add(new JLabel("*Note that this doesn't use perfect PUREs, so scores may be slightly off."));
-        final JPanel labelPanel = new JPanel(new BorderLayout());
-        panel.add(labelPanel);
-
-        final JPanel buttonPanel = new JPanel(new BorderLayout());
-        panel.add(buttonPanel);
-
-        //filter option labels --
-
-        //label for far filter
-        JLabel farLabel = new JLabel("FAR count");
-        labelPanel.add(farLabel);
-
-        //label for lost filter
-        JLabel lostLabel = new JLabel("LOST count");
-        labelPanel.add(lostLabel);
-
-        //label for min score
-        JLabel scoreLabel = new JLabel("Minimum score");
-        labelPanel.add(scoreLabel);
-
-        //label for sorter
-        JLabel sortLabel = new JLabel("Sort by");
-        labelPanel.add(sortLabel);
 
         //DROPDOWNS
 
         //array vars (dropdown options) --
 
         //diff name
-        String[] difficultyList = {"FTR/ETR", "BYD"};
         //for op dropdowns
-        String[] operators = {"Any", "=","<"};
+        final String[] operators = {"Any", "=","<"};
         //for sort dropdown
-        String[] sorts = {"Score","FAR count", "LOST count"};
+        final String[] sorts = {"Score","FAR count", "LOST count"};
 
         //chart select dropdowns --
 
-        //difficulty select dropdown
-        JComboBox<String> difficultySelect = new JComboBox<>(difficultyList);
-        chartPanel.add(difficultySelect);
+
 
         //charts
 
@@ -155,50 +136,39 @@ public class scoreDisplay extends Database {
 
         //dropdown for operator on far count
         final JComboBox<String> farOperator = new JComboBox<>(operators);
-        buttonPanel.add(farOperator);
 
         //dropdown for operator on miss count
-        final JComboBox<String> missOperator = new JComboBox<>(operators);
-        buttonPanel.add(missOperator);
+        final JComboBox<String> lostOperator = new JComboBox<>(operators);
 
         //select sorting methodology dropdown
         final JComboBox<String> sorter = new JComboBox<>(sorts);
-        buttonPanel.add(sorter);
 
         //filter fields--
 
         //field for far count
         JTextField farField = new JTextField("0");
-        buttonPanel.add(farField);
 
         //field for lost count
         JTextField lostField = new JTextField("0");
-        buttonPanel.add(lostField);
 
         //field for minimum score
         JTextField scoreField = new JTextField("0");
-        buttonPanel.add(scoreField);
 
         //specify cc for random song
-        JTextField ccMin = new JTextField("0");
-        buttonPanel.add(ccMin);
+        JTextField ccMin = new JTextField("Min CC");
 
-        JTextField ccMax = new JTextField("0");
-        buttonPanel.add(ccMax);
+        JTextField ccMax = new JTextField("Max CC");
 
         //BUTTONS--
 
         //checkbox if ur using that bitch from spiders thread
-        JCheckBox toa = new JCheckBox("Using Toa Kozukata");
-        buttonPanel.add(toa);
+        JCheckBox toa = new JCheckBox("Partner is Toa");
 
         //button to run score calcs
         JButton run = new JButton("Find scores");
-        buttonPanel.add(run);
 
         //button to select random song
         JButton randomize = new JButton("Select Random");
-        buttonPanel.add(randomize);
 
         //refreshes on initalization
         refresh((String) songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant, (String)Objects.requireNonNull(difficultySelect.getSelectedItem()));
@@ -208,6 +178,25 @@ public class scoreDisplay extends Database {
         //loads chart / refreshes song data (songSelect dropdown)
 
         songSelect.addActionListener(e -> refresh((String) songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant, (String)difficultySelect.getSelectedItem()));
+
+        //we use an arraylist here because it allows u to change the order of the components without having to have them on certain lines. to reorder u just reorder the arraylist here
+        itemsInOrder = new ArrayList<>(Arrays.asList(
+                new JLabel("FAR Count"), farField, farOperator,
+
+                new JLabel("LOST Count"), lostField, lostOperator,
+
+                new JLabel("Minimum score"), scoreField, new Box.Filler(minFillerSize,prefFilerSize,maxFillerSize),
+
+                new JLabel("Sort By: "), sorter, new Box.Filler(minFillerSize,prefFilerSize,maxFillerSize),
+
+                randomize, ccMin, ccMax,
+
+                toa, run
+                ));
+
+        for(Component i:itemsInOrder){
+            bottomPanel.add(i);
+        }
 
         //load byd/ftr charts (diffSelect dropdown)
         difficultySelect.addActionListener(e -> {
@@ -223,6 +212,7 @@ public class scoreDisplay extends Database {
             charts = chartsTemp.toArray(new String[length]);
             songSelect.setModel(new JComboBox<>(charts).getModel());
         });
+
 
         //selects random song
         randomize.addActionListener(e -> {
@@ -245,7 +235,7 @@ public class scoreDisplay extends Database {
             int index = rand.nextInt(charts.length);
             double selectedCC = (chartAttributes.get(index)).cc;
 
-            while(!(selectedCC <= maximum && selectedCC >= minimum)){
+            while(!(selectedCC<=maximum&&selectedCC>=minimum)){
                 index = rand.nextInt(charts.length);
                 selectedCC = (chartAttributes.get(index)).cc;
 
@@ -268,7 +258,7 @@ public class scoreDisplay extends Database {
             int miss = Integer.parseInt(lostField.getText());
             String minScore = (scoreField.getText());
             String farOp = (String)farOperator.getSelectedItem();
-            String missOp = (String)missOperator.getSelectedItem();
+            String missOp = (String)lostOperator.getSelectedItem();
             boolean toaStatus = toa.isSelected();
 
             //runs func to calc score
@@ -297,9 +287,7 @@ public class scoreDisplay extends Database {
             scorePanel.removeAll();
 
             //add sorted components to the scorePanel
-            for (ScoreTextArea textAreas : scoreTextArray) {
-                scorePanel.add(textAreas);
-            }
+            for (ScoreTextArea textAreas : scoreTextArray){scorePanel.add(textAreas);}
 
             //update the scroll pane after adding components
             scorePanel.revalidate();
