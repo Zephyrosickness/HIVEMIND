@@ -76,7 +76,6 @@ public class scoreDisplay extends Database{
         final Dimension prefFilerSize = new Dimension(frame.getWidth()/64, frame.getHeight()/64);
         final Dimension maxFillerSize = new Dimension(frame.getWidth()/32, frame.getHeight()/32);
         //dropdown assets
-        final String[] difficultyList = {"FTR/ETR", "BYD"};
         final String[] operators = {"Any", "=","<"};
         final String[] sorts = {"Score","FAR count", "LOST count"};
         //all the items
