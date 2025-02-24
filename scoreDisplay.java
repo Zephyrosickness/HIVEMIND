@@ -94,11 +94,6 @@ public class scoreDisplay extends Database{
 
         chartPanel.add(new JLabel("Chart"));
 
-        //difficulty select dropdown
-        final JComboBox<String> difficultySelect = new JComboBox<>(difficultyList);
-        chartPanel.add(difficultySelect);
-        componentMap.put("Difficulty", difficultySelect);
-
         //chart jacket
         final JLabel imageLabel = new JLabel();
         chartPanel.add(imageLabel);
@@ -117,7 +112,7 @@ public class scoreDisplay extends Database{
         //-label for chart constant
         final JLabel chartConstant = new JLabel("Chart Constant:");
         chartPanel.add(chartConstant);
-        componentMap.put("Chart Constant", difficultySelect);
+        componentMap.put("Chart Constant", chartConstant);
 
 
         //bottom panel items ---
@@ -173,13 +168,13 @@ public class scoreDisplay extends Database{
         final JButton randomize = new JButton("Select Random");
 
         //refreshes on initalization
-        refresh((String)songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant, (String)Objects.requireNonNull(difficultySelect.getSelectedItem()));
+        refresh((String)songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant);
 
         //ACTIONS--
 
         //loads chart / refreshes song data (songSelect dropdown)
 
-        songSelect.addActionListener(_ -> refresh((String) songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant, (String)difficultySelect.getSelectedItem()));
+        songSelect.addActionListener(_ -> refresh((String) songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant));
 
         //we use an array here because it allows u to change the order of the components without having to have them on certain lines. to reorder u just reorder the arraylist here
         Component[] itemsInOrder = new Component[]{
@@ -202,10 +197,6 @@ public class scoreDisplay extends Database{
         }
 
         //load byd/ftr charts (diffSelect dropdown)
-
-        difficultySelect.addActionListener(_ -> {
-            songSelect.setModel(loadSongList());
-        });
 
 
         //selects random song
@@ -239,7 +230,7 @@ public class scoreDisplay extends Database{
                 }
             }
             songSelect.setSelectedIndex(index);
-            refresh((String)songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant, (String)difficultySelect.getSelectedItem());
+            refresh((String)songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant);
         });
 
         farOperator.addActionListener(_ -> {
@@ -312,43 +303,28 @@ public class scoreDisplay extends Database{
 
     }
 
-    //used when changing from ftr to byd
-    private static ComboBoxModel<String> loadSongList(){
-        ArrayList<String> chartsTemp;
-        final String selected = getComponentValue("Difficulty");
-
-        if(selected.equals("BYD")){
-            chartsTemp = Database.chartNamesBYD;
-            chartMap = Database.chartMapBYD;
-        }else{
-            chartsTemp = Database.chartNames;
-            chartMap = Database.chartMapFTR;
-        }
-
-        int length = chartsTemp.size();
-        charts = chartsTemp.toArray(new String[length]);
-        return new JComboBox<>(charts).getModel();
-    }
     //refreshes song data
-    private static void refresh(String selected, JLabel imageLabel, JLabel noteCount, JLabel chartConstant, String difficulty){
+    private static void refresh(String selected, JLabel imageLabel, JLabel noteCount, JLabel chartConstant){
         //gets the string of jacket file location
-            songAttributes(selected);
+        boolean isBYD = selected.endsWith("BYD");
+        songAttributes(selected);
 
-            //sets up jacket
-            String check = jacketCheck(selected);
-            Path path = Paths.get("./assets/"+check +".jpg");
-            //appends _byd to the target jacket if the difficulty is byd
-            if (difficulty.equals("BYD")) {path = Paths.get("./assets/"+check +"_byd.jpg");}
+        //sets up jacket
+        String check = jacketCheck(selected);
+        Path path = Paths.get("./assets/"+check +".jpg");
 
-            File jacket = new File(path.toString());
+        //appends _byd to the target jacket if the difficulty is byd
+        if(isBYD) {path = Paths.get("./assets/"+check +"_byd.jpg");}
 
-            //System.out.println("\nimage checksum!!! [!DEBUG ONLY!] \n------DETAILS------\nJACKET: "+jacket+" EXISTS?: "+Files.exists(path));
+        File jacket = new File(path.toString());
+
+        //System.out.println("\nimage checksum!!! [!DEBUG ONLY!] \n------DETAILS------\nJACKET: "+jacket+" EXISTS?: "+Files.exists(path));
 
         //if the jacket doesnt exist for whatever reason, (most of the time im just too lazy to add jackets for new songs) swap to a placeholder and print an error
-            if (!Files.exists(path)) {
-                System.out.println("error reading image!\n------DETAILS------\nJACKET: " + jacket + " EXISTS?: " + Files.exists(path));
-                jacket = new File("./assets/placeholder.jpg");
-            }
+        if (!Files.exists(path)) {
+            System.out.println("error reading image!\n------DETAILS------\nJACKET: " + jacket + " EXISTS?: " + Files.exists(path));
+            jacket = new File("./assets/placeholder.jpg");
+        }
 
         //reads the jacket and displays it to ui
         try{
@@ -395,6 +371,15 @@ public class scoreDisplay extends Database{
         return tempString;
     }
 
+    private static String[] arrayListToArray(ArrayList<String> arrayList) {
+        final int size = arrayList.size();
+        final String[] array = new String[size];
+
+        for (int i = 0; i < size; i++) {
+            array[i] = arrayList.get(i);
+        }
+        return array;
+    }
 
     protected static class ScoreTextArea extends JTextArea{
         double score;
