@@ -11,7 +11,7 @@ public class Hub {
                     break;
                 }
             }
-        }catch (Exception e) {System.out.println("error with look and feel!\n------DETAILS------\n"+e.getMessage());}
+        } catch (Exception e) {System.out.println("error with look and feel!\n------DETAILS------\n"+e.getMessage());}
 
         new Database(); //inits chartlist
 

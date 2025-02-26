@@ -581,7 +581,9 @@ public class Database {
 
     public static String jacketCheck(String target){
 
-        if(target == null){target = "placeholder";}
+        if(target == null){
+            target = "placeholder";
+        }
 
         if(target.endsWith(" (Eternal)")){
             target = target.substring(0, target.length()-10);
