@@ -16,13 +16,7 @@ import java.util.List;
 
 public class scoreDisplay extends Database{
     final private static HashMap<String, Component> componentMap = new HashMap<>();
-
     protected static List<ScoreTextArea> scoreTextArray = new ArrayList<>();
-    protected static JComboBox<String> songSelect;
-
-    protected static String[] charts = (Database.chartNames).toArray(new String[Database.chartNames.size()]);
-
-    protected static Map<String, Chart> chartMap = Database.chartMapFTR;
 
     /*ppl keep saying static vars are bad and I mean that's probably true because of something something nerd stuff IDK about but um im bad at coding and I keep
     having problems IDK how to fix without static vars idek why they're bad but um maybe one day ill be good at coding and it will be fixed*/
@@ -100,7 +94,7 @@ public class scoreDisplay extends Database{
         componentMap.put("Jacket", imageLabel);
 
         //chart select dropdown
-        songSelect = new JComboBox<>(charts);
+        final JComboBox<String> songSelect = new JComboBox<>(chartMapFTR.keySet().toArray(new String[0]));
         chartPanel.add(songSelect);
         componentMap.put("Chart", songSelect);
 
@@ -268,17 +262,13 @@ public class scoreDisplay extends Database{
         ArrayList<String> chartsTemp;
         final String selected = getComponentValue("Difficulty");
 
-        if(selected.equals("BYD")){
-            chartsTemp = Database.chartNamesBYD;
-            chartMap = Database.chartMapBYD;
-        }else{
-            chartsTemp = Database.chartNames;
-            chartMap = Database.chartMapFTR;
-        }
+        //this is a switch instead of an if-else in case i ever need to do more diffs
+        chartsTemp = switch(selected){
+            case "BYD" -> Database.chartNamesBYD;
+            default -> Database.chartNames;
+        };
 
-        int length = chartsTemp.size();
-        charts = chartsTemp.toArray(new String[length]);
-        return new JComboBox<>(charts).getModel();
+        return new JComboBox<>(chartsTemp.toArray(new String[0])).getModel();
     }
     //refreshes song data
     private static void refresh(){
