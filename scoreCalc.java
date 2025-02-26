@@ -8,7 +8,8 @@ public class scoreCalc extends scoreDisplay{
         double pureRaw = 10000000.0 / combo;
         double farRaw = pureRaw / 2.0;
         int pureFinal;
-        int minScore = Integer.parseInt(scoreString);
+        int minScore = (int)Double.parseDouble(scoreString);
+        scoreString = Integer.toString(minScore);
         double scoreFinal;
         //these threshold variables exist because I mean I don't think anyone is going to care about your score if you get like 500 fars or whatever
         //it just eliminates unecessary scores and speeds up the process

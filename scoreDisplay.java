@@ -230,60 +230,7 @@ public class scoreDisplay extends Database{
         });
 
         //calculates scores (run button)
-        run.addActionListener(_ -> {
-            //clear the board before running new calcs
-            scoreTextArray.clear();
-
-            //init var (reading off fields and dropdowns)
-            Chart chart = getChart(getComponentValue("Chart"), getComponentValue("Difficulty"));
-            int far = Integer.parseInt(lostField.getText());
-            int miss = Integer.parseInt(lostField.getText());
-            String minScore = (scoreField.getText());
-            String farOp = (String)farOperator.getSelectedItem();
-            String missOp = (String)lostOperator.getSelectedItem();
-            boolean toaStatus = toa.isSelected();
-
-            if(Hub.DEBUG){
-                System.out.println("run called\ninput chart name: "+getComponentValue("Chart")+"\ndiff: "+getComponentValue("Difficulty"));
-                if(chart!=null){
-                    System.out.println("chart: "+chart.name);
-                }
-            }
-
-            if(chart==null){
-                System.out.println("error!! chart is null!! calculations have been prematurely ended.");
-                return;
-            }
-
-            scoreCalc.calcScore(minScore, far, miss, farOp, missOp, toaStatus, chart.cc, chart.combo);
-
-            //sort results based on the sort option
-            switch((String) Objects.requireNonNull(sortSelection.getSelectedItem())) {
-                case "Score":
-                    scoreTextArray.sort(Comparator.comparingDouble(ScoreTextArea::getScore).reversed());
-                    break;
-                case "FAR count":
-                    scoreTextArray.sort(Comparator.comparingInt(ScoreTextArea::getFar).reversed());
-                    break;
-                case "LOST count":
-                    scoreTextArray.sort(Comparator.comparingInt(ScoreTextArea::getMiss).reversed());
-                    break;
-            }
-
-            //removes all components from scorePanel so scores dont stack on next run
-            scorePanel.removeAll();
-
-            //add sorted components to the scorePanel
-            for(ScoreTextArea textAreas:scoreTextArray){
-                if(Hub.DEBUG){System.out.println("arrays are being added :3");}
-                scorePanel.add(textAreas);
-            }
-
-            //update the scroll pane after adding components
-            scorePanel.revalidate();
-            scorePanel.repaint();
-
-        });
+        run.addActionListener(_ -> runCalcs(scorePanel));
 
 
     }
@@ -404,6 +351,62 @@ public class scoreDisplay extends Database{
             tempString = Double.toString(toDouble);
         }
         return tempString;
+    }
+
+    private static void runCalcs(JPanel scorePanel){
+        //clear the board before running new calcs
+        scoreTextArray.clear();
+
+        //init var (reading off fields and dropdowns)
+        final Chart chart = getChart(getComponentValue("Chart"), getComponentValue("Difficulty"));
+        final int far = (int)Double.parseDouble(getComponentValue("Far Count"));
+        final int miss = (int)Double.parseDouble(getComponentValue("Lost Count"));
+        final String minScore = getComponentValue("Minimum Score");
+        final String farOp = getComponentValue("Far Operator");
+        final String missOp = getComponentValue("Lost Operator");
+        final String sort = getComponentValue("Sort Selection");
+        final boolean toaStatus = ((JCheckBox)componentMap.get("Toa")).isSelected();
+
+        if(Hub.DEBUG){
+            System.out.println("run called\ninput chart name: "+getComponentValue("Chart")+"\ndiff: "+getComponentValue("Difficulty"));
+            if(chart!=null){
+                System.out.println("chart: "+chart.name);
+            }
+        }
+
+        if(chart==null){
+            System.out.println("error!! chart is null!! calculations have been prematurely ended.");
+            return;
+        }
+
+        scoreCalc.calcScore(minScore, far, miss, farOp, missOp, toaStatus, chart.cc, chart.combo);
+
+        //sort results based on the sort option
+        switch(sort){
+            case "Score":
+                scoreTextArray.sort(Comparator.comparingDouble(ScoreTextArea::getScore).reversed());
+                break;
+            case "FAR count":
+                scoreTextArray.sort(Comparator.comparingInt(ScoreTextArea::getFar).reversed());
+                break;
+            case "LOST count":
+                scoreTextArray.sort(Comparator.comparingInt(ScoreTextArea::getMiss).reversed());
+                break;
+        }
+
+        //removes all components from scorePanel so scores dont stack on next run
+        scorePanel.removeAll();
+
+        //add sorted components to the scorePanel
+        for(ScoreTextArea textAreas:scoreTextArray){
+            if(Hub.DEBUG){System.out.println("arrays are being added :3");}
+            scorePanel.add(textAreas);
+        }
+
+        //update the scroll pane after adding components
+        scorePanel.revalidate();
+        scorePanel.repaint();
+
     }
 
     //this is so dumb but it has to be done to make exactly ONE function more efficient by removing TWO lines of code
