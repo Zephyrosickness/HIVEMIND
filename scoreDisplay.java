@@ -205,6 +205,7 @@ public class scoreDisplay extends Database{
 
         difficultySelect.addActionListener(_ -> {
             songSelect.setModel(loadSongList());
+            refresh((String)songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant, (String)difficultySelect.getSelectedItem());
         });
 
 
@@ -333,12 +334,13 @@ public class scoreDisplay extends Database{
     private static void refresh(String selected, JLabel imageLabel, JLabel noteCount, JLabel chartConstant, String difficulty){
         //gets the string of jacket file location
             songAttributes(selected);
+            Chart chart = getChart(difficulty, selected);
 
             //sets up jacket
             String check = jacketCheck(selected);
             Path path = Paths.get("./assets/"+check +".jpg");
             //appends _byd to the target jacket if the difficulty is byd
-            if (difficulty.equals("BYD")) {path = Paths.get("./assets/"+check +"_byd.jpg");}
+            if (difficulty.equals("BYD")|| Objects.equals(chart.tier, "BYD")) {path = Paths.get("./assets/"+check +"_byd.jpg");}
 
             File jacket = new File(path.toString());
 
@@ -366,8 +368,8 @@ public class scoreDisplay extends Database{
 
 
         //update constant/combo
-        noteCount.setText("Max Combo: " + combo);
-        chartConstant.setText("Chart Constant: " + cc);
+        noteCount.setText("Max Combo: " + chart.combo);
+        chartConstant.setText("Chart Constant: " + chart.cc);
 
 
     }
