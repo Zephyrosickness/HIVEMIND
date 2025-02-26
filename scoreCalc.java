@@ -30,7 +30,7 @@ public class scoreCalc extends scoreDisplay{
         //oh my god. this code used to be OVER 200 LINES LONG. it was the most UNREADABLE peice of SHIT I ever wrote. now it's 20 lines. im god. im a genius. greatest programmer ever
             for (farFinal = 0; farFinal<farThreshold; farFinal++) {
                 for (missFinal = 0; missFinal<missThreshold; missFinal++){
-                    if(Hub.DEBUG){System.out.println("[debug] forloop called in score calc\n combo: "+combo+"\ncc: "+cc);}
+                    if(Hub.DEBUG_CALC){System.out.println("[debug] forloop called in score calc\n combo: "+combo+"\ncc: "+cc);}
                     //calcs score. each PURE is 10,000,000 divided by max combo, and FAR is half of PURE
                     pureFinal = combo - (farFinal + missFinal);
                     scoreFinal = pureRaw * pureFinal + farRaw * farFinal;
@@ -47,7 +47,7 @@ public class scoreCalc extends scoreDisplay{
                     //if all criteria is met, imports into scroll panel
                     if(farCheck&&missCheck&&scoreCheck&&legit){
                         importComponent(scoreFinal, pureFinal, farFinal, missFinal, pttCalc.calcPTT(scoreFinal, cc));
-                        if(Hub.DEBUG){System.out.println("imported!!!!!!!!!!!!");}
+                        if(Hub.DEBUG_CALC){System.out.println("imported!!!!!!!!!!!!");}
                     }
                 }
             }

@@ -51,7 +51,7 @@ public class Database {
         //adds data for every chart currently in-game to the list variables; cc and combo values ripped from arcaea wiki
         private void initialize() {
             chartNames.clear(); chartNamesBYD.clear(); allCharts.clear(); allChartsBYD.clear(); //clear all listings to prevent stacking
-            
+
             //#
 
             new Chart("10pt8ion", 906, 9.7, "FTR");
@@ -576,13 +576,13 @@ public class Database {
     }
 
     public static Chart getChart(String name, String difficulty){
-        if(Hub.DEBUG){System.out.println("[debug] getchart called. difficulty: "+difficulty+"\nname: "+name);}
+        if(Hub.DEBUG){System.out.println("\n[DEBUG // GETCHART]\ndifficulty: "+difficulty+"\nname: "+name);}
 
         if(difficulty.equals("BYD")){
-            if(Hub.DEBUG){System.out.println("[debug] getchart called. resulting chart: "+chartMapBYD.get(name).name);}
+            if(Hub.DEBUG){System.out.println("[DEBUG // GETCHART] resulting chart: "+chartMapBYD.get(name).name);}
             return chartMapBYD.get(name);
         }else{
-            if(Hub.DEBUG){System.out.println("[debug] getchart called. resulting chart: "+chartMapFTR.get(name).name);}
+            if(Hub.DEBUG){System.out.println("[DEBUG // GETCHART] resulting chart: "+chartMapFTR.get(name).name);}
             return chartMapFTR.get(name);
         }
     }
@@ -599,58 +599,33 @@ public class Database {
 
         if(getChart(target,"FTR/ETR").tier.equals("ETR")){target = target.substring(0, target.length()-10);}
 
-        switch(target){
-            case "Select a chart":
-                target = "placeholder";
-                break;
+        return switch(target){
 
-            case "Altair (feat. *spiLa*)":
-                target = "Altair";
-                break;
+            case "Altair (feat. *spiLa*)" -> "Altair";
 
-            case "Can I friend you on Bassbook? lol":
-                target ="Bassbook";
-                break;
+            case "Can I friend you on Bassbook? lol" -> "Bassbook";
 
-            case "cocoro*cosmetic":
-                target = "cocoro";
-                break;
+            case "cocoro*cosmetic" -> "cocoro";
 
-            case " ͟͝͞Ⅱ́̕":
-                target = "Ii";
-                break;
+            case " ͟͝͞Ⅱ́̕" -> "Ii";
 
-            case "carmine:scythe":
-                target="carmine scythe";
-                break;
+            case "carmine:scythe" -> "carmine scythe";
 
-            case "To: Alice Liddell":
-                target="To Alice Liddell";
-                break;
+            case "To: Alice Liddell" -> "To Alice Liddell";
 
-            case "Valhalla:0":
-                target="valhalla0";
-                break;
+            case "Valhalla:0" -> "valhalla0";
 
-            case "Last | Moment":
-                target="Last Moment";
-                break;
+            case "Last | Moment" -> "Last Moment";
 
-            case "Last | Eternity":
-                target="Last Eternity";
-                break;
+            case "Last | Eternity" -> "Last Eternity";
 
-            case "Twilight Concerto":
-                target = "Tasogare";
-                break;
+            case "Twilight Concerto" -> "Tasogare";
 
-            case"Hidden Rainbows of Epicurus":
-                target = "Epicurus";
-                break;
+            case"Hidden Rainbows of Epicurus" -> "Epicurus";
 
-            default:
-                break;
-        }
-        return target;
+            case"world.execute(me)," -> "worldexecuteme";
+
+            default -> target;
+        };
     }
 }

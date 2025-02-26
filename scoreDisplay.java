@@ -205,7 +205,9 @@ public class scoreDisplay extends Database{
 
 
         //selects random song
-        randomize.addActionListener(_ -> {});
+        randomize.addActionListener(_ -> {
+            songSelect.setSelectedItem(getRandomChart().name);
+        });
 
         farOperator.addActionListener(_ -> {
             if(Objects.requireNonNull(farOperator.getSelectedItem()).toString().equals("Any")){
@@ -286,34 +288,33 @@ public class scoreDisplay extends Database{
 
     }
 
-    //private static void setRandomChart(){
+    private static Chart getRandomChart(){
+
         //init var
-        //final Random rand = new Random();
-            /*
-            error handler. prevents from typing the minimum value as 10000 or smth
-            value set to 11.1 bc it's the largest value that both future/beyond charts have
-            could make it 12 for byd and 11.3 for ftr, but I don't care enough for an error handler
-            minmax 0 is min and minmax 1 is max
-             */
-        /*final double[] minMax = clamp(new double[]{Double.parseDouble(getComponentValue("Minimum CC")), Double.parseDouble(getComponentValue("Maximum CC"))},11.1);
+        final Random rand = new Random();
+        final Map<String, Chart> charts = switch(getComponentValue("Difficulty")){ //this is a switch in case i add prs for whatever insane reason
+            case "BYD" -> chartMapBYD;
+            default -> chartMapFTR;
+        };
+        Chart selectedChart;
+        int index;
+
+        String[] names = charts.keySet().toArray(new String[0]);
+
+        //error handler. prevents from typing the minimum value as 10000 or smth. value set to 11.1 bc it's the largest value that both future/beyond charts have
+        // minmax 0 is min and minmax 1 is max
+        final double[] minMax = clamp(new double[]{Double.parseDouble(getComponentValue("Minimum CC")), Double.parseDouble(getComponentValue("Maximum CC"))},11.1);
 
         //selects random number and sets chart index # to the random num. if not within the bounds of specified cc, reroll
-        //songSelect.setSelectedIndex(rand.nextInt(selectedChart.length));
-        int index = rand.nextInt(charts.length);
-        double selectedCC = (chartAttributes.get(index)).cc;
+        do{
+            index = rand.nextInt(charts.size());
+            selectedChart = (charts.get(names[index]));
+            if(Hub.DEBUG){System.out.printf("\n\n[DEBUG // CHART SELECTION]\nselected chart: %s\nselected cc: %f\nmin: %f\nmax: %f\n",charts.get(names[index]).name, selectedChart.cc,minMax[0],minMax[1]);}
 
-        while(!(selectedCC<=minMax[1]&&selectedCC>=minMax[0])){
-            index = rand.nextInt(charts.length);
-            selectedCC = (chartAttributes.get(index)).cc;
+        }while(!(selectedChart.cc<=minMax[1]&& selectedChart.cc>=minMax[0]));
 
-            if(minMax[0]>minMax[1]){
-                System.out.println("!! random gen quirked up rn... go check that out");
-                break;
-            }
-        }
-        songSelect.setSelectedIndex(index);
-        refresh(imageLabel, noteCount, chartConstant);
-    }*/
+        return selectedChart;
+    }
 
     //used when changing from ftr to byd
     private static ComboBoxModel<String> loadSongList(){
