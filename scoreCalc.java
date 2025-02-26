@@ -14,7 +14,6 @@ public class scoreCalc extends scoreDisplay{
         //it just eliminates unecessary scores and speeds up the process
         int farThreshold = combo /10;
         int missThreshold = combo /5;
-        System.out.println(combo);
 
         //gets length of score. then adds 0's until it hits 7 digits (so 99 = 9,900,000)
         //if score starts with 1, then it be set to 10,000,000 (pure memory)
@@ -30,7 +29,8 @@ public class scoreCalc extends scoreDisplay{
         /*runs through every possible combination of far/lost notes, calculates the score and only prints out the ones that fufill the requirements*/
         //oh my god. this code used to be OVER 200 LINES LONG. it was the most UNREADABLE peice of SHIT I ever wrote. now it's 20 lines. im god. im a genius. greatest programmer ever
             for (farFinal = 0; farFinal<farThreshold; farFinal++) {
-                for (missFinal = 0; missFinal<missThreshold; missFinal++) {
+                for (missFinal = 0; missFinal<missThreshold; missFinal++){
+                    if(Hub.DEBUG){System.out.println("[debug] forloop called in score calc\n combo: "+combo+"\ncc: "+cc);}
                     //calcs score. each PURE is 10,000,000 divided by max combo, and FAR is half of PURE
                     pureFinal = combo - (farFinal + missFinal);
                     scoreFinal = pureRaw * pureFinal + farRaw * farFinal;
@@ -47,6 +47,7 @@ public class scoreCalc extends scoreDisplay{
                     //if all criteria is met, imports into scroll panel
                     if(farCheck&&missCheck&&scoreCheck&&legit){
                         importComponent(scoreFinal, pureFinal, farFinal, missFinal, pttCalc.calcPTT(scoreFinal, cc));
+                        if(Hub.DEBUG){System.out.println("imported!!!!!!!!!!!!");}
                     }
                 }
             }

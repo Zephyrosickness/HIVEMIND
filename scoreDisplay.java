@@ -16,16 +16,11 @@ import java.util.List;
 
 public class scoreDisplay extends Database{
     final private static HashMap<String, Component> componentMap = new HashMap<>();
-    //init var
-    protected static int combo;
-    protected static double cc;
 
     protected static List<ScoreTextArea> scoreTextArray = new ArrayList<>();
     protected static JComboBox<String> songSelect;
 
     protected static String[] charts = (Database.chartNames).toArray(new String[Database.chartNames.size()]);
-
-    protected static ArrayList<Chart> chartAttributes = Database.allCharts;
 
     protected static Map<String, Chart> chartMap = Database.chartMapFTR;
 
@@ -107,7 +102,7 @@ public class scoreDisplay extends Database{
         //chart select dropdown
         songSelect = new JComboBox<>(charts);
         chartPanel.add(songSelect);
-        componentMap.put("Song Select", songSelect);
+        componentMap.put("Chart", songSelect);
 
         //-label for notecount
         final JLabel noteCount = new JLabel("Max Combo:");
@@ -117,7 +112,7 @@ public class scoreDisplay extends Database{
         //-label for chart constant
         final JLabel chartConstant = new JLabel("Chart Constant:");
         chartPanel.add(chartConstant);
-        componentMap.put("Chart Constant", difficultySelect);
+        componentMap.put("Chart Constant", chartConstant);
 
 
         //bottom panel items ---
@@ -173,13 +168,13 @@ public class scoreDisplay extends Database{
         final JButton randomize = new JButton("Select Random");
 
         //refreshes on initalization
-        refresh((String)songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant, (String)Objects.requireNonNull(difficultySelect.getSelectedItem()));
+        refresh();
 
         //ACTIONS--
 
         //loads chart / refreshes song data (songSelect dropdown)
 
-        songSelect.addActionListener(_ -> refresh((String) songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant, (String)difficultySelect.getSelectedItem()));
+        songSelect.addActionListener(_ -> refresh());
 
         //we use an array here because it allows u to change the order of the components without having to have them on certain lines. to reorder u just reorder the arraylist here
         Component[] itemsInOrder = new Component[]{
@@ -205,43 +200,12 @@ public class scoreDisplay extends Database{
 
         difficultySelect.addActionListener(_ -> {
             songSelect.setModel(loadSongList());
-            refresh((String)songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant, (String)difficultySelect.getSelectedItem());
+            refresh();
         });
 
 
         //selects random song
-        randomize.addActionListener(_ -> {
-            //init var
-            Random rand = new Random();
-            double minimum = Double.parseDouble(ccMin.getText());
-            double maximum = Double.parseDouble(ccMax.getText());
-
-            //error handler. prevents from typing the minimum value as 10000 or smth
-            //value set to 11.1 bc it's the largest value that both future/beyond charts have
-            //could make it 12 for byd and 11.3 for ftr, but I don't care enough for an error handler
-
-            if(maximum>11.1){maximum=11.1;}
-
-            if(minimum>11.1){minimum=11.1;}
-
-
-            //selects random number and sets chart index # to the random num. if not within the bounds of specified cc, reroll
-            //songSelect.setSelectedIndex(rand.nextInt(selectedChart.length));
-            int index = rand.nextInt(charts.length);
-            double selectedCC = (chartAttributes.get(index)).cc;
-
-            while(!(selectedCC<=maximum&&selectedCC>=minimum)){
-                index = rand.nextInt(charts.length);
-                selectedCC = (chartAttributes.get(index)).cc;
-
-                if(minimum>maximum){
-                    System.out.println("!! random gen quirked up rn... go check that out");
-                    break;
-                }
-            }
-            songSelect.setSelectedIndex(index);
-            refresh((String)songSelect.getSelectedItem(), imageLabel, noteCount, chartConstant, (String)difficultySelect.getSelectedItem());
-        });
+        randomize.addActionListener(_ -> {});
 
         farOperator.addActionListener(_ -> {
             if(Objects.requireNonNull(farOperator.getSelectedItem()).toString().equals("Any")){
@@ -269,21 +233,27 @@ public class scoreDisplay extends Database{
             scoreTextArray.clear();
 
             //init var (reading off fields and dropdowns)
-            int far = Integer.parseInt(farField.getText());
+            Chart chart = getChart(getComponentValue("Chart"), getComponentValue("Difficulty"));
+            int far = Integer.parseInt(lostField.getText());
             int miss = Integer.parseInt(lostField.getText());
             String minScore = (scoreField.getText());
             String farOp = (String)farOperator.getSelectedItem();
             String missOp = (String)lostOperator.getSelectedItem();
             boolean toaStatus = toa.isSelected();
 
-            //runs func to calc score
-            /*THIS SHIT USED TO BE SO LONG AND AWFUL AND I HAD NO IDEA HOW TO GET IT INTO ITS OWN CLASS AND IT WAS OVER HALF THE ENTIRE PROGRAM BUT
-             * I DID NOW IT'S WAY SHORTER AND IN ITS OWN CLASS I'M SUCH A GENIUS I'M LITERALLY A PRODIGY OH MY GOD
-             */
+            if(Hub.DEBUG){
+                System.out.println("run called\ninput chart name: "+getComponentValue("Chart")+"\ndiff: "+getComponentValue("Difficulty"));
+                if(chart!=null){
+                    System.out.println("chart: "+chart.name);
+                }
+            }
 
-            System.out.println("run");
+            if(chart==null){
+                System.out.println("error!! chart is null!! calculations have been prematurely ended.");
+                return;
+            }
 
-            scoreCalc.calcScore(minScore, far, miss, farOp, missOp, toaStatus, cc, combo);
+            scoreCalc.calcScore(minScore, far, miss, farOp, missOp, toaStatus, chart.cc, chart.combo);
 
             //sort results based on the sort option
             switch((String) Objects.requireNonNull(sortSelection.getSelectedItem())) {
@@ -302,7 +272,10 @@ public class scoreDisplay extends Database{
             scorePanel.removeAll();
 
             //add sorted components to the scorePanel
-            for (ScoreTextArea textAreas : scoreTextArray){scorePanel.add(textAreas);}
+            for(ScoreTextArea textAreas:scoreTextArray){
+                if(Hub.DEBUG){System.out.println("arrays are being added :3");}
+                scorePanel.add(textAreas);
+            }
 
             //update the scroll pane after adding components
             scorePanel.revalidate();
@@ -312,6 +285,35 @@ public class scoreDisplay extends Database{
 
 
     }
+
+    //private static void setRandomChart(){
+        //init var
+        //final Random rand = new Random();
+            /*
+            error handler. prevents from typing the minimum value as 10000 or smth
+            value set to 11.1 bc it's the largest value that both future/beyond charts have
+            could make it 12 for byd and 11.3 for ftr, but I don't care enough for an error handler
+            minmax 0 is min and minmax 1 is max
+             */
+        /*final double[] minMax = clamp(new double[]{Double.parseDouble(getComponentValue("Minimum CC")), Double.parseDouble(getComponentValue("Maximum CC"))},11.1);
+
+        //selects random number and sets chart index # to the random num. if not within the bounds of specified cc, reroll
+        //songSelect.setSelectedIndex(rand.nextInt(selectedChart.length));
+        int index = rand.nextInt(charts.length);
+        double selectedCC = (chartAttributes.get(index)).cc;
+
+        while(!(selectedCC<=minMax[1]&&selectedCC>=minMax[0])){
+            index = rand.nextInt(charts.length);
+            selectedCC = (chartAttributes.get(index)).cc;
+
+            if(minMax[0]>minMax[1]){
+                System.out.println("!! random gen quirked up rn... go check that out");
+                break;
+            }
+        }
+        songSelect.setSelectedIndex(index);
+        refresh(imageLabel, noteCount, chartConstant);
+    }*/
 
     //used when changing from ftr to byd
     private static ComboBoxModel<String> loadSongList(){
@@ -331,31 +333,37 @@ public class scoreDisplay extends Database{
         return new JComboBox<>(charts).getModel();
     }
     //refreshes song data
-    private static void refresh(String selected, JLabel imageLabel, JLabel noteCount, JLabel chartConstant, String difficulty){
+    private static void refresh(){
+
         //gets the string of jacket file location
-            songAttributes(selected);
-            Chart chart = getChart(difficulty, selected);
+        final String difficulty = getComponentValue("Difficulty");
+        final Chart chart = getChart(getComponentValue("Chart"), difficulty);
+        final JLabel imageLabel = (JLabel)componentMap.get("Jacket"); //this is the label that holds the icon that you are changing
+        final JLabel noteCountLabel = (JLabel)componentMap.get("Max Combo"); //this is the label that holds cc data that you are changing
+        final JLabel chartConstantLabel = (JLabel)componentMap.get("Chart Constant"); //this is the label that holds cc data that you are changing
 
-            //sets up jacket
-            String check = jacketCheck(selected);
-            Path path = Paths.get("./assets/"+check +".jpg");
-            //appends _byd to the target jacket if the difficulty is byd
-            if (difficulty.equals("BYD")|| Objects.equals(chart.tier, "BYD")) {path = Paths.get("./assets/"+check +"_byd.jpg");}
 
-            File jacket = new File(path.toString());
+        //sets up jacket
+        String check = jacketCheck(chart.name);
+        Path path = Paths.get("./assets/"+check +".jpg");
+        //appends _byd to the target jacket if the difficulty is byd
+        if(Objects.equals(chart.tier, "BYD")){path = Paths.get("./assets/"+check +"_byd.jpg");}
 
-            //System.out.println("\nimage checksum!!! [!DEBUG ONLY!] \n------DETAILS------\nJACKET: "+jacket+" EXISTS?: "+Files.exists(path));
+        File jacket = new File(path.toString());
+
+        //System.out.println("\nimage checksum!!! [!DEBUG ONLY!] \n------DETAILS------\nJACKET: "+jacket+" EXISTS?: "+Files.exists(path));
 
         //if the jacket doesnt exist for whatever reason, (most of the time im just too lazy to add jackets for new songs) swap to a placeholder and print an error
-            if (!Files.exists(path)) {
-                System.out.println("error reading image!\n------DETAILS------\nJACKET: " + jacket + " EXISTS?: " + Files.exists(path));
-                jacket = new File("./assets/placeholder.jpg");
-            }
+        if (!Files.exists(path)) {
+            System.out.println("error reading image!\n------DETAILS------\nJACKET: " + jacket + " EXISTS?: " + Files.exists(path));
+            jacket = new File("./assets/placeholder.jpg");
+        }
 
         //reads the jacket and displays it to ui
         try{
             BufferedImage img = ImageIO.read(jacket);
 
+            //fix this later the height shouldnt be hardcoded
             int scaledWidth = 325;
             int scaledHeight = -1;  //set to -1 so aspect ratio will be preserved
             Image resizedImg = img.getScaledInstance(scaledWidth, scaledHeight, Image.SCALE_SMOOTH);
@@ -366,10 +374,9 @@ public class scoreDisplay extends Database{
             //error handler in case of invalid url
         }catch (IOException e){System.out.println("Error reading image!\n------DETAILS------\nERROR DETAILS: "+e.getMessage()+"JACKET: "+jacket);}
 
-
         //update constant/combo
-        noteCount.setText("Max Combo: " + chart.combo);
-        chartConstant.setText("Chart Constant: " + chart.cc);
+        noteCountLabel.setText("Max Combo: " + chart.combo);
+        chartConstantLabel.setText("Chart Constant: " + chart.cc);
 
 
     }
@@ -387,16 +394,24 @@ public class scoreDisplay extends Database{
         }else{
             //if component is a num then make sure its positive
             tempString = ((JTextField) component).getText();
-            int toInt = 0;
+            double toDouble = 0;
             try{
-                toInt = Integer.parseInt(tempString);
-                if(toInt<0){toInt = 1;}
+                toDouble = Double.parseDouble(tempString);
+                if(toDouble <0){
+                    toDouble = 1;}
             }catch(Exception _){}
-            tempString = Integer.toString(toInt);
+            tempString = Double.toString(toDouble);
         }
         return tempString;
     }
 
+    //this is so dumb but it has to be done to make exactly ONE function more efficient by removing TWO lines of code
+    private static double[] clamp(double[] targets, double max){
+        //use a regular for loop here instead of an enchanced one to keep the index intact
+        for(int i = 0; i<targets.length;i++){if(targets[i]>max){targets[i]=max;}}
+        if(targets[targets.length-1]==0){targets[targets.length-1]=max;}
+        return targets;
+    }
 
     protected static class ScoreTextArea extends JTextArea{
         double score;
@@ -412,17 +427,13 @@ public class scoreDisplay extends Database{
 
             setEditable(false);
             setBorder(BorderFactory.createLineBorder(Color.BLACK));
+
+            if(Hub.DEBUG){System.out.println("[debug] scoretextarray constructor call");}
         }
 
-        private double getScore() {
-            return score;
-        }
-        private int getFar() {
-            return (int)far;
-        }
-        private int getMiss() {
-            return (int)miss;
-        }
+        private double getScore() {return score;}
+        private int getFar(){return (int)far;}
+        private int getMiss(){return (int)miss;}
     }
 
     protected static void importComponent(double score, int pure, int far, int miss, double rating){
@@ -430,13 +441,5 @@ public class scoreDisplay extends Database{
         String text = "Score: " + (int) score + "\nPURE: " + pure + "\nFAR: " + far + "\nLOST: " + miss +"\nPlay Rating: "+rating;
         ScoreTextArea textArea = new ScoreTextArea(text, score, far, miss);
         scoreTextArray.add(textArea);
-    }
-
-    private static void songAttributes(String selected){
-        Chart selectedChartObject = chartMap.get(selected);
-
-        cc = selectedChartObject.cc;
-        combo = selectedChartObject.combo;
-
     }
 }

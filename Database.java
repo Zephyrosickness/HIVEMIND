@@ -575,9 +575,16 @@ public class Database {
         }
     }
 
-    public static Chart getChart(String difficulty, String name){
-        if(difficulty.equals("BYD")){return chartMapBYD.get(name);}
-        else{return chartMapFTR.get(name);}
+    public static Chart getChart(String name, String difficulty){
+        if(Hub.DEBUG){System.out.println("[debug] getchart called. difficulty: "+difficulty+"\nname: "+name);}
+
+        if(difficulty.equals("BYD")){
+            if(Hub.DEBUG){System.out.println("[debug] getchart called. resulting chart: "+chartMapBYD.get(name).name);}
+            return chartMapBYD.get(name);
+        }else{
+            if(Hub.DEBUG){System.out.println("[debug] getchart called. resulting chart: "+chartMapFTR.get(name).name);}
+            return chartMapFTR.get(name);
+        }
     }
 
     /*the way this script works is that it requires the selected variable name to be the exact same as the jacket file name.
@@ -590,9 +597,7 @@ public class Database {
             target = "placeholder";
         }
 
-        if(target.endsWith(" (Eternal)")){
-            target = target.substring(0, target.length()-10);
-        }
+        if(getChart(target,"FTR/ETR").tier.equals("ETR")){target = target.substring(0, target.length()-10);}
 
         switch(target){
             case "Select a chart":
