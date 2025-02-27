@@ -37,13 +37,13 @@ public class scoreCalc extends scoreDisplay{
                     scoreFinal = pureRaw * pureFinal + farRaw * farFinal;
 
                     //checks if all values meet operator criteria
-                    boolean farCheck = utilities.check(farFinal, inputFar, farOp);
-                    boolean missCheck = utilities.check(missFinal, inputMiss, missOp);
-                    boolean scoreCheck = scoreFinal >= minScore;
+                    final boolean farCheck = utilities.check(farFinal, inputFar, farOp);
+                    final boolean missCheck = utilities.check(missFinal, inputMiss, missOp);
+                    final boolean scoreCheck = scoreFinal >= minScore;
 
 
                     //makes sure no invalid values
-                    boolean legit = utilities.legitimacyCheck(pureFinal, farFinal, missFinal, combo,scoreFinal, toa, combo-pureFinal);
+                    final boolean legit = utilities.legitimacyCheck(pureFinal, farFinal, missFinal, combo,scoreFinal, toa, combo-pureFinal);
 
                     //if all criteria is met, imports into scroll panel
                     if(farCheck&&missCheck&&scoreCheck&&legit){

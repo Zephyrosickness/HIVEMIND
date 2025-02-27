@@ -50,7 +50,7 @@ public class scoreDisplay extends Database{
 
         //adds panel
         frame.add(leftPanel);
-        songInfoComponents(leftPanel, scorePanel, frame);
+        addInfoToPanel(leftPanel, scorePanel, frame);
 
         // Add the scroll pane to the frame
         frame.add(scoreDisplay);
@@ -59,7 +59,7 @@ public class scoreDisplay extends Database{
     }
 
     //panel to hold components
-    private static void songInfoComponents(JPanel panel, JPanel scorePanel, JFrame frame){
+    private static void addInfoToPanel(JPanel panel, JPanel scorePanel, JFrame frame){
         //filler sizes
         final Dimension minFillerSize = new Dimension(frame.getWidth()/128, frame.getHeight()/128);
         final Dimension prefFilerSize = new Dimension(frame.getWidth()/64, frame.getHeight()/64);
@@ -159,7 +159,7 @@ public class scoreDisplay extends Database{
         final JButton run = new JButton("Find scores");
 
         //button to select random song
-        final JButton randomize = new JButton("Select Random");
+        final JButton randomize = new JButton("Select Random Chart");
 
         //refreshes on initalization
         refresh();
@@ -289,7 +289,7 @@ public class scoreDisplay extends Database{
 
         File jacket = new File(path.toString());
 
-        //System.out.println("\nimage checksum!!! [!DEBUG ONLY!] \n------DETAILS------\nJACKET: "+jacket+" EXISTS?: "+Files.exists(path));
+        if(Hub.DEBUG){System.out.println("\nimage checksum!!! [!DEBUG ONLY!] \n------DETAILS------\nJACKET: "+jacket+" EXISTS?: "+Files.exists(path));}
 
         //if the jacket doesnt exist for whatever reason, (most of the time im just too lazy to add jackets for new songs) swap to a placeholder and print an error
         if (!Files.exists(path)) {
@@ -389,7 +389,7 @@ public class scoreDisplay extends Database{
 
         //add sorted components to the scorePanel
         for(ScoreTextArea textAreas:scoreTextArray){
-            if(Hub.DEBUG){System.out.println("arrays are being added :3");}
+            if(Hub.DEBUG){System.out.println("arrays are being added\narray text vvvvv\n"+textAreas.getText()+"\n");}
             scorePanel.add(textAreas);
         }
 

@@ -2,8 +2,8 @@ import javax.swing.*;
 import javax.swing.UIManager.LookAndFeelInfo;
 
 public class Hub {
-    final public static boolean DEBUG = true;
-    final public static boolean DEBUG_CALC = false;
+    final public static boolean DEBUG = false; ///debug for ui
+    final public static boolean DEBUG_CALC = false; //debug for calc
 
     public static void main(String[] args) {
         //changes l&f to windows classic because im a basic bitch like that
