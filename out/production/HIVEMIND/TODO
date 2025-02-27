@@ -1,5 +1,7 @@
 beautiful dreamer has a false positive where it believes the jacket exists and gets an exception trying to display a file that does not exist (i can just solve this by adding the jacket lmao)
 
+remove the 6 different arrays in db. all u need is the 2 maps
+
 add partner db
 and world mode calc
 and fragment calc maybe
