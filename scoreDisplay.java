@@ -268,6 +268,8 @@ public class scoreDisplay extends Database{
             default -> Database.chartNames;
         };
 
+        chartsTemp.sort(String::compareToIgnoreCase);
+
         return new JComboBox<>(chartsTemp.toArray(new String[0])).getModel();
     }
     //refreshes song data
