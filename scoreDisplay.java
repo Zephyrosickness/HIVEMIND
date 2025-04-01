@@ -18,6 +18,7 @@ import java.util.List;
 public class scoreDisplay extends Database{
     final private static HashMap<String, Component> componentMap = new HashMap<>();
     protected static List<ScoreTextArea> scoreTextArray = new ArrayList<>();
+    private static Map<String,Chart> chartMap = Database.chartMapFTR;
 
     protected scoreDisplay() throws ParserConfigurationException {}
 
@@ -196,6 +197,7 @@ public class scoreDisplay extends Database{
         //load byd/ftr charts (diffSelect dropdown)
 
         difficultySelect.addActionListener(_ -> {
+            changeMap((String)Objects.requireNonNull(difficultySelect.getSelectedItem()));
             songSelect.setModel(loadSongList());
             refresh();
         });
@@ -234,14 +236,10 @@ public class scoreDisplay extends Database{
 
         //init var
         final Random rand = new Random();
-        final Map<String, Chart> charts = switch(getComponentValue("Difficulty")){ //this is a switch in case i add prs for whatever insane reason
-            case "BYD" -> chartMapBYD;
-            default -> chartMapFTR;
-        };
         Chart selectedChart;
         int index;
 
-        String[] names = charts.keySet().toArray(new String[0]);
+        String[] names = chartMap.keySet().toArray(new String[0]);
 
         //error handler. prevents from typing the minimum value as 10000 or smth. value set to 11.1 bc it's the largest value that both future/beyond charts have
         // minmax 0 is min and minmax 1 is max
@@ -249,9 +247,9 @@ public class scoreDisplay extends Database{
 
         //selects random number and sets chart index # to the random num. if not within the bounds of specified cc, reroll
         do{
-            index = rand.nextInt(charts.size());
-            selectedChart = (charts.get(names[index]));
-            if(Hub.DEBUG){System.out.printf("\n\n[DEBUG // CHART SELECTION]\nselected chart: %s\nselected cc: %f\nmin: %f\nmax: %f\n",charts.get(names[index]).name, selectedChart.cc,minMax[0],minMax[1]);}
+            index = rand.nextInt(chartMap.size());
+            selectedChart = (chartMap.get(names[index]));
+            if(Hub.DEBUG){System.out.printf("\n\n[DEBUG // CHART SELECTION]\nselected chart: %s\nselected cc: %f\nmin: %f\nmax: %f\n",chartMap.get(names[index]).name, selectedChart.cc,minMax[0],minMax[1]);}
 
         }while(!(selectedChart.cc<=minMax[1]&& selectedChart.cc>=minMax[0]));
 
@@ -260,13 +258,8 @@ public class scoreDisplay extends Database{
 
     //used when changing from ftr to byd
     private static ComboBoxModel<String> loadSongList(){
-        final String selected = getComponentValue("Difficulty");
-
         //this is a switch instead of an if-else in case i ever need to do more diffs
-        final List<String> listTemp = switch(selected){
-            case "BYD" -> Database.chartMapBYD.keySet().stream().toList();
-            default -> Database.chartMapFTR.keySet().stream().toList();
-        };
+        final List<String> listTemp = chartMap.keySet().stream().toList();
         final ArrayList<String> chartsTemp = new ArrayList<>(listTemp);
 
         chartsTemp.sort(String::compareToIgnoreCase);
@@ -287,8 +280,11 @@ public class scoreDisplay extends Database{
         //sets up jacket
         String check = jacketCheck(chart.name);
         Path path = Paths.get("./assets/"+check +".jpg");
-        //appends _byd to the target jacket if the difficulty is byd
-        if(Objects.equals(chart.tier, "BYD")){path = Paths.get("./assets/"+check +"_byd.jpg");}
+        //appends _byd to the target jacket if the difficulty is byd. if ftr doesnt exist (i.e april fools songs) dont append byd
+        final Path pathBYDTemp = Path.of("./assets/" + check + "_byd.jpg");
+        if(Objects.equals(chart.tier, "BYD")&&getChart(chart.name,"FTR/ETR")!=null&&Files.exists(pathBYDTemp)){
+            path = pathBYDTemp;
+        }
 
         File jacket = new File(path.toString());
 
@@ -442,5 +438,14 @@ public class scoreDisplay extends Database{
         String text = "Score: " + (int) score + "\nPURE: " + pure + "\nFAR: " + far + "\nLOST: " + miss +"\nPlay Rating: "+rating;
         ScoreTextArea textArea = new ScoreTextArea(text, score, far, miss);
         scoreTextArray.add(textArea);
+    }
+
+    private static void changeMap(String input){
+        //redundant branch bc i will add present and past later
+        chartMap = switch(input){
+            case "FTR/ETR" -> chartMapFTR;
+            case "BYD" -> chartMapBYD;
+            default -> chartMapFTR;
+        };
     }
 }

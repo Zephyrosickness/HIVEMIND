@@ -83,7 +83,12 @@ public class Database {
             target = "placeholder";
         }
 
-        if(getChart(target,"FTR/ETR").tier.equals("ETR")){target = target.substring(0, target.length()-10);}
+        if(getChart(target,"FTR/ETR")!=null){
+            if(getChart(target, "FTR/ETR").tier.equals("ETR")) {
+                target = target.substring(0, target.length() - 10);
+            }
+        }
+
 
         return switch(target){
 
