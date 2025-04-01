@@ -3,7 +3,7 @@ import javax.swing.UIManager.LookAndFeelInfo;
 import javax.xml.parsers.ParserConfigurationException;
 
 public class Hub {
-    final public static boolean DEBUG = true; ///debug for ui
+    final public static boolean DEBUG = false; ///debug for ui
     final public static boolean DEBUG_CALC = false; //debug for calc
 
     public static void main(String[] args) throws ParserConfigurationException {

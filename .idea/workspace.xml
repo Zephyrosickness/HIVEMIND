@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9f0de1c-4710-4440-90a5-9fa7cd7f1cd9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/XMLReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hub.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMLReader.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/Database$Chart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/Database$Chart.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/Database.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/Hub.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/Hub.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/scoreCalc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/scoreCalc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/scoreDisplay$ScoreTextArea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/scoreDisplay$ScoreTextArea.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/scoreDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/scoreDisplay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/scoreCalc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/scoreDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/TODO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/XMLReader.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

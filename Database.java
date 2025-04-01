@@ -115,11 +115,11 @@ public class Database {
         };
     }
 
-    private class XMLReader {
+    private static class XMLReader {
         private static final String databasePath = "database.xml";
         private static final File databaseFile = new File(databasePath);
 
-        public static void initReader() throws ParserConfigurationException {
+        private static void initReader() throws ParserConfigurationException {
             try {
                 final DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance(); //this method allows you to make document builders
                 final DocumentBuilder dBuilder = dbFactory.newDocumentBuilder(); //this method parses xml files
