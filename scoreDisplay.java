@@ -3,6 +3,7 @@ import java.awt.*;
 import javax.swing.UIManager.LookAndFeelInfo;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
+import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
@@ -17,6 +18,8 @@ import java.util.List;
 public class scoreDisplay extends Database{
     final private static HashMap<String, Component> componentMap = new HashMap<>();
     protected static List<ScoreTextArea> scoreTextArray = new ArrayList<>();
+
+    protected scoreDisplay() throws ParserConfigurationException {}
 
     /*ppl keep saying static vars are bad and I mean that's probably true because of something something nerd stuff IDK about but um im bad at coding and I keep
     having problems IDK how to fix without static vars idek why they're bad but um maybe one day ill be good at coding and it will be fixed*/
@@ -94,7 +97,7 @@ public class scoreDisplay extends Database{
         componentMap.put("Jacket", imageLabel);
 
         //chart select dropdown
-        final JComboBox<String> songSelect = new JComboBox<>(chartMapFTR.keySet().toArray(new String[0]));
+        final JComboBox<String> songSelect = new JComboBox<>(loadSongList());
         chartPanel.add(songSelect);
         componentMap.put("Chart", songSelect);
 
@@ -199,9 +202,7 @@ public class scoreDisplay extends Database{
 
 
         //selects random song
-        randomize.addActionListener(_ -> {
-            songSelect.setSelectedItem(getRandomChart().name);
-        });
+        randomize.addActionListener(_ -> songSelect.setSelectedItem(getRandomChart().name));
 
         farOperator.addActionListener(_ -> {
             if(Objects.requireNonNull(farOperator.getSelectedItem()).toString().equals("Any")){
@@ -259,14 +260,14 @@ public class scoreDisplay extends Database{
 
     //used when changing from ftr to byd
     private static ComboBoxModel<String> loadSongList(){
-        ArrayList<String> chartsTemp;
         final String selected = getComponentValue("Difficulty");
 
         //this is a switch instead of an if-else in case i ever need to do more diffs
-        chartsTemp = switch(selected){
-            case "BYD" -> Database.chartNamesBYD;
-            default -> Database.chartNames;
+        final List<String> listTemp = switch(selected){
+            case "BYD" -> Database.chartMapBYD.keySet().stream().toList();
+            default -> Database.chartMapFTR.keySet().stream().toList();
         };
+        final ArrayList<String> chartsTemp = new ArrayList<>(listTemp);
 
         chartsTemp.sort(String::compareToIgnoreCase);
 
@@ -323,7 +324,11 @@ public class scoreDisplay extends Database{
 
     private static String getComponentValue(String name){
         final Component component = componentMap.get(name);
-        if(component==null){System.out.println("ur piece of shit component is null. make piece of shit error handler later "+name);}
+        if(Hub.DEBUG){System.out.printf("[DEBUG: COMPONENT VALUE SEARCH]\n[REQUESTED COMPONENT NAME]: %s\n---[END.]---\n",name);}
+        if(component==null){
+            System.out.println("ur piece of shit component is null. make piece of shit error handler later "+name);
+            return "null";
+        }
 
         String tempString;
         assert component!=null;

@@ -1,4 +1,8 @@
+import javax.xml.parsers.ParserConfigurationException;
+
 public class scoreCalc extends scoreDisplay{
+    protected scoreCalc() throws ParserConfigurationException {}
+
     protected static void calcScore(String scoreString, int inputFar, int inputMiss, String farOp, String missOp, boolean toa, double cc, int combo){
 
         //init var
