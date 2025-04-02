@@ -90,31 +90,40 @@ public class Database {
         }
 
 
+        target = target.toLowerCase();
         return switch(target){
 
-            case "Altair (feat. *spiLa*)" -> "Altair";
+            case "altair (feat. *spila*)" -> "altair";
 
-            case "Can I friend you on Bassbook? lol" -> "Bassbook";
+            case "can i friend you on bassbook? lol" -> "bassbook";
 
             case "cocoro*cosmetic" -> "cocoro";
 
-            case " ͟͝͞Ⅱ́̕" -> "Ii";
-
             case "carmine:scythe" -> "carmine scythe";
 
-            case "To: Alice Liddell" -> "To Alice Liddell";
+            case "livht my wδy" -> "livht";
 
-            case "Valhalla:0" -> "valhalla0";
+            case "ω4" -> "w4";
 
-            case "Last | Moment" -> "Last Moment";
+            case "to: alice liddell" -> "to alice liddell";
 
-            case "Last | Eternity" -> "Last Eternity";
+            case "οδυσσεια" -> "odysseia";
 
-            case "Twilight Concerto" -> "Tasogare";
+            case "ävril -flicka i krans-" -> "avril";
 
-            case"Hidden Rainbows of Epicurus" -> "Epicurus";
+            case "valhalla:0" -> "valhalla0";
 
-            case"world.execute(me)," -> "worldexecuteme";
+            case "last | moment" -> "last moment";
+
+            case "last | eternity" -> "Last eternity";
+
+            case "twilight concerto" -> "tasogare";
+
+            case "hidden rainbows of epicurus" -> "epicurus";
+
+            case "world.execute(me);" -> "worldexecuteme";
+
+            case "vectoя" -> "vector";
 
             default -> target;
         };

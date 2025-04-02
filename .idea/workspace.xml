@@ -7,13 +7,442 @@
     <list default="true" id="a9f0de1c-4710-4440-90a5-9fa7cd7f1cd9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/1F√.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/7thSense.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/99 Glooms.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/A Wandering Melody of Love.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/AI[UE]OON.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ALTER EGO.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/AMAZING MIGHTYYYY!!!!.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Abstruse dilemma.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Aegleseeker.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Ai Drew.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Aleph-0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Alexandrite.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Alice à la mode.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Alice's Suitcase.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Alone &amp; Lorn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Altair.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Altale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/AlterAle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Amekagura.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Amygdata.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Antagonism.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Antithese.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Antithese_byd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Anökumene.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/April showers.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Arcahv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Arcana Eden.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Arghena.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Ascent.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Ashen 6oundary.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Astra walkthrough.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Astral tale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/AttraqtiA.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Aurgelmir.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Auxesia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Avant Raze.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Awaken in ruins.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Axium Crisis.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/B.B.K.K.B.K.K..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/BADTEK.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/BATTLE NO.1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/BLRINK.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/BUCHiGiRE Berserker.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Babaroque.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Back to Basics.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Bamboo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Bassbook.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Be There.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Beautiful Dreamer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Beside You.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Black Lotus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Black MInD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Black Territory.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Blaster.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Blocked Library.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Blossoms.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Blue Rose.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Blue comet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Bookmaker (2D Version).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Bookmaker_BYD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Brand New World.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Bullet Waiting for Me (James Landino remix).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/CROSS†OVER.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/CYCLES.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Call my name feat. yukacco.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Callima Karma.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Capella.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Carmine scythe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Chaos.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Chelsea.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Chromafill.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Chronicle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Chronostasis.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Climax.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Clotho and the stargazer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Coastal Highway.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Cocoro.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Conflict.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Corps-sans-organes.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Corruption.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Cosmica.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Cosmo Pop Funclub.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Crimson Throne.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Cross†Soul.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Cry of viyella.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Crystal Gravity.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Cyaegha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Cyanine.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Cybernecia Catharsis.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Cybernecia_byd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/DDD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/DX Choseinou Full Metal Shojo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Dancin' on A Cat's Paw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Dandelion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Dantalion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/DataErr0r.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Dazzle hop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Defection.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Dement ~after legend~.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Dement_~after_legend~_BYD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Devillic Sphere.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Dialnote.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Diode.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Distorted fate.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Divine Light of Myriad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Dot to Dot feat. shully.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Dreadnought.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Dream goes on.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Dreamin' Attraction!!.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Drg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Dropdead.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Dynitikós.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Désive.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ENERGY SYNERGY MATRIX.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Eccentric Tale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Eden.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Ego eimi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Einherjar Joker.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Einherjar_byd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Empire of Winter.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Enchanted love.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Epicurus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Equilibrium.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Espebranch.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Essence of Twilight.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Ether strike.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Evening in Scarlet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Evoltex (poppi'n mix).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/FLUFFY FLASH.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/FREEF4LL.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/FREEF4LL_BYD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Faint Light (Arcaea Edit).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Fairytale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Fairytale_BYD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Fallensquare.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/False Embellishment.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Fanta5y.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Far Away Light.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Feels So Right feat. Renko.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Felis.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Felys final remix.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Filament.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Final Step!.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/First Snow.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Flashback.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Floating world.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Flyburg and Endroll.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Fracture Ray.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Free Myself.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/G e n g a o z o.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/GENOCIDER.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/GIMME DA BLOOD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/GIMMICK.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/GLORY：ROAD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/GOODTEK_BYD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Galactic love.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Galaxy Friends.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Garakuta Doll Play.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Gekka (Short Version).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Genesis (CHUNITHM).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Genesis (Morrigan).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Genesis.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Give Me a Nightmare.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Glow.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Goldenslaughterer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Good bye, Merry-Go-Round..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Goodtek (arcaea edit).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Got hive of Ra.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Grievous Lady.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Grimheart.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/HIVEMIND.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Halcyon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Hall of Mirrors.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Harutopia ~Utopia of Spring~.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Haze of Autumn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Head BONK ache.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Heart Jackin'.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Heart.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Heavenly caress.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Heavensdoor.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Heavensdoor_byd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Hellohell.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Hiiro Gekka, Kyoushou no Zetsu (nayuta 2017 ver.).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Hikari.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Hotarubi no Yuki.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Hybris (The one who shattered).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/I've heard it said.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/IMPACT.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/INTERNET OVERDOSE.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/INTERNET YAMERO.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/IZANA.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Iconoclast.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Ignotus Afterburn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Ignotus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Ii.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Ikazuchi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Illegal Paradise.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Impure Bird.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Infinite Strife,.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Infinity Heaven.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Infinity_Heaven_BYD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Init().jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Inkar_byd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Innocence.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Inverted World.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Ionostream.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Jingle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Journey.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Jump.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Kanagawa Cyber Culvert.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Kanagawa_Cyber_Culvert_byd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Kanbu de Tomatte Sugu Tokeru.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Kanjou no Matenrou ～Arr.Demetori.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Kissing Lucifer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Kyoren romance.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/LAMIA.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/LIVHT MY WΔY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/La'qryma of the Wasteland.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/La'qryma_of_the_Wasteland_BYD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Lapis.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Last Celebration.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Last Eternity.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Last Moment.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Last.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Lastendconductor.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Lawless point.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Lazy Addiction.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Leave all behind.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Let you DIVE! (nitro rmx).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Let's Rock (arcaea mix).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Lethaeus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Lethal voltage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Libertas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Libertas_byd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Life is Piano.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Lightning Screw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Lights of muse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Linear Accelerator.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Live Fast Die Young.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Logos.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Lost Desire.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Lost Emotion feat. nomico.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Lost civilization.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Lost in the abyss.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Lost_Civilizatoin_BYD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Loveless Dress.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Lucid Traveler.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Lucifer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Lumia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Lumia_BYD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Luna rossa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/LunarOrbit -believe in the Espebranch road-.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Löschen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/MAHOROBA.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/MANTIS (arcaea ultra-bloodrush vip).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/MAXRAGE.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/MERLIN.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Macrocosmic Modulation.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Magnolia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Malicious Mischance.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Manic Jeer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Masquerade Legion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Maze No.9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Mazy Metroplex.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Medusa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Memory Forest.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Memoryfactory.lzh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Meta-Mysteria.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Metallic Punisher.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Mirinae.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Mirzam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Misdeed -la bonté de Dieu et l'origine du mal-.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Modelista.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Monochrome Princess.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Moonheart.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Moonheart_BYD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Moonlight of Sand Castle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Morningloom.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/NEO WINGS.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/NULCTRL.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/NULL APOPHENIA.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Nameless passion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/New York Back Raise.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Next to you.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Next_to_you_BYD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Nhelv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Nirv lucE.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Nέo κósmo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/OMAKENO Stroke.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Oblivia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Oblivia_byd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Old School Salvage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/On and on!! feat. jenga.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/One Last Drive.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Oracle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Oshama Scramble!.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Ouroboros -twin stroke of the end-.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Ouvertüre.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Overdead..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Overwhelm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/PICO-Pico-Translation!.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/PRAGMATISM.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/PRIMITIVE LIGHTS.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/PUPA.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Paper Witch.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Paradise.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Particle Arts.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Party Vinyl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Party_Vinyl_BYD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Pentiment.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Phantasia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Pragmatism -resurrection-.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Primeval texture.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Prism.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Protoflicker.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Purgatorium.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Purgatorium_BYD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Purple Verse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Purple_verse_byd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Qovat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Qualia -ideaesthesia-.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Qualia_byd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Quon (Feryquitous).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Quon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/REKKA RESONANCE.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Rabbit In The Black Room.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Raven's pride.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Reconstruction.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Red and Blue.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Red and blue and green.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Redolent Shape.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Redraw the Colorless World.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Reinvent.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Relentless.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Remind the souls (short version).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Revixy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Rgb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Ringed Genesis.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Rise of the world.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Rise.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Romance Wars.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Rugie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/SAIKYO STRONGER.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/SOUNDWiTCH.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/STAGER (ALL STAGE CLEAR).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/SUPERNOVA.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Sacrifice feat. ayame.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Sakura Fubuki.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/San skia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Sayonara Hatsukoi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Scarlet Cage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Scarlet Lance.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Seclusion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Senkyou.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Shades of Light in a Transcendent Realm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Shades_of_Light_in_a_Transcendent_Realm_BYD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Sheriruth (Laur Remix).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Sheriruth.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Silent Rush.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Singularity VVVIP.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Singularity.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Small Cloud Sugar Candy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Snow white.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Solitary Dream.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Specta.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Spider's Thread.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Stasis.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Stratoliner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Strongholds.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Sulfur.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Summer Fireworks of Love.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Suomi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Surrender.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Syro.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/TEmPTaTiON.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/THE ULTIMACY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Tasogare.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Technicolour.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Tempestissimo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Tempestissimo_BYD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Teravolt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Teriqma.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Testify.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/The Message.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/The Survivor (Game Edit).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/The formula.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Tie me down gently.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Tiferet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/To Alice Liddell.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/To the furthest dream.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/To the milky way.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Transient space.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Trap Crow.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Trappola Bewitching.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Trappola_bewitching_BYD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Trrricksters!!.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Tsuki ni Murakumo, Hana ni Kaze.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Turbocharger.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Ultimate taste.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Ultradiaxon-n3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Unknown levels.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Used to be.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/VECTOЯ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Valhalla0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Vandalism.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Vexaria.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Vexaria_BYD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Vicious Heroism.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Vicious [ANTi] heroism.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Vindication.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Vivid Theory.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Viyella's Tears.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Vulcanus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Wait for dawn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Wbg0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Wish upon a snow.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/With U.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/World Ender.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/World Fragments III(radio edit).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/World Vanquisher.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/XTREME.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Xanatos.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Xeraphinite.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Yosakura Fubuki.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Your voice so... feat. Such.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/[X].jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Ävril -Flicka i krans-.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ΟΔΥΣΣΕΙΑ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Ω4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/Database$Chart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/Database$Chart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/Database$XMLReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/Database$XMLReader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/Database.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/Hub.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/Hub.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/scoreDisplay$ScoreTextArea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/scoreDisplay$ScoreTextArea.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/scoreDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/scoreDisplay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/scoreDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/database.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/database.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the vision.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

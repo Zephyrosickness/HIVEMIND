@@ -1,4 +1,4 @@
-beautiful dreamer has a false positive where it believes the jacket exists and gets an exception trying to display a file that does not exist (i can just solve this by adding the jacket lmao)
+add rest of the attributes to the display that are in the xml and just arent used
 
 add partner db
 and world mode calc
