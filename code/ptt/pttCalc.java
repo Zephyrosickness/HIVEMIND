@@ -30,8 +30,8 @@ public class pttCalc extends code.ptt.pttDisplay {
         //runs through every combo of score/chart constant and calculates play rating. if the rating, cc, and score all fall within criteria, display on the scroll panel
         for(finalScore = 9000000; finalScore<=10000000; finalScore+=5000){
             for(finalCC=7; finalCC<=11.3; finalCC+=0.1){
-                finalRating = reversePttCalc(finalScore, finalCC);
-                finalCC = Utilities.round(finalCC);
+                finalRating = calcPTT(finalScore, finalCC);
+                finalCC = Utilities.round(finalCC, 1);
 
                 //checks
                 boolean ratingCheck = Utilities.check(finalRating, targetRating, ratingOp);
@@ -44,48 +44,22 @@ public class pttCalc extends code.ptt.pttDisplay {
         }
     }
 
-
-    //more info: go to the arcaea wiki and look up "potential"
-    protected static double reversePttCalc(double score, double CC){
-        double modifier;
-        if(score>=10000000){
-            modifier = 2;
-        }else if(score>=9800000&&score<=9999999){
-            modifier = 1+((score-9800000)/200000);
-        }else{
-            modifier = (score-9500000)/300000;
-        }
-
-        //error check to make sure it's not a negative value and rounds if its positive.
-        //raw is the un-rounded, raw play rating. the code rounds it to the 2nd decimal place because if I didn't do this then it would be like 500 lines long
-        double raw = CC+modifier;
-
-        if(raw<=0){
-            return 0;
-        }else{
-            return Utilities.round(raw);
-        }
-    }
-
     //calculates play rating and returns as double. not much to say besides if u need more info u can find it here https://arcaea.fandom.com/wiki/Potential
     public static double calcPTT(double score, double cc){
-        double modifier;
-        if(score==10000000){
-            modifier = 2;
-        }else if(score>=9800000&&score<=9999999){
-            modifier = 1+((score-9800000)/200000);
-        }else{
-            modifier = (score-9500000)/300000;
-        }
+        final double scoreRating = calcRatingScore(score);
+        final double playRating = cc+ scoreRating;
 
-        //error check to make sure it's not a negative value and rounds if its positive.
-        //raw is the unrounded, raw play rating. the code rounds it to the 2nd decimal place because if I didn't do this then it would be like 500 lines long
-        double raw = cc + modifier;
-        if(raw<=0){
-            return 0;
-        }else{
-            double scale = Math.pow(10, 2);
-            return Math.round(raw * scale) / scale;
-        }
+        if(playRating<=0){return 0;
+        }else{return Utilities.round(playRating,2);}
+    }
+
+    private static double calcRatingScore(double score){
+        double playRating;
+
+        if(score==10000000){playRating = 2;
+        }else if(score>=9800000&&score<=9999999){playRating = 1+((score-9800000)/200000);
+        }else{playRating = (score-9500000)/300000;}
+
+        return playRating;
     }
 }

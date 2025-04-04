@@ -375,7 +375,7 @@ public class scoreDisplay{
             return;
         }
 
-        scoreCalc.calcScore(minScore, far, miss, farOp, missOp, toaStatus, chart.getNum(ChartAttributes.CC), chart.getNum(ChartAttributes.NOTECOUNT));
+        scoreCalc.calcAllPossibleScores(minScore, far, miss, farOp, missOp, toaStatus, chart.getNum(ChartAttributes.CC), chart.getNum(ChartAttributes.NOTECOUNT));
 
         //sort results based on the sort option
         switch(sort){
