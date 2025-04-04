@@ -170,7 +170,7 @@ public class pttDisplay {
                 //ACTIONS
 
         //load chart (songSelect dropdown)
-        run.addActionListener(e -> {
+        run.addActionListener(_ -> {
 
             clear(ratingPanel);
 
@@ -208,7 +208,7 @@ public class pttDisplay {
             ratingPanel.repaint();
         });
 
-        clear.addActionListener(e -> {
+        clear.addActionListener(_ -> {
 
             ratingPanel.removeAll();
 

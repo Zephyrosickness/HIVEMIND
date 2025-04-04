@@ -3,10 +3,7 @@ package code.score;
 import code.Hub;
 import code.Utilities;
 
-import javax.xml.parsers.ParserConfigurationException;
-
 public class scoreCalc extends code.score.scoreDisplay{
-    protected scoreCalc() throws ParserConfigurationException {}
 
     protected static void calcAllPossibleScores(String scoreString, int inputFar, int inputMiss, String farOp, String missOp, boolean toa, double cc, double combo){
 

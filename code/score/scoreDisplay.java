@@ -7,7 +7,6 @@ import java.awt.*;
 import javax.swing.UIManager.LookAndFeelInfo;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
-import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
@@ -26,8 +25,6 @@ public class scoreDisplay{
     protected static List<ScoreTextArea> scoreTextArray = new ArrayList<>();
     private static Map<String, Database.Chart> chartMap = chartMapFTR;
     private static final Dimension fillerSize = new Dimension(0,0);
-
-    protected scoreDisplay() throws ParserConfigurationException {}
 
     /*ppl keep saying static vars are bad and I mean that's probably true because of something something nerd stuff IDK about but um im bad at coding and I keep
     having problems IDK how to fix without static vars idek why they're bad but um maybe one day ill be good at coding and it will be fixed*/
