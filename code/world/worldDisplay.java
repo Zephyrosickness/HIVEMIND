@@ -3,6 +3,10 @@ package code.world;
 import javax.swing.*;
 import java.awt.*;
 
+
+//unfinished
+//placeholder code copy pasted from scoredisplay class
+
 public class worldDisplay{
     public static void init(){
         final int SIZE = 700;
