@@ -1,9 +1,14 @@
+package code.score;
+
+import code.Hub;
+import code.utilities;
+
 import javax.xml.parsers.ParserConfigurationException;
 
-public class scoreCalc extends scoreDisplay{
+public class scoreCalc extends code.score.scoreDisplay{
     protected scoreCalc() throws ParserConfigurationException {}
 
-    protected static void calcScore(String scoreString, int inputFar, int inputMiss, String farOp, String missOp, boolean toa, double cc, int combo){
+    protected static void calcScore(String scoreString, int inputFar, int inputMiss, String farOp, String missOp, boolean toa, double cc, double combo){
 
         //init var
 
@@ -17,8 +22,8 @@ public class scoreCalc extends scoreDisplay{
         double scoreFinal;
         //these threshold variables exist because I mean I don't think anyone is going to care about your score if you get like 500 fars or whatever
         //it just eliminates unecessary scores and speeds up the process
-        int farThreshold = combo /10;
-        int missThreshold = combo /5;
+        int farThreshold = (int)(combo/10);
+        int missThreshold = (int)(combo/5);
 
         //gets length of score. then adds 0's until it hits 7 digits (so 99 = 9,900,000)
         //if score starts with 1, then it be set to 10,000,000 (pure memory)
@@ -37,7 +42,7 @@ public class scoreCalc extends scoreDisplay{
                 for (missFinal = 0; missFinal<missThreshold; missFinal++){
                     if(Hub.DEBUG_CALC){System.out.println("[debug] forloop called in score calc\n combo: "+combo+"\ncc: "+cc);}
                     //calcs score. each PURE is 10,000,000 divided by max combo, and FAR is half of PURE
-                    pureFinal = combo - (farFinal + missFinal);
+                    pureFinal = (int)(combo-(farFinal+missFinal));
                     scoreFinal = pureRaw * pureFinal + farRaw * farFinal;
 
                     //checks if all values meet operator criteria
@@ -47,11 +52,11 @@ public class scoreCalc extends scoreDisplay{
 
 
                     //makes sure no invalid values
-                    final boolean legit = utilities.legitimacyCheck(pureFinal, farFinal, missFinal, combo,scoreFinal, toa, combo-pureFinal);
+                    final boolean legit = utilities.legitimacyCheck(pureFinal, farFinal, missFinal, (int)combo,scoreFinal, toa, (int)(combo-pureFinal));
 
                     //if all criteria is met, imports into scroll panel
                     if(farCheck&&missCheck&&scoreCheck&&legit){
-                        importComponent(scoreFinal, pureFinal, farFinal, missFinal, pttCalc.calcPTT(scoreFinal, cc));
+                        importComponent(scoreFinal, pureFinal, farFinal, missFinal, code.ptt.pttCalc.calcPTT(scoreFinal, cc));
                         if(Hub.DEBUG_CALC){System.out.println("imported!!!!!!!!!!!!");}
                     }
                 }

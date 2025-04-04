@@ -1,5 +1,8 @@
+package code.ptt;
 
-public class pttCalc extends pttDisplay {
+import code.utilities;
+
+public class pttCalc extends code.ptt.pttDisplay {
     protected static void calc(double targetRating, double targetCC, String scoreString, String ratingOp, String ccOp, String scoreOp){
 //vars
         int finalScore;
@@ -65,7 +68,7 @@ public class pttCalc extends pttDisplay {
     }
 
     //calculates play rating and returns as double. not much to say besides if u need more info u can find it here https://arcaea.fandom.com/wiki/Potential
-    protected static double calcPTT(double score, double cc){
+    public static double calcPTT(double score, double cc){
         double modifier;
         if(score==10000000){
             modifier = 2;

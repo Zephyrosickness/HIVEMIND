@@ -1,3 +1,5 @@
+package code.ptt;
+
 import javax.swing.*;
 import java.awt.*;
 import javax.swing.UIManager.LookAndFeelInfo;

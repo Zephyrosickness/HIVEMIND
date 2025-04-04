@@ -1,3 +1,8 @@
+package code;
+
+import code.ptt.pttDisplay;
+import code.score.scoreDisplay;
+
 import javax.swing.*;
 import javax.swing.UIManager.LookAndFeelInfo;
 import javax.xml.parsers.ParserConfigurationException;

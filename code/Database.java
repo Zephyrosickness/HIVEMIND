@@ -1,3 +1,5 @@
+package code;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -13,8 +15,8 @@ import java.util.*;
 public class Database {
 
     //chart lists
-    protected static Map<String,Chart> chartMapFTR = new HashMap<>();
-    protected static Map<String,Chart> chartMapBYD = new HashMap<>();
+    public static Map<String,Chart> chartMapFTR = new HashMap<>();
+    public static Map<String,Chart> chartMapBYD = new HashMap<>();
     protected static Map<String,Chart> chartMapELSEPLACEHOLDER = new HashMap<>(); //this is for present and past i dont give a fuck....
 
     //constructor; creates a new instance of the chart class to run its constructor
@@ -26,11 +28,13 @@ public class Database {
     //i changed init to static and initialized directly but ill keep those earlier comments because idc
     protected Database() throws ParserConfigurationException {Chart.initialize();}
 
-    protected static final class Chart {
-        String name;
-        int combo;
-        double cc;
-        String tier; // applicable: FTR/ETR/BYD
+    public enum ChartAttributes{TITLE, NOTECOUNT,CC,TIER}
+
+    public static final class Chart{
+        private final String name;
+        private final int combo;
+        private final double cc;
+        private final String tier; // applicable: FTR/ETR/BYD
 
         Chart(String name, int combo, double cc, String tier){ //constructor for creating chart objects
             /*at first it may seem strange that these values are initialized in-class and then are parameterized via this constructor,
@@ -39,7 +43,6 @@ public class Database {
             this.combo = combo;
             this.cc = cc;
             this.tier = tier;
-
 
             if(tier.equals("BYD")){
                 if(Hub.DEBUG){System.out.printf("[DEBUG: CHART OBJECT ADDED TO MAP]\n\n[TIER]: %s\n---[END.]---\n", tier);}
@@ -59,6 +62,22 @@ public class Database {
             XMLReader.initReader();
 
         }
+
+        public String getString(ChartAttributes att){
+            return switch(att){
+                case TITLE -> name;
+                case TIER -> tier;
+                default -> "PLACEHOLDER"; //make error handler for this
+            };
+        }
+
+        public Double getNum(ChartAttributes att){
+            return switch(att){
+                case CC -> cc;
+                case NOTECOUNT -> (double)combo;
+                default -> -1.5;
+            };
+        }
     }
 
     public static Chart getChart(String name, String difficulty){
@@ -72,6 +91,7 @@ public class Database {
             return chartMapFTR.get(name);
         }
     }
+
 
     /*the way this script works is that it requires the selected variable name to be the exact same as the jacket file name.
      *unfortunately, sometimes some characters either cannot be used in filenames or im just too lazy to change it. so this "corrects"

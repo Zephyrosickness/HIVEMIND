@@ -1,3 +1,5 @@
+package code;
+
 public class utilities {
     //checks if target meets operators
     public static boolean check(double input, double target, String operator){

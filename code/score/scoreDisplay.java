@@ -1,3 +1,7 @@
+package code.score;
+
+import code.Database;
+import code.Hub;
 import javax.swing.*;
 import java.awt.*;
 import javax.swing.UIManager.LookAndFeelInfo;
@@ -12,13 +16,15 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
+import static code.Database.*;
+
 //contains most graphical data
 //welcome to hell
 
-public class scoreDisplay extends Database{
+public class scoreDisplay{
     final private static HashMap<String, Component> componentMap = new HashMap<>();
     protected static List<ScoreTextArea> scoreTextArray = new ArrayList<>();
-    private static Map<String,Chart> chartMap = Database.chartMapFTR;
+    private static Map<String, Database.Chart> chartMap = chartMapFTR;
 
     protected scoreDisplay() throws ParserConfigurationException {}
 
@@ -163,7 +169,7 @@ public class scoreDisplay extends Database{
         final JButton run = new JButton("Find scores");
 
         //button to select random song
-        final JButton randomize = new JButton("Select Random Chart");
+        final JButton randomize = new JButton("Select Random Database.Chart");
 
         //refreshes on initalization
         refresh();
@@ -204,7 +210,7 @@ public class scoreDisplay extends Database{
 
 
         //selects random song
-        randomize.addActionListener(_ -> songSelect.setSelectedItem(getRandomChart().name));
+        randomize.addActionListener(_ -> songSelect.setSelectedItem(getRandomChart().getString(ChartAttributes.TITLE)));
 
         farOperator.addActionListener(_ -> {
             if(Objects.requireNonNull(farOperator.getSelectedItem()).toString().equals("Any")){
@@ -232,11 +238,11 @@ public class scoreDisplay extends Database{
 
     }
 
-    private static Chart getRandomChart(){
+    private static Database.Chart getRandomChart(){
 
         //init var
         final Random rand = new Random();
-        Chart selectedChart;
+        Database.Chart selectedChart;
         int index;
 
         String[] names = chartMap.keySet().toArray(new String[0]);
@@ -249,9 +255,9 @@ public class scoreDisplay extends Database{
         do{
             index = rand.nextInt(chartMap.size());
             selectedChart = (chartMap.get(names[index]));
-            if(Hub.DEBUG){System.out.printf("\n\n[DEBUG // CHART SELECTION]\nselected chart: %s\nselected cc: %f\nmin: %f\nmax: %f\n",chartMap.get(names[index]).name, selectedChart.cc,minMax[0],minMax[1]);}
+            if(code.Hub.DEBUG){System.out.printf("\n\n[DEBUG // CHART SELECTION]\nselected chart: %s\nselected cc: %f\nmin: %f\nmax: %f\n",chartMap.get(names[index]).getString(ChartAttributes.TITLE), selectedChart.getNum(ChartAttributes.CC),minMax[0],minMax[1]);}
 
-        }while(!(selectedChart.cc<=minMax[1]&& selectedChart.cc>=minMax[0]));
+        }while(!(selectedChart.getNum(ChartAttributes.CC)<=minMax[1]&& selectedChart.getNum(ChartAttributes.CC)>=minMax[0]));
 
         return selectedChart;
     }
@@ -271,18 +277,18 @@ public class scoreDisplay extends Database{
 
         //gets the string of jacket file location
         final String difficulty = getComponentValue("Difficulty");
-        final Chart chart = getChart(getComponentValue("Chart"), difficulty);
+        final Database.Chart chart = getChart(getComponentValue("Chart"), difficulty);
         final JLabel imageLabel = (JLabel)componentMap.get("Jacket"); //this is the label that holds the icon that you are changing
         final JLabel noteCountLabel = (JLabel)componentMap.get("Max Combo"); //this is the label that holds cc data that you are changing
         final JLabel chartConstantLabel = (JLabel)componentMap.get("Chart Constant"); //this is the label that holds cc data that you are changing
 
 
         //sets up jacket
-        String check = jacketCheck(chart.name);
+        String check = jacketCheck(chart.getString(ChartAttributes.TITLE));
         Path path = Paths.get("./assets/"+check +".jpg");
         //appends _byd to the target jacket if the difficulty is byd. if ftr doesnt exist (i.e april fools songs) dont append byd
         final Path pathBYDTemp = Path.of("./assets/" + check + "_byd.jpg");
-        if(Objects.equals(chart.tier, "BYD")&&getChart(chart.name,"FTR/ETR")!=null&&Files.exists(pathBYDTemp)){
+        if(Objects.equals(chart.getString(ChartAttributes.TIER), "BYD")&&getChart(chart.getString(ChartAttributes.TITLE),"FTR/ETR")!=null&&Files.exists(pathBYDTemp)){
             path = pathBYDTemp;
         }
 
@@ -312,8 +318,8 @@ public class scoreDisplay extends Database{
         }catch (IOException e){System.out.println("Error reading image!\n------DETAILS------\nERROR DETAILS: "+e.getMessage()+"JACKET: "+jacket);}
 
         //update constant/combo
-        noteCountLabel.setText("Max Combo: " + chart.combo);
-        chartConstantLabel.setText("Chart Constant: " + chart.cc);
+        noteCountLabel.setText("Max Combo: " + chart.getNum(ChartAttributes.NOTECOUNT));
+        chartConstantLabel.setText("Chart Constant: " + chart.getNum(ChartAttributes.CC));
 
 
     }
@@ -351,7 +357,7 @@ public class scoreDisplay extends Database{
         scoreTextArray.clear();
 
         //init var (reading off fields and dropdowns)
-        final Chart chart = getChart(getComponentValue("Chart"), getComponentValue("Difficulty"));
+        final Database.Chart chart = getChart(getComponentValue("Chart"), getComponentValue("Difficulty"));
         final int far = (int)Double.parseDouble(getComponentValue("Far Count"));
         final int miss = (int)Double.parseDouble(getComponentValue("Lost Count"));
         final String minScore = getComponentValue("Minimum Score");
@@ -363,7 +369,7 @@ public class scoreDisplay extends Database{
         if(Hub.DEBUG){
             System.out.println("run called\ninput chart name: "+getComponentValue("Chart")+"\ndiff: "+getComponentValue("Difficulty"));
             if(chart!=null){
-                System.out.println("chart: "+chart.name);
+                System.out.println("chart: "+chart.getString(ChartAttributes.TITLE));
             }
         }
 
@@ -372,7 +378,7 @@ public class scoreDisplay extends Database{
             return;
         }
 
-        scoreCalc.calcScore(minScore, far, miss, farOp, missOp, toaStatus, chart.cc, chart.combo);
+        scoreCalc.calcScore(minScore, far, miss, farOp, missOp, toaStatus, chart.getNum(ChartAttributes.CC), chart.getNum(ChartAttributes.NOTECOUNT));
 
         //sort results based on the sort option
         switch(sort){
