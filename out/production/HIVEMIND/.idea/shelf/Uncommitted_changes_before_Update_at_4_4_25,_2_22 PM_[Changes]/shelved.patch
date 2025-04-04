@@ -1,0 +1,737 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"a9f0de1c-4710-4440-90a5-9fa7cd7f1cd9\" name=\"Changes\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Database.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Database.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/TODO\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/TODO\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/1F√.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/7thSense.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/99 Glooms.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/A Wandering Melody of Love.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/AI[UE]OON.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/ALTER EGO.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/AMAZING MIGHTYYYY!!!!.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Abstruse dilemma.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Aegleseeker.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Ai Drew.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Aleph-0.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Alexandrite.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Alice à la mode.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Alice's Suitcase.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Alone &amp; Lorn.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Altair.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Altale.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/AlterAle.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Amekagura.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Amygdata.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Antagonism.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Antithese.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Antithese_byd.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Anökumene.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/April showers.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Arcahv.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Arcana Eden.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Arghena.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Ascent.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Ashen 6oundary.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Astra walkthrough.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Astral tale.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/AttraqtiA.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Aurgelmir.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Auxesia.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Avant Raze.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Awaken in ruins.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Axium Crisis.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/B.B.K.K.B.K.K..jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/BADTEK.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/BATTLE NO.1.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/BLRINK.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/BUCHiGiRE Berserker.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Babaroque.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Back to Basics.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Bamboo.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Bassbook.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Be There.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Beautiful Dreamer.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Beside You.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Black Lotus.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Black MInD.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Black Territory.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Blaster.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Blocked Library.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Blossoms.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Blue Rose.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Blue comet.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Bookmaker (2D Version).jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Bookmaker_BYD.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Brand New World.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Bullet Waiting for Me (James Landino remix).jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/CROSS†OVER.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/CYCLES.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Call my name feat. yukacco.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Callima Karma.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Capella.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Carmine scythe.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Chaos.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Chelsea.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Chromafill.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Chronicle.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Chronostasis.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Climax.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Clotho and the stargazer.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Coastal Highway.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Cocoro.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Conflict.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Corps-sans-organes.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Corruption.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Cosmica.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Cosmo Pop Funclub.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Crimson Throne.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Cross†Soul.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Cry of viyella.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Crystal Gravity.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Cyaegha.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Cyanine.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Cybernecia Catharsis.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Cybernecia_byd.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/DDD.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/DX Choseinou Full Metal Shojo.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Dancin' on A Cat's Paw.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Dandelion.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Dantalion.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/DataErr0r.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Dazzle hop.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Defection.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Dement ~after legend~.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Dement_~after_legend~_BYD.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Devillic Sphere.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Dialnote.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Diode.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Distorted fate.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Divine Light of Myriad.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Dot to Dot feat. shully.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Dreadnought.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Dream goes on.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Dreamin' Attraction!!.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Drg.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Dropdead.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Dynitikós.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Désive.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/ENERGY SYNERGY MATRIX.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Eccentric Tale.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Eden.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Ego eimi.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Einherjar Joker.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Einherjar_byd.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Empire of Winter.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Enchanted love.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Epicurus.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Equilibrium.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Espebranch.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Essence of Twilight.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Ether strike.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Evening in Scarlet.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Evoltex (poppi'n mix).jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/FLUFFY FLASH.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/FREEF4LL.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/FREEF4LL_BYD.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Faint Light (Arcaea Edit).jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Fairytale.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Fairytale_BYD.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Fallensquare.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/False Embellishment.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Fanta5y.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Far Away Light.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Feels So Right feat. Renko.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Felis.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Felys final remix.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Filament.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Final Step!.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/First Snow.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Flashback.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Floating world.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Flyburg and Endroll.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Fracture Ray.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Free Myself.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/G e n g a o z o.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/GENOCIDER.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/GIMME DA BLOOD.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/GIMMICK.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/GLORY：ROAD.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/GOODTEK_BYD.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Galactic love.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Galaxy Friends.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Garakuta Doll Play.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Gekka (Short Version).jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Genesis (CHUNITHM).jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Genesis (Morrigan).jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Genesis.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Give Me a Nightmare.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Glow.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Goldenslaughterer.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Good bye, Merry-Go-Round..jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Goodtek (arcaea edit).jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Got hive of Ra.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Grievous Lady.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Grimheart.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/HIVEMIND.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Halcyon.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Hall of Mirrors.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Harutopia ~Utopia of Spring~.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Haze of Autumn.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Head BONK ache.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Heart Jackin'.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Heart.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Heavenly caress.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Heavensdoor.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Heavensdoor_byd.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Hellohell.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Hiiro Gekka, Kyoushou no Zetsu (nayuta 2017 ver.).jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Hikari.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Hotarubi no Yuki.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Hybris (The one who shattered).jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/I've heard it said.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/IMPACT.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/INTERNET OVERDOSE.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/INTERNET YAMERO.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/IZANA.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Iconoclast.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Ignotus Afterburn.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Ignotus.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Ii.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Ikazuchi.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Illegal Paradise.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Impure Bird.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Infinite Strife,.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Infinity Heaven.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Infinity_Heaven_BYD.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Init().jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Inkar_byd.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Innocence.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Inverted World.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Ionostream.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Jingle.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Journey.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Jump.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Kanagawa Cyber Culvert.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Kanagawa_Cyber_Culvert_byd.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Kanbu de Tomatte Sugu Tokeru.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Kanjou no Matenrou ～Arr.Demetori.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Kissing Lucifer.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Kyoren romance.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/LAMIA.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/LIVHT MY WΔY.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/La'qryma of the Wasteland.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/La'qryma_of_the_Wasteland_BYD.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Lapis.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Last Celebration.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Last Eternity.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Last Moment.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Last.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Lastendconductor.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Lawless point.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Lazy Addiction.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Leave all behind.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Let you DIVE! (nitro rmx).jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Let's Rock (arcaea mix).jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Lethaeus.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Lethal voltage.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Libertas.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Libertas_byd.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Life is Piano.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Lightning Screw.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Lights of muse.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Linear Accelerator.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Live Fast Die Young.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Logos.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Lost Desire.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Lost Emotion feat. nomico.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Lost civilization.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Lost in the abyss.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Lost_Civilizatoin_BYD.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Loveless Dress.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Lucid Traveler.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Lucifer.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Lumia.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Lumia_BYD.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Luna rossa.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/LunarOrbit -believe in the Espebranch road-.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Löschen.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/MAHOROBA.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/MANTIS (arcaea ultra-bloodrush vip).jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/MAXRAGE.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/MERLIN.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Macrocosmic Modulation.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Magnolia.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Malicious Mischance.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Manic Jeer.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Masquerade Legion.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Maze No.9.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Mazy Metroplex.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Medusa.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Memory Forest.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Memoryfactory.lzh.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Meta-Mysteria.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Metallic Punisher.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Mirinae.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Mirzam.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Misdeed -la bonté de Dieu et l'origine du mal-.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Modelista.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Monochrome Princess.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Moonheart.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Moonheart_BYD.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Moonlight of Sand Castle.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Morningloom.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/NEO WINGS.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/NULCTRL.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/NULL APOPHENIA.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Nameless passion.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/New York Back Raise.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Next to you.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Next_to_you_BYD.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Nhelv.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Nirv lucE.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Nέo κósmo.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/OMAKENO Stroke.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Oblivia.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Oblivia_byd.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Old School Salvage.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/On and on!! feat. jenga.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/One Last Drive.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Oracle.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Oshama Scramble!.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Ouroboros -twin stroke of the end-.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Ouvertüre.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Overdead..jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Overwhelm.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/PICO-Pico-Translation!.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/PRAGMATISM.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/PRIMITIVE LIGHTS.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/PUPA.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Paper Witch.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Paradise.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Particle Arts.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Party Vinyl.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Party_Vinyl_BYD.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Pentiment.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Phantasia.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Pragmatism -resurrection-.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Primeval texture.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Prism.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Protoflicker.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Purgatorium.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Purgatorium_BYD.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Purple Verse.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Purple_verse_byd.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Qovat.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Qualia -ideaesthesia-.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Qualia_byd.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Quon (Feryquitous).jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Quon.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/REKKA RESONANCE.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Rabbit In The Black Room.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Raven's pride.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Reconstruction.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Red and Blue.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Red and blue and green.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Redolent Shape.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Redraw the Colorless World.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Reinvent.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Relentless.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Remind the souls (short version).jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Revixy.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Rgb.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Ringed Genesis.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Rise of the world.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Rise.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Romance Wars.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Rugie.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/SAIKYO STRONGER.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/SOUNDWiTCH.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/STAGER (ALL STAGE CLEAR).jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/SUPERNOVA.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Sacrifice feat. ayame.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Sakura Fubuki.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/San skia.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Sayonara Hatsukoi.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Scarlet Cage.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Scarlet Lance.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Seclusion.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Senkyou.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Shades of Light in a Transcendent Realm.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Shades_of_Light_in_a_Transcendent_Realm_BYD.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Sheriruth (Laur Remix).jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Sheriruth.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Silent Rush.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Singularity VVVIP.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Singularity.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Small Cloud Sugar Candy.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Snow white.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Solitary Dream.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Specta.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Spider's Thread.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Stasis.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Stratoliner.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Strongholds.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Sulfur.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Summer Fireworks of Love.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Suomi.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Surrender.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Syro.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/TEmPTaTiON.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/THE ULTIMACY.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Tasogare.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Technicolour.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Tempestissimo.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Tempestissimo_BYD.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Teravolt.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Teriqma.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Testify.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/The Message.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/The Survivor (Game Edit).jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/The formula.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Tie me down gently.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Tiferet.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/To Alice Liddell.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/To the furthest dream.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/To the milky way.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Transient space.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Trap Crow.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Trappola Bewitching.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Trappola_bewitching_BYD.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Trrricksters!!.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Tsuki ni Murakumo, Hana ni Kaze.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Turbocharger.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Ultimate taste.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Ultradiaxon-n3.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Unknown levels.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Used to be.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/VECTOЯ.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Valhalla0.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Vandalism.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Vexaria.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Vexaria_BYD.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Vicious Heroism.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Vicious [ANTi] heroism.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Vindication.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Vivid Theory.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Viyella's Tears.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Vulcanus.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Wait for dawn.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Wbg0.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Wish upon a snow.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/With U.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/World Ender.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/World Fragments III(radio edit).jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/World Vanquisher.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/XTREME.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Xanatos.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Xeraphinite.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Yosakura Fubuki.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Your voice so... feat. Such.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/[X].jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Ävril -Flicka i krans-.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/ΟΔΥΣΣΕΙΑ.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/assets/Ω4.jpg\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/database.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/database.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/HIVEMIND/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/HIVEMIND/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/HIVEMIND/Database$XMLReader.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/HIVEMIND/Database$XMLReader.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/HIVEMIND/Database.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/HIVEMIND/Database.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/HIVEMIND/database.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/HIVEMIND/database.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/the vision.png\" beforeDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;Zephyrosickness&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;https://github.com/Zephyrosickness/HIVEMIND.git&quot;,\n    &quot;accountId&quot;: &quot;d7fffdeb-b127-4db7-bea3-5e2482b2f699&quot;\n  }\n}</component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProblemsViewState\">\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 5\n}</component>\n  <component name=\"ProjectId\" id=\"2kjzbRojqV9lNaub1zc7XkgwiWM\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;Application.Hub.executor&quot;: &quot;Run&quot;,\n    &quot;Application.hub.executor&quot;: &quot;Run&quot;,\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;\n  }\n}</component>\n  <component name=\"RunManager\">\n    <configuration name=\"Hub\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Hub\" />\n      <module name=\"HIVEMIND\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.Hub\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"a9f0de1c-4710-4440-90a5-9fa7cd7f1cd9\" name=\"Changes\" comment=\"\" />\n      <created>1723811844763</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1723811844763</updated>\n    </task>\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision e0411beb05ca9aef74fbd16df5ed03ce7e3040ef)
++++ b/.idea/workspace.xml	(date 1743624402111)
+@@ -5,444 +5,19 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="a9f0de1c-4710-4440-90a5-9fa7cd7f1cd9" name="Changes" comment="">
++      <change afterPath="$PROJECT_DIR$/Constants.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/1F√.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/7thSense.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/99 Glooms.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/A Wandering Melody of Love.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/AI[UE]OON.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/ALTER EGO.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/AMAZING MIGHTYYYY!!!!.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Abstruse dilemma.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Aegleseeker.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Ai Drew.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Aleph-0.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Alexandrite.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Alice à la mode.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Alice's Suitcase.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Alone &amp; Lorn.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Altair.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Altale.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/AlterAle.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Amekagura.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Amygdata.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Antagonism.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Antithese.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Antithese_byd.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Anökumene.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/April showers.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Arcahv.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Arcana Eden.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Arghena.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Ascent.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Ashen 6oundary.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Astra walkthrough.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Astral tale.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/AttraqtiA.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Aurgelmir.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Auxesia.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Avant Raze.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Awaken in ruins.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Axium Crisis.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/B.B.K.K.B.K.K..jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/BADTEK.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/BATTLE NO.1.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/BLRINK.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/BUCHiGiRE Berserker.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Babaroque.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Back to Basics.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Bamboo.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Bassbook.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Be There.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Beautiful Dreamer.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Beside You.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Black Lotus.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Black MInD.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Black Territory.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Blaster.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Blocked Library.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Blossoms.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Blue Rose.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Blue comet.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Bookmaker (2D Version).jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Bookmaker_BYD.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Brand New World.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Bullet Waiting for Me (James Landino remix).jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/CROSS†OVER.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/CYCLES.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Call my name feat. yukacco.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Callima Karma.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Capella.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Carmine scythe.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Chaos.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Chelsea.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Chromafill.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Chronicle.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Chronostasis.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Climax.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Clotho and the stargazer.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Coastal Highway.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Cocoro.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Conflict.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Corps-sans-organes.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Corruption.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Cosmica.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Cosmo Pop Funclub.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Crimson Throne.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Cross†Soul.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Cry of viyella.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Crystal Gravity.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Cyaegha.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Cyanine.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Cybernecia Catharsis.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Cybernecia_byd.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/DDD.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/DX Choseinou Full Metal Shojo.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Dancin' on A Cat's Paw.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Dandelion.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Dantalion.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/DataErr0r.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Dazzle hop.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Defection.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Dement ~after legend~.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Dement_~after_legend~_BYD.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Devillic Sphere.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Dialnote.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Diode.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Distorted fate.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Divine Light of Myriad.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Dot to Dot feat. shully.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Dreadnought.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Dream goes on.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Dreamin' Attraction!!.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Drg.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Dropdead.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Dynitikós.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Désive.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/ENERGY SYNERGY MATRIX.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Eccentric Tale.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Eden.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Ego eimi.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Einherjar Joker.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Einherjar_byd.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Empire of Winter.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Enchanted love.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Epicurus.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Equilibrium.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Espebranch.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Essence of Twilight.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Ether strike.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Evening in Scarlet.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Evoltex (poppi'n mix).jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/FLUFFY FLASH.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/FREEF4LL.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/FREEF4LL_BYD.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Faint Light (Arcaea Edit).jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Fairytale.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Fairytale_BYD.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Fallensquare.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/False Embellishment.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Fanta5y.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Far Away Light.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Feels So Right feat. Renko.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Felis.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Felys final remix.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Filament.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Final Step!.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/First Snow.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Flashback.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Floating world.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Flyburg and Endroll.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Fracture Ray.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Free Myself.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/G e n g a o z o.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/GENOCIDER.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/GIMME DA BLOOD.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/GIMMICK.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/GLORY：ROAD.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/GOODTEK_BYD.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Galactic love.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Galaxy Friends.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Garakuta Doll Play.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Gekka (Short Version).jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Genesis (CHUNITHM).jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Genesis (Morrigan).jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Genesis.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Give Me a Nightmare.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Glow.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Goldenslaughterer.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Good bye, Merry-Go-Round..jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Goodtek (arcaea edit).jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Got hive of Ra.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Grievous Lady.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Grimheart.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/HIVEMIND.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Halcyon.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Hall of Mirrors.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Harutopia ~Utopia of Spring~.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Haze of Autumn.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Head BONK ache.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Heart Jackin'.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Heart.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Heavenly caress.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Heavensdoor.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Heavensdoor_byd.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Hellohell.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Hiiro Gekka, Kyoushou no Zetsu (nayuta 2017 ver.).jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Hikari.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Hotarubi no Yuki.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Hybris (The one who shattered).jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/I've heard it said.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/IMPACT.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/INTERNET OVERDOSE.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/INTERNET YAMERO.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/IZANA.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Iconoclast.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Ignotus Afterburn.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Ignotus.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Ii.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Ikazuchi.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Illegal Paradise.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Impure Bird.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Infinite Strife,.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Infinity Heaven.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Infinity_Heaven_BYD.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Init().jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Inkar_byd.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Innocence.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Inverted World.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Ionostream.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Jingle.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Journey.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Jump.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Kanagawa Cyber Culvert.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Kanagawa_Cyber_Culvert_byd.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Kanbu de Tomatte Sugu Tokeru.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Kanjou no Matenrou ～Arr.Demetori.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Kissing Lucifer.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Kyoren romance.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/LAMIA.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/LIVHT MY WΔY.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/La'qryma of the Wasteland.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/La'qryma_of_the_Wasteland_BYD.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Lapis.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Last Celebration.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Last Eternity.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Last Moment.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Last.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Lastendconductor.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Lawless point.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Lazy Addiction.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Leave all behind.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Let you DIVE! (nitro rmx).jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Let's Rock (arcaea mix).jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Lethaeus.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Lethal voltage.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Libertas.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Libertas_byd.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Life is Piano.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Lightning Screw.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Lights of muse.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Linear Accelerator.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Live Fast Die Young.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Logos.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Lost Desire.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Lost Emotion feat. nomico.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Lost civilization.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Lost in the abyss.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Lost_Civilizatoin_BYD.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Loveless Dress.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Lucid Traveler.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Lucifer.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Lumia.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Lumia_BYD.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Luna rossa.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/LunarOrbit -believe in the Espebranch road-.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Löschen.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/MAHOROBA.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/MANTIS (arcaea ultra-bloodrush vip).jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/MAXRAGE.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/MERLIN.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Macrocosmic Modulation.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Magnolia.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Malicious Mischance.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Manic Jeer.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Masquerade Legion.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Maze No.9.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Mazy Metroplex.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Medusa.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Memory Forest.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Memoryfactory.lzh.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Meta-Mysteria.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Metallic Punisher.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Mirinae.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Mirzam.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Misdeed -la bonté de Dieu et l'origine du mal-.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Modelista.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Monochrome Princess.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Moonheart.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Moonheart_BYD.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Moonlight of Sand Castle.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Morningloom.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/NEO WINGS.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/NULCTRL.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/NULL APOPHENIA.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Nameless passion.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/New York Back Raise.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Next to you.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Next_to_you_BYD.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Nhelv.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Nirv lucE.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Nέo κósmo.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/OMAKENO Stroke.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Oblivia.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Oblivia_byd.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Old School Salvage.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/On and on!! feat. jenga.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/One Last Drive.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Oracle.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Oshama Scramble!.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Ouroboros -twin stroke of the end-.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Ouvertüre.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Overdead..jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Overwhelm.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/PICO-Pico-Translation!.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/PRAGMATISM.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/PRIMITIVE LIGHTS.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/PUPA.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Paper Witch.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Paradise.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Particle Arts.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Party Vinyl.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Party_Vinyl_BYD.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Pentiment.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Phantasia.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Pragmatism -resurrection-.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Primeval texture.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Prism.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Protoflicker.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Purgatorium.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Purgatorium_BYD.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Purple Verse.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Purple_verse_byd.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Qovat.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Qualia -ideaesthesia-.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Qualia_byd.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Quon (Feryquitous).jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Quon.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/REKKA RESONANCE.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Rabbit In The Black Room.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Raven's pride.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Reconstruction.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Red and Blue.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Red and blue and green.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Redolent Shape.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Redraw the Colorless World.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Reinvent.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Relentless.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Remind the souls (short version).jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Revixy.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Rgb.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Ringed Genesis.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Rise of the world.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Rise.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Romance Wars.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Rugie.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/SAIKYO STRONGER.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/SOUNDWiTCH.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/STAGER (ALL STAGE CLEAR).jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/SUPERNOVA.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Sacrifice feat. ayame.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Sakura Fubuki.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/San skia.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Sayonara Hatsukoi.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Scarlet Cage.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Scarlet Lance.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Seclusion.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Senkyou.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Shades of Light in a Transcendent Realm.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Shades_of_Light_in_a_Transcendent_Realm_BYD.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Sheriruth (Laur Remix).jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Sheriruth.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Silent Rush.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Singularity VVVIP.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Singularity.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Small Cloud Sugar Candy.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Snow white.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Solitary Dream.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Specta.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Spider's Thread.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Stasis.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Stratoliner.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Strongholds.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Sulfur.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Summer Fireworks of Love.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Suomi.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Surrender.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Syro.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/TEmPTaTiON.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/THE ULTIMACY.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Tasogare.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Technicolour.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Tempestissimo.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Tempestissimo_BYD.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Teravolt.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Teriqma.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Testify.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/The Message.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/The Survivor (Game Edit).jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/The formula.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Tie me down gently.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Tiferet.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/To Alice Liddell.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/To the furthest dream.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/To the milky way.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Transient space.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Trap Crow.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Trappola Bewitching.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Trappola_bewitching_BYD.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Trrricksters!!.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Tsuki ni Murakumo, Hana ni Kaze.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Turbocharger.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Ultimate taste.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Ultradiaxon-n3.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Unknown levels.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Used to be.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/VECTOЯ.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Valhalla0.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Vandalism.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Vexaria.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Vexaria_BYD.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Vicious Heroism.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Vicious [ANTi] heroism.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Vindication.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Vivid Theory.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Viyella's Tears.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Vulcanus.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Wait for dawn.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Wbg0.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Wish upon a snow.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/With U.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/World Ender.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/World Fragments III(radio edit).jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/World Vanquisher.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/XTREME.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Xanatos.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Xeraphinite.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Yosakura Fubuki.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Your voice so... feat. Such.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/[X].jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Ävril -Flicka i krans-.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/ΟΔΥΣΣΕΙΑ.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/Ω4.jpg" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/database.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/Database$Chart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/Database$Chart.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/Database$XMLReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/Database$XMLReader.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/Database.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/TODO" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/database.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/database.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/the vision.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/scoreDisplay$ScoreTextArea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/scoreDisplay$ScoreTextArea.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/scoreDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/scoreDisplay.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/scoreDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/scoreDisplay.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -465,12 +40,12 @@
+     &quot;assignee&quot;: &quot;Zephyrosickness&quot;
+   }
+ }</component>
+-  <component name="GithubPullRequestsUISettings">{
+-  &quot;selectedUrlAndAccountId&quot;: {
+-    &quot;url&quot;: &quot;https://github.com/Zephyrosickness/HIVEMIND.git&quot;,
+-    &quot;accountId&quot;: &quot;d7fffdeb-b127-4db7-bea3-5e2482b2f699&quot;
+-  }
+-}</component>
++  <component name="GithubPullRequestsUISettings"><![CDATA[{
++  "selectedUrlAndAccountId": {
++    "url": "https://github.com/Zephyrosickness/HIVEMIND.git",
++    "accountId": "f74bdf36-e43c-4850-9360-a36f76c4e519"
++  }
++}]]></component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
+@@ -488,21 +63,22 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;Application.Hub.executor&quot;: &quot;Run&quot;,
+-    &quot;Application.hub.executor&quot;: &quot;Run&quot;,
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "Application.Hub.executor": "Run",
++    "Application.hub.executor": "Run",
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "RunOnceActivity.git.unshallow": "true",
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "git-widget-placeholder": "main",
++    "kotlin-language-version-configured": "true",
++    "project.structure.last.edited": "Project",
++    "project.structure.proportion": "0.15",
++    "project.structure.side.proportion": "0.0",
++    "settings.editor.selected.configurable": "preferences.pluginManager"
+   }
+-}</component>
++}]]></component>
+   <component name="RunManager">
+     <configuration name="Hub" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="Hub" />
+Index: out/production/HIVEMIND/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"a9f0de1c-4710-4440-90a5-9fa7cd7f1cd9\" name=\"Changes\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Database.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Database.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/HIVEMIND/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/HIVEMIND/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/HIVEMIND/Database$Chart.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/HIVEMIND/Database$Chart.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/HIVEMIND/Database.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/HIVEMIND/Database.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/HIVEMIND/Hub.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/HIVEMIND/Hub.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/HIVEMIND/scoreDisplay$ScoreTextArea.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/HIVEMIND/scoreDisplay$ScoreTextArea.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/HIVEMIND/scoreDisplay.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/HIVEMIND/scoreDisplay.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/scoreDisplay.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/scoreDisplay.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;Zephyrosickness&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;https://github.com/Zephyrosickness/HIVEMIND.git&quot;,\n    &quot;accountId&quot;: &quot;d7fffdeb-b127-4db7-bea3-5e2482b2f699&quot;\n  }\n}</component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProblemsViewState\">\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 5\n}</component>\n  <component name=\"ProjectId\" id=\"2kjzbRojqV9lNaub1zc7XkgwiWM\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;Application.Hub.executor&quot;: &quot;Run&quot;,\n    &quot;Application.hub.executor&quot;: &quot;Run&quot;,\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;\n  }\n}</component>\n  <component name=\"RunManager\">\n    <configuration name=\"Hub\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Hub\" />\n      <module name=\"HIVEMIND\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.Hub\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"a9f0de1c-4710-4440-90a5-9fa7cd7f1cd9\" name=\"Changes\" comment=\"\" />\n      <created>1723811844763</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1723811844763</updated>\n    </task>\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/out/production/HIVEMIND/.idea/workspace.xml b/out/production/HIVEMIND/.idea/workspace.xml
+--- a/out/production/HIVEMIND/.idea/workspace.xml	(revision e0411beb05ca9aef74fbd16df5ed03ce7e3040ef)
++++ b/out/production/HIVEMIND/.idea/workspace.xml	(date 1743621258211)
+@@ -5,14 +5,9 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="a9f0de1c-4710-4440-90a5-9fa7cd7f1cd9" name="Changes" comment="">
++      <change afterPath="$PROJECT_DIR$/Constants.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/Database$Chart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/Database$Chart.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/Database.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/Hub.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/Hub.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/scoreDisplay$ScoreTextArea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/scoreDisplay$ScoreTextArea.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/scoreDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/scoreDisplay.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/scoreDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/scoreDisplay.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -36,12 +31,12 @@
+     &quot;assignee&quot;: &quot;Zephyrosickness&quot;
+   }
+ }</component>
+-  <component name="GithubPullRequestsUISettings">{
+-  &quot;selectedUrlAndAccountId&quot;: {
+-    &quot;url&quot;: &quot;https://github.com/Zephyrosickness/HIVEMIND.git&quot;,
+-    &quot;accountId&quot;: &quot;d7fffdeb-b127-4db7-bea3-5e2482b2f699&quot;
+-  }
+-}</component>
++  <component name="GithubPullRequestsUISettings"><![CDATA[{
++  "selectedUrlAndAccountId": {
++    "url": "https://github.com/Zephyrosickness/HIVEMIND.git",
++    "accountId": "f74bdf36-e43c-4850-9360-a36f76c4e519"
++  }
++}]]></component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
+@@ -59,21 +54,22 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;Application.Hub.executor&quot;: &quot;Run&quot;,
+-    &quot;Application.hub.executor&quot;: &quot;Run&quot;,
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "Application.Hub.executor": "Run",
++    "Application.hub.executor": "Run",
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "RunOnceActivity.git.unshallow": "true",
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "git-widget-placeholder": "main",
++    "kotlin-language-version-configured": "true",
++    "project.structure.last.edited": "Project",
++    "project.structure.proportion": "0.15",
++    "project.structure.side.proportion": "0.0",
++    "settings.editor.selected.configurable": "preferences.pluginManager"
+   }
+-}</component>
++}]]></component>
+   <component name="RunManager">
+     <configuration name="Hub" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="Hub" />
+Index: Database.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import org.w3c.dom.Document;\nimport org.w3c.dom.Element;\nimport org.w3c.dom.NodeList;\nimport org.xml.sax.SAXException;\n\nimport javax.xml.parsers.DocumentBuilder;\nimport javax.xml.parsers.DocumentBuilderFactory;\nimport javax.xml.parsers.ParserConfigurationException;\nimport java.io.File;\nimport java.io.IOException;\nimport java.util.*;\n\npublic class Database {\n\n    //chart lists\n    protected static Map<String,Chart> chartMapFTR = new HashMap<>();\n    protected static Map<String,Chart> chartMapBYD = new HashMap<>();\n    protected static Map<String,Chart> chartMapELSEPLACEHOLDER = new HashMap<>(); //this is for present and past i dont give a fuck....\n\n    //constructor; creates a new instance of the chart class to run its constructor\n    //\"why use an inner class and initialize method called by a method in superclass? that seems redundant\"\n    // I don't want the database class needing parameters to instantiate in other classes\n    //and if I put this logic in the inner-db class then the add chart logic will be in the constructor too and I don't want to add some garbage-data chart to listings every time\n    //and I cant run initialize directly because it is static context\n    //edit 4/1/2025 ^^^ why the fuck does it being static or not matter.\n    //i changed init to static and initialized directly but ill keep those earlier comments because idc\n    protected Database() throws ParserConfigurationException {Chart.initialize();}\n\n    protected static final class Chart {\n        String name;\n        int combo;\n        double cc;\n        String tier; // applicable: FTR/ETR/BYD\n\n        Chart(String name, int combo, double cc, String tier){ //constructor for creating chart objects\n            /*at first it may seem strange that these values are initialized in-class and then are parameterized via this constructor,\n            but there may be instances where you need to pull the most recently selected chart's data (UNCONFIRMED)*/\n            this.name = name;\n            this.combo = combo;\n            this.cc = cc;\n            this.tier = tier;\n\n\n            if(tier.equals(\"BYD\")){\n                if(Hub.DEBUG){System.out.printf(\"[DEBUG: CHART OBJECT ADDED TO MAP]\\n\\n[TIER]: %s\\n---[END.]---\\n\", tier);}\n                chartMapBYD.put(name,this);\n            }else if(tier.equals(\"FTR\")){\n                if(Hub.DEBUG){System.out.printf(\"[DEBUG: CHART OBJECT ADDED TO MAP]\\n[TIER]: %s\\n---[END.]---\\n\",tier);}\n                chartMapFTR.put(name,this);\n            }else{\n                chartMapELSEPLACEHOLDER.put(name,this);\n            }\n        }\n\n        //adds data for every chart currently in-game to the list variables; cc and combo values ripped from arcaea wiki\n        private static void initialize() throws ParserConfigurationException {\n            chartMapELSEPLACEHOLDER.clear(); chartMapFTR.clear(); chartMapBYD.clear(); //clear all listings to prevent stacking\n\n            XMLReader.initReader();\n\n        }\n    }\n\n    public static Chart getChart(String name, String difficulty){\n        if(Hub.DEBUG){System.out.println(\"\\n[DEBUG // GETCHART]\\ndifficulty: \"+difficulty+\"\\nname: \"+name);}\n\n        if(difficulty.equals(\"BYD\")){\n            if(Hub.DEBUG){System.out.println(\"[DEBUG // GETCHART] resulting chart: \"+chartMapBYD.get(name).name);}\n            return chartMapBYD.get(name);\n        }else{\n            if(Hub.DEBUG){System.out.println(\"[DEBUG // GETCHART] resulting chart: \"+chartMapFTR.get(name).name);}\n            return chartMapFTR.get(name);\n        }\n    }\n\n    /*the way this script works is that it requires the selected variable name to be the exact same as the jacket file name.\n     *unfortunately, sometimes some characters either cannot be used in filenames or im just too lazy to change it. so this \"corrects\"\n     *any differences between filenames and string values without either field being compromised*/\n\n    public static String jacketCheck(String target){\n\n        if(target == null){\n            target = \"placeholder\";\n        }\n\n        if(getChart(target,\"FTR/ETR\")!=null){\n            if(getChart(target, \"FTR/ETR\").tier.equals(\"ETR\")) {\n                target = target.substring(0, target.length() - 10);\n            }\n        }\n\n\n        target = target.toLowerCase();\n        return switch(target){\n\n            case \"altair (feat. *spila*)\" -> \"altair\";\n\n            case \"can i friend you on bassbook? lol\" -> \"bassbook\";\n\n            case \"cocoro*cosmetic\" -> \"cocoro\";\n\n            case \"carmine:scythe\" -> \"carmine scythe\";\n\n            case \"livht my wδy\" -> \"livht\";\n\n            case \"ω4\" -> \"w4\";\n\n            case \"to: alice liddell\" -> \"to alice liddell\";\n\n            case \"οδυσσεια\" -> \"odysseia\";\n\n            case \"ävril -flicka i krans-\" -> \"avril\";\n\n            case \"valhalla:0\" -> \"valhalla0\";\n\n            case \"last | moment\" -> \"last moment\";\n\n            case \"last | eternity\" -> \"Last eternity\";\n\n            case \"twilight concerto\" -> \"tasogare\";\n\n            case \"hidden rainbows of epicurus\" -> \"epicurus\";\n\n            case \"world.execute(me);\" -> \"worldexecuteme\";\n\n            case \"vectoя\" -> \"vector\";\n\n            default -> target;\n        };\n    }\n\n    private static class XMLReader {\n        private static final String databasePath = \"database.xml\";\n        private static final File databaseFile = new File(databasePath);\n\n        private static void initReader() throws ParserConfigurationException {\n            try {\n                final DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance(); //this method allows you to make document builders\n                final DocumentBuilder dBuilder = dbFactory.newDocumentBuilder(); //this method parses xml files\n                final Document database = dBuilder.parse(databaseFile); //this is the parsed xml file\n                database.getDocumentElement().normalize();\n\n                initAllCharts(database);\n            }catch(IOException | SAXException e){throw new RuntimeException(e);}\n        }\n\n        private static void initAllCharts(Document database){\n            final NodeList allCharts = database.getElementsByTagName(\"chart\");\n\n            for(int temp = 0; temp< allCharts.getLength(); temp++){\n                final Element currentChart = (Element) allCharts.item(temp);\n\n                final String name = getItem(\"title\", currentChart);\n                final int combo = Integer.parseInt(getItem(\"combo\", currentChart));\n                final double cc = Double.parseDouble(getItem(\"cc\", currentChart));\n                final String tier = getItem(\"tier\", currentChart);\n\n                if(Hub.DEBUG){System.out.printf(\"[DEBUG: CHART INITIALIZED IN XML READER]\\n\\n[NAME]: %s\\n[COMBO]: %d\\n[CC]: %f\\n[TIER]: %s\\n---[END.]---\\n\",name,combo,cc,tier);}\n\n                new Database.Chart(name,combo,cc,tier);\n\n            }\n        }\n\n        private static String getItem(String item, Element element){return element.getElementsByTagName(item.toLowerCase()).item(0).getTextContent();}\n    }\n}\n
+===================================================================
+diff --git a/Database.java b/Database.java
+--- a/Database.java	(revision e0411beb05ca9aef74fbd16df5ed03ce7e3040ef)
++++ b/Database.java	(date 1743621627453)
+@@ -28,17 +28,29 @@
+ 
+     protected static final class Chart {
+         String name;
++        String artist;
++        String charter;
+         int combo;
+         double cc;
++        String pack;
++        String length;
++        String BPM;
+         String tier; // applicable: FTR/ETR/BYD
++        String[] atts;
+ 
+-        Chart(String name, int combo, double cc, String tier){ //constructor for creating chart objects
++        Chart(String name, String artist, String charter, int combo, double cc, String pack, String length, String BPM, String tier){ //constructor for creating chart objects
+             /*at first it may seem strange that these values are initialized in-class and then are parameterized via this constructor,
+             but there may be instances where you need to pull the most recently selected chart's data (UNCONFIRMED)*/
+             this.name = name;
++            this.artist = artist;
++            this.charter = charter;
+             this.combo = combo;
+             this.cc = cc;
++            this.pack = pack;
++            this.length = length;
++            this.BPM = BPM;
+             this.tier = tier;
++            atts = new String[]{artist, charter, String.valueOf(combo), String.valueOf(cc), pack, length, BPM};
+ 
+ 
+             if(tier.equals("BYD")){
+@@ -150,14 +162,20 @@
+             for(int temp = 0; temp< allCharts.getLength(); temp++){
+                 final Element currentChart = (Element) allCharts.item(temp);
+ 
++                //this could technically be one line but then itd be super unreadable lol
+                 final String name = getItem("title", currentChart);
+-                final int combo = Integer.parseInt(getItem("combo", currentChart));
++                final String artist = getItem("artist", currentChart);
++                final String charter = getItem("charter",currentChart);
++                final int combo = Integer.parseInt(getItem("notecount", currentChart));
+                 final double cc = Double.parseDouble(getItem("cc", currentChart));
++                final String pack = getItem("pack",currentChart);
++                final String length = getItem("length",currentChart);
++                final String BPM = getItem("BPM",currentChart); //bpm is a string because some charts have bpms like "75-210" which cannot be converted to a number
+                 final String tier = getItem("tier", currentChart);
+ 
+                 if(Hub.DEBUG){System.out.printf("[DEBUG: CHART INITIALIZED IN XML READER]\n\n[NAME]: %s\n[COMBO]: %d\n[CC]: %f\n[TIER]: %s\n---[END.]---\n",name,combo,cc,tier);}
+ 
+-                new Database.Chart(name,combo,cc,tier);
++                new Database.Chart(name,artist,charter,combo,cc,pack,length,BPM,tier);
+ 
+             }
+         }
+Index: scoreDisplay.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import javax.swing.*;\nimport java.awt.*;\nimport javax.swing.UIManager.LookAndFeelInfo;\nimport java.awt.image.BufferedImage;\nimport javax.imageio.ImageIO;\nimport javax.xml.parsers.ParserConfigurationException;\nimport java.io.File;\nimport java.io.IOException;\nimport java.util.*;\nimport java.nio.file.Files;\nimport java.nio.file.Path;\nimport java.nio.file.Paths;\nimport java.util.List;\n\n//contains most graphical data\n//welcome to hell\n\npublic class scoreDisplay extends Database{\n    final private static HashMap<String, Component> componentMap = new HashMap<>();\n    protected static List<ScoreTextArea> scoreTextArray = new ArrayList<>();\n    private static Map<String,Chart> chartMap = Database.chartMapFTR;\n\n    protected scoreDisplay() throws ParserConfigurationException {}\n\n    /*ppl keep saying static vars are bad and I mean that's probably true because of something something nerd stuff IDK about but um im bad at coding and I keep\n    having problems IDK how to fix without static vars idek why they're bad but um maybe one day ill be good at coding and it will be fixed*/\n\n    public static void init(){\n        final int SIZE = 700;\n        //changes l&f to windows classic because im a basic bitch like that\n        try{for(LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()){if(\"Windows Classic\".equals(info.getName())){UIManager.setLookAndFeel(info.getClassName());break;}}\n        }catch(Exception e){System.out.println(\"error with look and feel\");}\n\n        // create a window\n        final JFrame frame = new JFrame(\"The Memory Archive\");\n        frame.setSize(SIZE, SIZE);\n        frame.setLayout(new GridLayout(1,2));\n\n        //score display\n\n        //i feel like this can be made more efficient vvv\n        //make new panel this will have the scores in it\n        final JPanel scorePanel = new JPanel();\n        scorePanel.setLayout(new BoxLayout(scorePanel, BoxLayout.Y_AXIS));\n\n        // Create a JScrollPane and add the content panel to it\n        final JScrollPane scoreDisplay = new JScrollPane(scorePanel);\n\n\n        //main panel to hold panels in the left half\n        //make this panel vertical and then max a panel on the bottom and then inside that have 2 more f***ing panels for the labels and the actual ui items\n        final JPanel leftPanel = new JPanel();\n        leftPanel.setLayout(new BoxLayout(leftPanel,BoxLayout.PAGE_AXIS));\n\n        //adds panel\n        frame.add(leftPanel);\n        addInfoToPanel(leftPanel, scorePanel, frame);\n\n        // Add the scroll pane to the frame\n        frame.add(scoreDisplay);\n\n        frame.setVisible(true);\n    }\n\n    //panel to hold components\n    private static void addInfoToPanel(JPanel panel, JPanel scorePanel, JFrame frame){\n        //filler sizes\n        final Dimension minFillerSize = new Dimension(frame.getWidth()/128, frame.getHeight()/128);\n        final Dimension prefFilerSize = new Dimension(frame.getWidth()/64, frame.getHeight()/64);\n        final Dimension maxFillerSize = new Dimension(frame.getWidth()/32, frame.getHeight()/32);\n        //dropdown assets\n        final String[] difficultyList = {\"FTR/ETR\", \"BYD\"};\n        final String[] operators = {\"Any\", \"=\",\"<\"};\n        final String[] sorts = {\"Score\",\"FAR count\", \"LOST count\"};\n        //all the items\n\n        //the panel that holds all chart data (top half of the ui)\n        final JPanel chartPanel = new JPanel();\n        chartPanel.setLayout(new FlowLayout(FlowLayout.LEFT));\n        panel.add(chartPanel);\n\n        //panel for everything else\n        final JPanel bottomPanel = new JPanel(new GridLayout(0,3));\n        panel.add(bottomPanel);\n\n        //chart panel items ----\n\n        chartPanel.add(new JLabel(\"Chart\"));\n\n        //difficulty select dropdown\n        final JComboBox<String> difficultySelect = new JComboBox<>(difficultyList);\n        chartPanel.add(difficultySelect);\n        componentMap.put(\"Difficulty\", difficultySelect);\n\n        //chart jacket\n        final JLabel imageLabel = new JLabel();\n        chartPanel.add(imageLabel);\n        componentMap.put(\"Jacket\", imageLabel);\n\n        //chart select dropdown\n        final JComboBox<String> songSelect = new JComboBox<>(loadSongList());\n        chartPanel.add(songSelect);\n        componentMap.put(\"Chart\", songSelect);\n\n        //-label for notecount\n        final JLabel noteCount = new JLabel(\"Max Combo:\");\n        chartPanel.add(noteCount);\n        componentMap.put(\"Max Combo\", noteCount);\n\n        //-label for chart constant\n        final JLabel chartConstant = new JLabel(\"Chart Constant:\");\n        chartPanel.add(chartConstant);\n        componentMap.put(\"Chart Constant\", chartConstant);\n\n\n        //bottom panel items ---\n\n\n        //dropdown for operator on far count\n        final JComboBox<String> farOperator = new JComboBox<>(operators);\n        farOperator.setName(\"Far Operator\");\n\n        //dropdown for operator on miss count\n        final JComboBox<String> lostOperator = new JComboBox<>(operators);\n        lostOperator.setName(\"Lost Operator\");\n\n        //select sorting methodology dropdown\n        final JComboBox<String> sortSelection = new JComboBox<>(sorts);\n        sortSelection.setName(\"Sort Selection\");\n\n        //filter fields--\n\n        //field for far count\n        final JTextField farField = new JTextField(\"0\");\n        farField.setVisible(false);\n        farField.setEnabled(false);\n        farField.setName(\"Far Count\");\n\n        //field for lost count\n        final JTextField lostField = new JTextField(\"0\");\n        lostField.setVisible(false);\n        lostField.setEnabled(false);\n        lostField.setName(\"Lost Count\");\n\n        //field for minimum score\n        final JTextField scoreField = new JTextField(\"0\");\n        scoreField.setName(\"Minimum Score\");\n\n        //specify cc for random song\n        final JTextField ccMin = new JTextField(\"Min CC\");\n        ccMin.setName(\"Minimum CC\");\n\n        final JTextField ccMax = new JTextField(\"Max CC\");\n        ccMax.setName(\"Maximum CC\");\n\n        //BUTTONS--\n\n        //checkbox if ur using that bitch from spiders thread\n        final JCheckBox toa = new JCheckBox(\"Partner is Toa\");\n        toa.setName(\"Toa\");\n\n        //button to run score calcs\n        final JButton run = new JButton(\"Find scores\");\n\n        //button to select random song\n        final JButton randomize = new JButton(\"Select Random Chart\");\n\n        //refreshes on initalization\n        refresh();\n\n        //ACTIONS--\n\n        //loads chart / refreshes song data (songSelect dropdown)\n\n        songSelect.addActionListener(_ -> refresh());\n\n        //we use an array here because it allows u to change the order of the components without having to have them on certain lines. to reorder u just reorder the arraylist here\n        Component[] itemsInOrder = new Component[]{\n                new JLabel(\"FAR Count\"), farOperator, farField,\n\n                new JLabel(\"LOST Count\"), lostOperator, lostField,\n\n                new JLabel(\"Minimum score\"), scoreField, new Box.Filler(minFillerSize, prefFilerSize, maxFillerSize),\n\n                new JLabel(\"Sort By: \"), sortSelection, new Box.Filler(minFillerSize, prefFilerSize, maxFillerSize),\n\n                randomize, ccMin, ccMax,\n\n                toa, run\n        };\n\n        for(Component i:itemsInOrder){\n            bottomPanel.add(i);\n            if(i.getName()!=null){componentMap.put(i.getName(), i);}\n        }\n\n        //load byd/ftr charts (diffSelect dropdown)\n\n        difficultySelect.addActionListener(_ -> {\n            changeMap((String)Objects.requireNonNull(difficultySelect.getSelectedItem()));\n            songSelect.setModel(loadSongList());\n            refresh();\n        });\n\n\n        //selects random song\n        randomize.addActionListener(_ -> songSelect.setSelectedItem(getRandomChart().name));\n\n        farOperator.addActionListener(_ -> {\n            if(Objects.requireNonNull(farOperator.getSelectedItem()).toString().equals(\"Any\")){\n                farField.setEnabled(false);\n                farField.setVisible(false);\n            }else{\n                farField.setEnabled(true);\n                farField.setVisible(true);\n            }\n        });\n\n        lostOperator.addActionListener(_ -> {\n            if(Objects.requireNonNull(lostOperator.getSelectedItem()).toString().equals(\"Any\")){\n                lostField.setEnabled(false);\n                lostField.setVisible(false);\n            }else{\n                lostField.setEnabled(true);\n                lostField.setVisible(true);\n            }\n        });\n\n        //calculates scores (run button)\n        run.addActionListener(_ -> runCalcs(scorePanel));\n\n\n    }\n\n    private static Chart getRandomChart(){\n\n        //init var\n        final Random rand = new Random();\n        Chart selectedChart;\n        int index;\n\n        String[] names = chartMap.keySet().toArray(new String[0]);\n\n        //error handler. prevents from typing the minimum value as 10000 or smth. value set to 11.1 bc it's the largest value that both future/beyond charts have\n        // minmax 0 is min and minmax 1 is max\n        final double[] minMax = clamp(new double[]{Double.parseDouble(getComponentValue(\"Minimum CC\")), Double.parseDouble(getComponentValue(\"Maximum CC\"))},11.1);\n\n        //selects random number and sets chart index # to the random num. if not within the bounds of specified cc, reroll\n        do{\n            index = rand.nextInt(chartMap.size());\n            selectedChart = (chartMap.get(names[index]));\n            if(Hub.DEBUG){System.out.printf(\"\\n\\n[DEBUG // CHART SELECTION]\\nselected chart: %s\\nselected cc: %f\\nmin: %f\\nmax: %f\\n\",chartMap.get(names[index]).name, selectedChart.cc,minMax[0],minMax[1]);}\n\n        }while(!(selectedChart.cc<=minMax[1]&& selectedChart.cc>=minMax[0]));\n\n        return selectedChart;\n    }\n\n    //used when changing from ftr to byd\n    private static ComboBoxModel<String> loadSongList(){\n        //this is a switch instead of an if-else in case i ever need to do more diffs\n        final List<String> listTemp = chartMap.keySet().stream().toList();\n        final ArrayList<String> chartsTemp = new ArrayList<>(listTemp);\n\n        chartsTemp.sort(String::compareToIgnoreCase);\n\n        return new JComboBox<>(chartsTemp.toArray(new String[0])).getModel();\n    }\n    //refreshes song data\n    private static void refresh(){\n\n        //gets the string of jacket file location\n        final String difficulty = getComponentValue(\"Difficulty\");\n        final Chart chart = getChart(getComponentValue(\"Chart\"), difficulty);\n        final JLabel imageLabel = (JLabel)componentMap.get(\"Jacket\"); //this is the label that holds the icon that you are changing\n        final JLabel noteCountLabel = (JLabel)componentMap.get(\"Max Combo\"); //this is the label that holds cc data that you are changing\n        final JLabel chartConstantLabel = (JLabel)componentMap.get(\"Chart Constant\"); //this is the label that holds cc data that you are changing\n\n\n        //sets up jacket\n        String check = jacketCheck(chart.name);\n        Path path = Paths.get(\"./assets/\"+check +\".jpg\");\n        //appends _byd to the target jacket if the difficulty is byd. if ftr doesnt exist (i.e april fools songs) dont append byd\n        final Path pathBYDTemp = Path.of(\"./assets/\" + check + \"_byd.jpg\");\n        if(Objects.equals(chart.tier, \"BYD\")&&getChart(chart.name,\"FTR/ETR\")!=null&&Files.exists(pathBYDTemp)){\n            path = pathBYDTemp;\n        }\n\n        File jacket = new File(path.toString());\n\n        if(Hub.DEBUG){System.out.println(\"\\nimage checksum!!! [!DEBUG ONLY!] \\n------DETAILS------\\nJACKET: \"+jacket+\" EXISTS?: \"+Files.exists(path));}\n\n        //if the jacket doesnt exist for whatever reason, (most of the time im just too lazy to add jackets for new songs) swap to a placeholder and print an error\n        if (!Files.exists(path)) {\n            System.out.println(\"error reading image!\\n------DETAILS------\\nJACKET: \" + jacket + \" EXISTS?: \" + Files.exists(path));\n            jacket = new File(\"./assets/placeholder.jpg\");\n        }\n\n        //reads the jacket and displays it to ui\n        try{\n            BufferedImage img = ImageIO.read(jacket);\n\n            //fix this later the height shouldnt be hardcoded\n            int scaledWidth = 325;\n            int scaledHeight = -1;  //set to -1 so aspect ratio will be preserved\n            Image resizedImg = img.getScaledInstance(scaledWidth, scaledHeight, Image.SCALE_SMOOTH);\n\n            //replaces jacket\n            ImageIcon imageIcon = new ImageIcon(resizedImg);\n            imageLabel.setIcon(imageIcon);\n            //error handler in case of invalid url\n        }catch (IOException e){System.out.println(\"Error reading image!\\n------DETAILS------\\nERROR DETAILS: \"+e.getMessage()+\"JACKET: \"+jacket);}\n\n        //update constant/combo\n        noteCountLabel.setText(\"Max Combo: \" + chart.combo);\n        chartConstantLabel.setText(\"Chart Constant: \" + chart.cc);\n\n\n    }\n\n    private static String getComponentValue(String name){\n        final Component component = componentMap.get(name);\n        if(Hub.DEBUG){System.out.printf(\"[DEBUG: COMPONENT VALUE SEARCH]\\n[REQUESTED COMPONENT NAME]: %s\\n---[END.]---\\n\",name);}\n        if(component==null){\n            System.out.println(\"ur piece of shit component is null. make piece of shit error handler later \"+name);\n            return \"null\";\n        }\n\n        String tempString;\n        assert component!=null;\n\n        //if component is a string\n        if(component.getClass()==JComboBox.class){\n            tempString = Objects.requireNonNull(((JComboBox<String>)component).getSelectedItem()).toString();\n        }else{\n            //if component is a num then make sure its positive\n            tempString = ((JTextField) component).getText();\n            double toDouble = 0;\n            try{\n                toDouble = Double.parseDouble(tempString);\n                if(toDouble <0){\n                    toDouble = 1;}\n            }catch(Exception _){}\n            tempString = Double.toString(toDouble);\n        }\n        return tempString;\n    }\n\n    private static void runCalcs(JPanel scorePanel){\n        //clear the board before running new calcs\n        scoreTextArray.clear();\n\n        //init var (reading off fields and dropdowns)\n        final Chart chart = getChart(getComponentValue(\"Chart\"), getComponentValue(\"Difficulty\"));\n        final int far = (int)Double.parseDouble(getComponentValue(\"Far Count\"));\n        final int miss = (int)Double.parseDouble(getComponentValue(\"Lost Count\"));\n        final String minScore = getComponentValue(\"Minimum Score\");\n        final String farOp = getComponentValue(\"Far Operator\");\n        final String missOp = getComponentValue(\"Lost Operator\");\n        final String sort = getComponentValue(\"Sort Selection\");\n        final boolean toaStatus = ((JCheckBox)componentMap.get(\"Toa\")).isSelected();\n\n        if(Hub.DEBUG){\n            System.out.println(\"run called\\ninput chart name: \"+getComponentValue(\"Chart\")+\"\\ndiff: \"+getComponentValue(\"Difficulty\"));\n            if(chart!=null){\n                System.out.println(\"chart: \"+chart.name);\n            }\n        }\n\n        if(chart==null){\n            System.out.println(\"error!! chart is null!! calculations have been prematurely ended.\");\n            return;\n        }\n\n        scoreCalc.calcScore(minScore, far, miss, farOp, missOp, toaStatus, chart.cc, chart.combo);\n\n        //sort results based on the sort option\n        switch(sort){\n            case \"Score\":\n                scoreTextArray.sort(Comparator.comparingDouble(ScoreTextArea::getScore).reversed());\n                break;\n            case \"FAR count\":\n                scoreTextArray.sort(Comparator.comparingInt(ScoreTextArea::getFar).reversed());\n                break;\n            case \"LOST count\":\n                scoreTextArray.sort(Comparator.comparingInt(ScoreTextArea::getMiss).reversed());\n                break;\n        }\n\n        //removes all components from scorePanel so scores dont stack on next run\n        scorePanel.removeAll();\n\n        //add sorted components to the scorePanel\n        for(ScoreTextArea textAreas:scoreTextArray){\n            if(Hub.DEBUG){System.out.println(\"arrays are being added\\narray text vvvvv\\n\"+textAreas.getText()+\"\\n\");}\n            scorePanel.add(textAreas);\n        }\n\n        //update the scroll pane after adding components\n        scorePanel.revalidate();\n        scorePanel.repaint();\n\n    }\n\n    //this is so dumb but it has to be done to make exactly ONE function more efficient by removing TWO lines of code\n    private static double[] clamp(double[] targets, double max){\n        //use a regular for loop here instead of an enchanced one to keep the index intact\n        for(int i = 0; i<targets.length;i++){if(targets[i]>max){targets[i]=max;}}\n        if(targets[targets.length-1]==0){targets[targets.length-1]=max;}\n        return targets;\n    }\n\n    protected static class ScoreTextArea extends JTextArea{\n        double score;\n        double far;\n        double miss;\n\n        private ScoreTextArea(String text, double score, int far, int miss) {\n            //variables for each score container\n            super(text);\n            this.score = score;\n            this.far = far;\n            this.miss = miss;\n\n            setEditable(false);\n            setBorder(BorderFactory.createLineBorder(Color.BLACK));\n\n            if(Hub.DEBUG){System.out.println(\"[debug] scoretextarray constructor call\");}\n        }\n\n        private double getScore() {return score;}\n        private int getFar(){return (int)far;}\n        private int getMiss(){return (int)miss;}\n    }\n\n    protected static void importComponent(double score, int pure, int far, int miss, double rating){\n        //adds judgement data and score to array\n        String text = \"Score: \" + (int) score + \"\\nPURE: \" + pure + \"\\nFAR: \" + far + \"\\nLOST: \" + miss +\"\\nPlay Rating: \"+rating;\n        ScoreTextArea textArea = new ScoreTextArea(text, score, far, miss);\n        scoreTextArray.add(textArea);\n    }\n\n    private static void changeMap(String input){\n        //redundant branch bc i will add present and past later\n        chartMap = switch(input){\n            case \"FTR/ETR\" -> chartMapFTR;\n            case \"BYD\" -> chartMapBYD;\n            default -> chartMapFTR;\n        };\n    }\n}\n
+===================================================================
+diff --git a/scoreDisplay.java b/scoreDisplay.java
+--- a/scoreDisplay.java	(revision e0411beb05ca9aef74fbd16df5ed03ce7e3040ef)
++++ b/scoreDisplay.java	(date 1743627346088)
+@@ -86,6 +86,7 @@
+         //chart panel items ----
+ 
+         chartPanel.add(new JLabel("Chart"));
++        componentMap.put("Chart Panel",chartPanel);
+ 
+         //difficulty select dropdown
+         final JComboBox<String> difficultySelect = new JComboBox<>(difficultyList);
+@@ -102,16 +103,7 @@
+         chartPanel.add(songSelect);
+         componentMap.put("Chart", songSelect);
+ 
+-        //-label for notecount
+-        final JLabel noteCount = new JLabel("Max Combo:");
+-        chartPanel.add(noteCount);
+-        componentMap.put("Max Combo", noteCount);
+-
+-        //-label for chart constant
+-        final JLabel chartConstant = new JLabel("Chart Constant:");
+-        chartPanel.add(chartConstant);
+-        componentMap.put("Chart Constant", chartConstant);
+-
++        for(String currentAttribute:Constants.chartAtts){addLabelToChartPanel(currentAttribute);}
+ 
+         //bottom panel items ---
+ 
+@@ -165,6 +157,7 @@
+         //button to select random song
+         final JButton randomize = new JButton("Select Random Chart");
+ 
++
+         //refreshes on initalization
+         refresh();
+ 
+@@ -273,9 +266,6 @@
+         final String difficulty = getComponentValue("Difficulty");
+         final Chart chart = getChart(getComponentValue("Chart"), difficulty);
+         final JLabel imageLabel = (JLabel)componentMap.get("Jacket"); //this is the label that holds the icon that you are changing
+-        final JLabel noteCountLabel = (JLabel)componentMap.get("Max Combo"); //this is the label that holds cc data that you are changing
+-        final JLabel chartConstantLabel = (JLabel)componentMap.get("Chart Constant"); //this is the label that holds cc data that you are changing
+-
+ 
+         //sets up jacket
+         String check = jacketCheck(chart.name);
+@@ -312,8 +302,10 @@
+         }catch (IOException e){System.out.println("Error reading image!\n------DETAILS------\nERROR DETAILS: "+e.getMessage()+"JACKET: "+jacket);}
+ 
+         //update constant/combo
+-        noteCountLabel.setText("Max Combo: " + chart.combo);
+-        chartConstantLabel.setText("Chart Constant: " + chart.cc);
++        //u use a regular for loop here instead of an enchanced forloop with the constant.chartAtts array because u also need the index for the actual chart.atts array
++        for(int i = 0;i<Constants.chartAtts.length;i++){
++            ((JLabel)componentMap.get(Constants.chartAtts[i])).setText(Constants.chartAtts[i]+": "+chart.atts[i]);
++        }
+ 
+ 
+     }
+@@ -448,4 +440,10 @@
+             default -> chartMapFTR;
+         };
+     }
++
++    private static void addLabelToChartPanel(String text){
++        final JLabel label = new JLabel(text);
++        ((JPanel)componentMap.get("Chart Panel")).add(label);
++        componentMap.put(text, label);
++    }
+ }
