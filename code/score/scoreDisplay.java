@@ -25,6 +25,7 @@ public class scoreDisplay{
     final private static HashMap<String, Component> componentMap = new HashMap<>();
     protected static List<ScoreTextArea> scoreTextArray = new ArrayList<>();
     private static Map<String, Database.Chart> chartMap = chartMapFTR;
+    private static final Dimension fillerSize = new Dimension(0,0);
 
     protected scoreDisplay() throws ParserConfigurationException {}
 
@@ -60,7 +61,7 @@ public class scoreDisplay{
 
         //adds panel
         frame.add(leftPanel);
-        addInfoToPanel(leftPanel, scorePanel, frame);
+        addInfoToPanel(leftPanel, scorePanel);
 
         // Add the scroll pane to the frame
         frame.add(scoreDisplay);
@@ -69,11 +70,8 @@ public class scoreDisplay{
     }
 
     //panel to hold components
-    private static void addInfoToPanel(JPanel panel, JPanel scorePanel, JFrame frame){
-        //filler sizes
-        final Dimension minFillerSize = new Dimension(frame.getWidth()/128, frame.getHeight()/128);
-        final Dimension prefFilerSize = new Dimension(frame.getWidth()/64, frame.getHeight()/64);
-        final Dimension maxFillerSize = new Dimension(frame.getWidth()/32, frame.getHeight()/32);
+    private static void addInfoToPanel(JPanel panel, JPanel scorePanel){
+
         //dropdown assets
         final String[] difficultyList = {"FTR/ETR", "BYD"};
         final String[] operators = {"Any", "=","<"};
@@ -169,7 +167,7 @@ public class scoreDisplay{
         final JButton run = new JButton("Find scores");
 
         //button to select random song
-        final JButton randomize = new JButton("Select Random Database.Chart");
+        final JButton randomize = new JButton("Select Random Chart");
 
         //refreshes on initalization
         refresh();
@@ -186,9 +184,9 @@ public class scoreDisplay{
 
                 new JLabel("LOST Count"), lostOperator, lostField,
 
-                new JLabel("Minimum score"), scoreField, new Box.Filler(minFillerSize, prefFilerSize, maxFillerSize),
+                new JLabel("Minimum score"), scoreField, new Box.Filler(fillerSize, fillerSize, fillerSize),
 
-                new JLabel("Sort By: "), sortSelection, new Box.Filler(minFillerSize, prefFilerSize, maxFillerSize),
+                new JLabel("Sort By: "), sortSelection, new Box.Filler(fillerSize, fillerSize, fillerSize),
 
                 randomize, ccMin, ccMax,
 
@@ -333,7 +331,6 @@ public class scoreDisplay{
         }
 
         String tempString;
-        assert component!=null;
 
         //if component is a string
         if(component.getClass()==JComboBox.class){

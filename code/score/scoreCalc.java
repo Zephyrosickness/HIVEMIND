@@ -1,7 +1,7 @@
 package code.score;
 
 import code.Hub;
-import code.utilities;
+import code.Utilities;
 
 import javax.xml.parsers.ParserConfigurationException;
 
@@ -46,13 +46,13 @@ public class scoreCalc extends code.score.scoreDisplay{
                     scoreFinal = pureRaw * pureFinal + farRaw * farFinal;
 
                     //checks if all values meet operator criteria
-                    final boolean farCheck = utilities.check(farFinal, inputFar, farOp);
-                    final boolean missCheck = utilities.check(missFinal, inputMiss, missOp);
+                    final boolean farCheck = Utilities.check(farFinal, inputFar, farOp);
+                    final boolean missCheck = Utilities.check(missFinal, inputMiss, missOp);
                     final boolean scoreCheck = scoreFinal >= minScore;
 
 
                     //makes sure no invalid values
-                    final boolean legit = utilities.legitimacyCheck(pureFinal, farFinal, missFinal, (int)combo,scoreFinal, toa, (int)(combo-pureFinal));
+                    final boolean legit = Utilities.legitimacyCheck(pureFinal, farFinal, missFinal, (int)combo,scoreFinal, toa, (int)(combo-pureFinal));
 
                     //if all criteria is met, imports into scroll panel
                     if(farCheck&&missCheck&&scoreCheck&&legit){

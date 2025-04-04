@@ -171,7 +171,7 @@ public class Database {
                 final Element currentChart = (Element) allCharts.item(temp);
 
                 final String name = getItem("title", currentChart);
-                final int combo = Integer.parseInt(getItem("combo", currentChart));
+                final int combo = Integer.parseInt(getItem("notecount", currentChart));
                 final double cc = Double.parseDouble(getItem("cc", currentChart));
                 final String tier = getItem("tier", currentChart);
 

@@ -1,6 +1,6 @@
 package code.ptt;
 
-import code.utilities;
+import code.Utilities;
 
 public class pttCalc extends code.ptt.pttDisplay {
     protected static void calc(double targetRating, double targetCC, String scoreString, String ratingOp, String ccOp, String scoreOp){
@@ -31,12 +31,12 @@ public class pttCalc extends code.ptt.pttDisplay {
         for(finalScore = 9000000; finalScore<=10000000; finalScore+=5000){
             for(finalCC=7; finalCC<=11.3; finalCC+=0.1){
                 finalRating = reversePttCalc(finalScore, finalCC);
-                finalCC = utilities.round(finalCC);
+                finalCC = Utilities.round(finalCC);
 
                 //checks
-                boolean ratingCheck = utilities.check(finalRating, targetRating, ratingOp);
-                boolean scoreCheck = utilities.check(finalScore, targetScore, scoreOp);
-                boolean ccCheck = utilities.check(finalCC, targetCC, ccOp);
+                boolean ratingCheck = Utilities.check(finalRating, targetRating, ratingOp);
+                boolean scoreCheck = Utilities.check(finalScore, targetScore, scoreOp);
+                boolean ccCheck = Utilities.check(finalCC, targetCC, ccOp);
                 if(ccCheck&&scoreCheck&&ratingCheck){
                     pttDisplay.importComponent(finalScore, finalRating, finalCC);
                 }
@@ -63,7 +63,7 @@ public class pttCalc extends code.ptt.pttDisplay {
         if(raw<=0){
             return 0;
         }else{
-            return utilities.round(raw);
+            return Utilities.round(raw);
         }
     }
 
