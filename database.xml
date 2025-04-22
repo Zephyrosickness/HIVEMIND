@@ -451,5 +451,5 @@
     <chart id = "451"> <title>Beautiful Dreamer</title> <tier>FTR</tier> <notecount>1139</notecount> <cc>9.9</cc> </chart>
     <chart id = "452"> <title>Back to Basics</title> <tier>FTR</tier> <notecount>1544</notecount> <cc>10.5</cc> </chart>
     <chart id = "453"> <title>Last | Moment</title> <tier>BYD</tier> <notecount>888</notecount> <cc>9.6</cc> </chart>
-    <chart id = "454"><title>Designant.</title><tier>FTR</tier><notecount>2184</notecount></chart>
+    <chart id = "454"><title>Designant.</title><tier>BYD</tier><notecount>2184</notecount><cc>11.9</cc></chart>
 </chartDB>
