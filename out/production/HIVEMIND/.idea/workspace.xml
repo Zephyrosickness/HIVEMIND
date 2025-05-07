@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9f0de1c-4710-4440-90a5-9fa7cd7f1cd9" name="Changes" comment="cleanup">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_1_25,_8_07 PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_1_25__8_07PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_4_25,_2_22 PM_[Changes]1/Database$Chart.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_4_25,_2_22 PM_[Changes]1/Database$XMLReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_4_25,_2_22 PM_[Changes]1/Database.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_4_25,_2_22 PM_[Changes]1/scoreDisplay$ScoreTextArea.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_4_25,_2_22 PM_[Changes]1/scoreDisplay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_4_25,_2_22 PM_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_4_25__2_22PM__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HIVEMIND/database.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HIVEMIND/database.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/genesis (morrigan).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +34,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Zephyrosickness/HIVEMIND.git&quot;,
-    &quot;accountId&quot;: &quot;d7fffdeb-b127-4db7-bea3-5e2482b2f699&quot;
+    &quot;accountId&quot;: &quot;f74bdf36-e43c-4850-9360-a36f76c4e519&quot;
   }
 }</component>
   <component name="MarkdownSettingsMigration">
@@ -69,6 +61,7 @@
     &quot;Application.hub.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
@@ -131,7 +124,31 @@
       <option name="project" value="LOCAL" />
       <updated>1743791612414</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="make stupid world made calc that doesnt work">
+      <option name="closed" value="true" />
+      <created>1743797400950</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743797400950</updated>
+    </task>
+    <task id="LOCAL-00004" summary="unversioned">
+      <option name="closed" value="true" />
+      <created>1743797416307</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743797416307</updated>
+    </task>
+    <task id="LOCAL-00005" summary="cleanup">
+      <option name="closed" value="true" />
+      <created>1743797481738</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1743797481738</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,6 +164,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add the jackets back oops LOL" />
+    <MESSAGE value="make stupid world made calc that doesnt work" />
+    <MESSAGE value="unversioned" />
     <MESSAGE value="cleanup" />
     <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
   </component>

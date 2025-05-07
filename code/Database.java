@@ -94,8 +94,8 @@ public class Database {
 
 
     /*the way this script works is that it requires the selected variable name to be the exact same as the jacket file name.
-     *unfortunately, sometimes some characters either cannot be used in filenames or im just too lazy to change it. so this "corrects"
-     *any differences between filenames and string values without either field being compromised*/
+     *unfortunately, sometimes some characters either physically cannot be used in filenames or the program will refuse to build if special characters are used.
+     *so this "corrects" any differences between filenames and string values without either field being compromised*/
 
     public static String jacketCheck(String target){
 
@@ -113,6 +113,8 @@ public class Database {
         target = target.toLowerCase();
         return switch(target){
 
+            case "αterlβus" -> "aterlbus";
+
             case "altair (feat. *spila*)" -> "altair";
 
             case "can i friend you on bassbook? lol" -> "bassbook";
@@ -125,13 +127,43 @@ public class Database {
 
             case "ω4" -> "w4";
 
+            case "désive" -> "desive";
+
+            case "γuarδina" -> "guardina";
+
+            case "alice à la mode" -> "alice a la mode";
+
             case "to: alice liddell" -> "to alice liddell";
 
             case "οδυσσεια" -> "odysseia";
 
+            case "〇、" -> "O,";
+
+            case "kanjou no matenrou ～arr.demetori" -> "kanjou";
+
+             case "syūten" -> "syuten";
+
+            case "misdeed -la bonté de dieu et l'origine du mal-" -> "misdeed";
+
+            case "cross†over" -> "cross over";
+
+            case "cross†soul" -> "cross soul";
+
+            case "dynitikós" -> "dynikitos";
+
             case "ävril -flicka i krans-" -> "avril";
 
             case "valhalla:0" -> "valhalla0";
+
+            case "nέo κósmo" -> "neo kosmo";
+
+            case "anökumene" -> "anokumene";
+
+            case "löschen" -> "loschen";
+
+            case "1f√" -> "1fV";
+
+            case "µ" -> "u";
 
             case "last | moment" -> "last moment";
 
